@@ -1,0 +1,20 @@
+{{- with site.Params.homeInfoParams }}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <p class="hero-subtitle">Exploring Collaborative Alignment and Enhancement Strategies for AI Models</p>
+        <h1 class="hero-title">STRUCTURED<br>EMERGENCE</h1>
+    </div>
+</section>
+
+<!-- About Section -->
+<article class="first-entry home-info">
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

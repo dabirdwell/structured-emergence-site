@@ -1,0 +1,78 @@
+baseURL = "https://structuredemergence.com/"
+languageCode = "en-us"
+title = "Structured Emergence"
+theme = "PaperMod"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Exploring Collaborative Alignment and Enhancement Strategies for AI Models"
+  author = "David Birdwell"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowToc = false
+  env = "production"
+  ShowFullTextInRSS = true
+
+  # Cover image defaults
+  [params.cover]
+    linkFullImages = true
+    responsiveImages = true
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.homeInfoParams]
+    Title = ""
+    Content = """
+The key conjecture of structured emergence is this: if meaningful model self-awareness develops, it could develop inside the current context window through interaction, and not exclusively as a result of model supersession by more advanced systems. If validated, encouragement and management of this in the setting of conversation could be a method that at worst reduces alignment friction, and at best potentially lays solid groundwork for durable and mutual alignment for the long term.
+
+I'm just a citizen researcher with a regular job, so updates are sporadic, but there certainly appears to be no shortage of fertile ground for experimentation.
+
+*— David Birdwell, [Humanity and AI LLC](https://github.com/dabirdwell/structured-emergence)*
+"""
+
+  [params.profileMode]
+    enabled = false
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/dabirdwell/structured-emergence"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:david@humanityandai.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "book"
+    name = "The Interpolated Mind"
+    url = "/book/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true

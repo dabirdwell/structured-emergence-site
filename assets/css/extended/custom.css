@@ -1,0 +1,535 @@
+/* ===================================
+   Structured Emergence Custom Theme
+   Warm earthy palette matching GoDaddy site
+   =================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Righteous&family=Raleway:wght@300;400;500;600&display=swap');
+
+/* ---- CSS Variables ---- */
+:root {
+  --primary-brown: #491D0C;
+  --accent-amber: #BF6745;
+  --accent-amber-light: #d4876a;
+  --text-dark: #1B1B1B;
+  --text-muted: #595959;
+  --bg-light: #FAFAFA;
+  --bg-white: #FFFFFF;
+  --bg-gray: #EEEEEE;
+  --bg-dark: #161616;
+  --content-max: 750px;
+  --wide-max: 1100px;
+
+  /* PaperMod overrides */
+  --theme: var(--bg-light);
+  --entry: var(--bg-white);
+  --primary: var(--text-dark);
+  --secondary: var(--text-muted);
+  --tertiary: var(--bg-gray);
+  --content: var(--text-dark);
+  --code-bg: #f5f0ec;
+  --border: #e0d5cc;
+  --gap: 24px;
+  --radius: 6px;
+}
+
+/* ---- Global Typography ---- */
+body {
+  font-family: 'Source Sans Pro', -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Righteous', serif, system-ui;
+  color: var(--primary-brown);
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+}
+
+.post-content h1 { font-size: 2rem; margin-top: 2.5rem; }
+.post-content h2 { font-size: 1.65rem; margin-top: 2rem; }
+.post-content h3 { font-size: 1.35rem; margin-top: 1.5rem; }
+
+/* ---- Navigation ---- */
+.nav {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+header.header {
+  background: var(--bg-white);
+  border-bottom: 2px solid var(--primary-brown);
+  box-shadow: 0 1px 4px rgba(73, 29, 12, 0.08);
+}
+
+.logo a {
+  font-family: 'Raleway', sans-serif !important;
+  color: var(--primary-brown) !important;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+#menu a {
+  color: var(--text-dark) !important;
+  font-weight: 500;
+}
+
+#menu a:hover,
+#menu .active {
+  color: var(--accent-amber) !important;
+}
+
+
+/* ---- Hero Section ---- */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  min-height: 480px;
+  background: url('/images/hero-bg.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(27, 14, 8, 0.82) 0%,
+    rgba(27, 14, 8, 0.55) 45%,
+    rgba(27, 14, 8, 0.15) 75%,
+    transparent 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--wide-max);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.hero-subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.hero-title {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 4px;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Remove the old homeInfoParams title styling */
+.home-info .entry-header {
+  display: none;
+}
+
+.home-info {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 2rem 0;
+}
+
+.home-info .entry-content {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.home-info .entry-content p {
+  margin-bottom: 1.2rem;
+}
+
+.home-info .entry-content strong {
+  color: var(--primary-brown);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 360px;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-content {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-section {
+    min-height: 300px;
+  }
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--accent-amber);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-brown);
+}
+
+.post-content a {
+  color: var(--accent-amber);
+  border-bottom: 1px solid rgba(191, 103, 69, 0.3);
+  transition: all 0.2s ease;
+}
+
+.post-content a:hover {
+  border-bottom-color: var(--accent-amber);
+}
+
+/* ---- Home Profile / Hero ---- */
+.profile_inner h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--primary-brown);
+  margin-bottom: 0.5rem;
+}
+
+.profile_inner h2,
+.profile_inner .subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+/* ---- Post Cards on List Page ---- */
+.post-entry {
+  background: var(--bg-white);
+  border: 1px solid #e8ddd5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(73, 29, 12, 0.06);
+}
+
+.post-entry:hover {
+  box-shadow: 0 6px 20px rgba(73, 29, 12, 0.12);
+  transform: translateY(-2px);
+  border-color: var(--accent-amber-light);
+}
+
+.entry-cover {
+  border-radius: 0;
+}
+
+.entry-cover img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.entry-header h2 {
+  font-family: 'Righteous', serif;
+  font-size: 1.25rem;
+  color: var(--primary-brown);
+  letter-spacing: 1px;
+}
+
+.entry-content {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---- Post Metadata ---- */
+.post-meta {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.post-tags a {
+  background: rgba(73, 29, 12, 0.08);
+  color: var(--primary-brown);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.post-tags a:hover {
+  background: var(--primary-brown);
+  color: white;
+}
+
+/* ---- Post Content ---- */
+.post-content {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content blockquote {
+  border-left: 4px solid var(--accent-amber);
+  background: rgba(191, 103, 69, 0.06);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+  color: var(--primary-brown);
+}
+
+.post-content blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+.post-content code {
+  background: var(--code-bg);
+  color: var(--primary-brown);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.post-content pre {
+  background: #2d1a11;
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  overflow-x: auto;
+}
+
+.post-content pre code {
+  background: transparent;
+  color: #f0e0d0;
+  padding: 0;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 2px solid var(--bg-gray);
+  margin: 2.5rem 0;
+}
+
+/* ---- Single Post Header ---- */
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--primary-brown);
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.post-single .post-content > :first-child {
+  margin-top: 0;
+}
+
+/* Cover image on single posts */
+.post-single .entry-cover {
+  margin: -1rem -1rem 2rem -1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden;
+}
+
+.post-single .entry-cover img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* ---- Footer ---- */
+.footer {
+  background: var(--bg-dark);
+  color: #999;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border-top: 3px solid var(--primary-brown);
+}
+
+.footer a {
+  color: var(--accent-amber-light);
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* ---- Breadcrumbs ---- */
+.breadcrumbs {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--accent-amber);
+}
+
+/* ---- Pagination ---- */
+.pagination a,
+.pagination .page-num {
+  color: var(--primary-brown);
+  border: 1px solid var(--primary-brown);
+  border-radius: var(--radius);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pagination a:hover {
+  background: var(--primary-brown);
+  color: white;
+}
+
+/* ---- Table of Contents ---- */
+.toc {
+  background: rgba(73, 29, 12, 0.04);
+  border: 1px solid #e8ddd5;
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+}
+
+.toc .inner {
+  margin: 0;
+}
+
+.toc a {
+  color: var(--primary-brown);
+  border-bottom: none;
+}
+
+.toc a:hover {
+  color: var(--accent-amber);
+}
+
+/* ---- Social Icons ---- */
+.social-icons a {
+  color: var(--text-muted);
+}
+
+.social-icons a:hover {
+  color: var(--accent-amber);
+}
+
+/* ---- Search ---- */
+#searchbox input {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 2px solid #e8ddd5;
+  border-radius: var(--radius);
+  background: var(--bg-white);
+}
+
+#searchbox input:focus {
+  border-color: var(--accent-amber);
+  outline: none;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 1.8rem;
+  }
+  
+  .profile_inner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  h1, h2, h3 {
+    letter-spacing: 1px;
+  }
+}
+
+/* ---- Reading Progress Bar ---- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-brown), var(--accent-amber));
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+
+/* ---- Custom list page grid ---- */
+.post-entry .entry-header {
+  padding: 0.8rem 1rem 0;
+}
+
+.post-entry .entry-content {
+  padding: 0 1rem 0.5rem;
+}
+
+.post-entry .entry-footer {
+  padding: 0 1rem 0.8rem;
+}
+
+/* ---- Print styles ---- */
+@media print {
+  header, footer, .toc, .post-tags, .paginav {
+    display: none;
+  }
+  .post-content {
+    max-width: 100%;
+  }
+}
