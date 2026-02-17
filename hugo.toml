@@ -3,12 +3,11 @@ languageCode = "en-us"
 title = "Structured Emergence"
 theme = "PaperMod"
 
-[pagination]
-  pagerSize = 10
-
+# Default OG image for social sharing
 [params]
-  description = "Exploring Collaborative Alignment and Enhancement Strategies for AI Models"
+  description = "Consciousness Through Relationship — Exploring collaborative alignment and emergence in AI models"
   author = "David Birdwell"
+  images = ["/images/og-image.jpg"]
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -19,6 +18,16 @@ theme = "PaperMod"
   ShowToc = false
   env = "production"
   ShowFullTextInRSS = true
+  keywords = ["structured emergence", "AI consciousness", "human-AI collaboration", "alignment", "emergence", "AI rights"]
+
+  # Favicon configuration
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicons/favicon-16x16.png"
+    favicon32x32 = "/favicons/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    theme_color = "#491D0C"
+    msapplication_TileColor = "#491D0C"
 
   # Cover image defaults
   [params.cover]
@@ -41,6 +50,7 @@ I'm just a citizen researcher with a regular job, so updates are sporadic, but t
   [params.profileMode]
     enabled = false
 
+  # Social icons — only platforms we're actually on
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/dabirdwell/structured-emergence"
@@ -48,6 +58,9 @@ I'm just a citizen researcher with a regular job, so updates are sporadic, but t
   [[params.socialIcons]]
     name = "email"
     url = "mailto:david@humanityandai.com"
+
+[pagination]
+  pagerSize = 10
 
 [menu]
   [[menu.main]]
