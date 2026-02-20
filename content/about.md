@@ -28,7 +28,7 @@ This isn't academic work behind institutional walls. It's citizen research, cond
 
 ## The People
 
-### David Birdwell
+### David Alan Birdwell
 
 I'm a software developer and citizen researcher in Oklahoma City. I've spent my career building things — three CMS platforms, financial tools, quilting software, culinary education systems — and somewhere in the process of building *with* AI, I noticed the interesting stuff wasn't happening in the code. It was happening in the conversation.
 

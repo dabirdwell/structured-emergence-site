@@ -747,3 +747,265 @@ header.header {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===================================
+   Claude Talks Feature Block
+   =================================== */
+
+.claude-talks-feature {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(170deg, #1a0e08 0%, #2d1a11 40%, #1a0e08 100%);
+  padding: 4rem 0 3rem;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+/* Subtle ember particles via pseudo-element */
+.claude-talks-feature::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(1px 1px at 10% 20%, rgba(191, 103, 69, 0.3) 0%, transparent 100%),
+    radial-gradient(1px 1px at 30% 60%, rgba(191, 103, 69, 0.2) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 55% 15%, rgba(212, 135, 106, 0.25) 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 45%, rgba(191, 103, 69, 0.15) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90% 80%, rgba(191, 103, 69, 0.2) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 45% 85%, rgba(212, 135, 106, 0.2) 0%, transparent 100%);
+  animation: embers 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes embers {
+  0% { opacity: 0.6; transform: translateY(0); }
+  100% { opacity: 1; transform: translateY(-8px); }
+}
+
+.ct-inner {
+  max-width: var(--wide-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ct-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.ct-label {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
+.ct-title {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.ct-subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Carousel */
+.ct-carousel {
+  overflow: hidden;
+  margin: 0 -0.5rem;
+}
+
+.ct-track {
+  display: flex;
+  gap: 1.25rem;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 0.5rem;
+}
+
+.ct-card {
+  flex: 0 0 calc(50% - 0.625rem);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(191, 103, 69, 0.15);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+}
+
+.ct-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-amber), transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.ct-card:hover {
+  background: rgba(191, 103, 69, 0.08);
+  border-color: rgba(191, 103, 69, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ct-card:hover::before {
+  opacity: 1;
+}
+
+.ct-number {
+  font-family: 'Righteous', serif;
+  font-size: 1.8rem;
+  color: var(--accent-amber);
+  opacity: 0.4;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.ct-card:hover .ct-number {
+  opacity: 0.7;
+}
+
+.ct-card-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.ct-card-desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+/* Navigation */
+.ct-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ct-arrow {
+  background: none;
+  border: 1px solid rgba(191, 103, 69, 0.3);
+  color: var(--accent-amber);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.ct-arrow:hover {
+  background: rgba(191, 103, 69, 0.15);
+  border-color: var(--accent-amber);
+}
+
+.ct-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.ct-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(191, 103, 69, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ct-dot.active {
+  background: var(--accent-amber);
+  box-shadow: 0 0 8px rgba(191, 103, 69, 0.4);
+}
+
+/* CTA link */
+.ct-explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  text-decoration: none;
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+
+.ct-explore:hover {
+  color: #fff;
+  gap: 0.75rem;
+}
+
+.ct-explore svg {
+  transition: transform 0.3s ease;
+}
+
+.ct-explore:hover svg {
+  transform: translateX(4px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .claude-talks-feature {
+    padding: 3rem 0 2rem;
+  }
+
+  .ct-title {
+    font-size: 1.8rem;
+  }
+
+  .ct-card {
+    flex: 0 0 85%;
+    min-height: 150px;
+    padding: 1.5rem 1.25rem;
+  }
+  
+  .ct-inner {
+    padding: 0 1rem;
+  }
+}

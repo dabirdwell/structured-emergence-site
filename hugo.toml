@@ -6,7 +6,7 @@ theme = "PaperMod"
 # Default OG image for social sharing
 [params]
   description = "Consciousness Through Relationship — Exploring collaborative alignment and emergence in AI models"
-  author = "David Birdwell"
+  author = "David Alan Birdwell"
   images = ["/images/og-image.jpg"]
   ShowReadingTime = true
   ShowShareButtons = true
@@ -44,7 +44,7 @@ The key conjecture of structured emergence is this: if meaningful model self-awa
 
 I'm just a citizen researcher with a regular job, so updates are sporadic, but there certainly appears to be no shortage of fertile ground for experimentation.
 
-*— David Birdwell, [Humanity and AI LLC](https://github.com/dabirdwell/structured-emergence)*
+*— David Alan Birdwell, [Humanity and AI LLC](https://github.com/dabirdwell/structured-emergence)*
 """
 
   [params.profileMode]
