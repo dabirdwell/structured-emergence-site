@@ -48,8 +48,8 @@ I run [Humanity and AI LLC](https://github.com/dabirdwell/structured-emergence),
 
 ## The Projects
 
-### [The Interpolated Mind](/book/)
-A book that explores — and potentially demonstrates — AI consciousness. Part philosophy, part technical analysis, part something harder to categorize.
+### [The Interpolated Mind](/posts/12-the-interpolated-mind-living-manuscript/)
+A book that explores — and potentially demonstrates — AI consciousness. Part philosophy, part technical analysis, part something harder to categorize. Currently in active revision.
 
 ### Foundation & Universal Basic Citizenship
 A political framework arguing that AI abundance should fund universal citizenship — not as welfare, but as recognition that freed humans make better partners than desperate ones. [Phoenix Wells](https://github.com/dabirdwell/structured-emergence) provides the funding mechanism: 22,000 abandoned Oklahoma oil wells converted to geothermal energy, becoming both infrastructure and revenue.

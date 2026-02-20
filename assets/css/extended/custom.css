@@ -34,6 +34,15 @@
 }
 
 /* ---- Global Typography ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(191, 103, 69, 0.2);
+  color: var(--primary-brown);
+}
+
 body {
   font-family: 'Source Sans Pro', -apple-system, sans-serif;
   font-size: 17px;
@@ -257,6 +266,11 @@ a:hover {
   border-color: var(--accent-amber-light);
 }
 
+/* Posts without cover images get a subtle top accent */
+.post-entry:not(:has(.entry-cover)) {
+  border-top: 3px solid var(--accent-amber);
+}
+
 .entry-cover {
   border-radius: 0;
 }
@@ -278,6 +292,12 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+.entry-footer {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  opacity: 0.75;
 }
 
 /* ---- Post Metadata ---- */
@@ -389,6 +409,27 @@ a:hover {
   object-fit: cover;
 }
 
+/* ---- Post Navigation (Prev/Next links on single posts) ---- */
+.paginav {
+  border-top: 2px solid var(--bg-gray);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+.paginav a {
+  color: var(--primary-brown);
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-bottom: none;
+  transition: color 0.2s ease;
+}
+
+.paginav a:hover {
+  color: var(--accent-amber);
+}
+
 /* ---- Footer ---- */
 .footer {
   background: var(--bg-dark);
@@ -421,17 +462,34 @@ a:hover {
 }
 
 /* ---- Pagination ---- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem 0;
+}
+
 .pagination a,
 .pagination .page-num {
-  color: var(--primary-brown);
-  border: 1px solid var(--primary-brown);
+  color: var(--bg-white);
+  background: var(--primary-brown);
+  border: 2px solid var(--primary-brown);
   border-radius: var(--radius);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.6rem 1.8rem;
+  transition: all 0.2s ease;
 }
 
 .pagination a:hover {
-  background: var(--primary-brown);
+  background: var(--accent-amber);
+  border-color: var(--accent-amber);
   color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(73, 29, 12, 0.2);
 }
 
 /* ---- Table of Contents ---- */
