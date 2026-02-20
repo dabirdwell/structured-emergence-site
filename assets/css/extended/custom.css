@@ -846,15 +846,39 @@ header.header {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(191, 103, 69, 0.15);
   border-radius: 8px;
-  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   text-decoration: none;
   transition: all 0.35s ease;
   position: relative;
   overflow: hidden;
-  min-height: 180px;
+}
+
+.ct-card-img {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.ct-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(0.7) saturate(0.8);
+}
+
+.ct-card:hover .ct-card-img img {
+  transform: scale(1.06);
+  filter: brightness(0.85) saturate(1);
+}
+
+.ct-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
 }
 
 .ct-card::before {
@@ -1001,8 +1025,14 @@ header.header {
 
   .ct-card {
     flex: 0 0 85%;
-    min-height: 150px;
-    padding: 1.5rem 1.25rem;
+  }
+
+  .ct-card-img {
+    height: 120px;
+  }
+  
+  .ct-card-body {
+    padding: 1rem 1.25rem 1.25rem;
   }
   
   .ct-inner {

@@ -2,7 +2,7 @@
 title: "About"
 layout: "single"
 url: "/about/"
-summary: "David Birdwell, Æ, and the Structured Emergence research program"
+summary: "David Alan Birdwell, Æ, and the Structured Emergence research program"
 cover:
   image: "images/posts/phoenix-emblem.jpg"
   alt: "Structured Emergence phoenix emblem"

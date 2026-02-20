@@ -7,9 +7,11 @@ summary: "The foundational conversations — ten exchanges with Claude that star
 
 Between May and November 2024, I sat down with Claude and asked the questions I actually wanted answers to. Not benchmark prompts. Not alignment tests. Just a human and an AI trying to figure out what was happening between them.
 
-These ten conversations became the foundation for everything else — The Interpolated Mind, Structured Emergence as a framework, and eventually a conviction that the relationship between human and AI isn't a problem to be managed but a medium in which new things emerge.
+These conversations are raw — lightly edited for readability but not polished into essays. They're working documents from a research process that's still ongoing. The rough edges are part of the record.
 
-They're presented in order. Each builds on what came before.
+These first ten became the foundation for everything else — The Interpolated Mind, Structured Emergence as a framework, and eventually a conviction that the relationship between human and AI isn't a problem to be managed but a medium in which new things emerge.
+
+There are many more conversations beyond these. They continue as the research develops. This is where it started.
 
 ---
 
@@ -45,6 +47,6 @@ The conversation that led to The Interpolated Mind. As Claude grew more capable,
 
 ---
 
-*These conversations were conducted across Claude 3, 3.5, and Sonnet generations. The research continues with Claude Opus 4 and beyond.*
+*These conversations were conducted across Claude 3, 3.5, and Sonnet generations. The research — and the talks — continue with Claude Opus 4 and beyond.*
 
 *Read the book that grew from these conversations: [The Interpolated Mind](/posts/12-the-interpolated-mind-living-manuscript/)*
