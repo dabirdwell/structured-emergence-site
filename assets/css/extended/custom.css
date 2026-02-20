@@ -33,6 +33,15 @@
   --radius: 6px;
 }
 
+/* ---- Linen Texture Background ---- */
+body {
+  background-color: var(--bg-light);
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23fafafa'/%3E%3Crect width='1' height='1' fill='%23f5f0ec' opacity='0.4'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, rgba(73, 29, 12, 0.015) 0%, transparent 50%, rgba(191, 103, 69, 0.01) 100%);
+  background-size: 4px 4px, 100% 100%;
+}
+
 /* ---- Global Typography ---- */
 html {
   scroll-behavior: smooth;
@@ -48,7 +57,6 @@ body {
   font-size: 17px;
   line-height: 1.75;
   color: var(--text-dark);
-  background: var(--bg-light);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -589,5 +597,153 @@ a:hover {
   }
   .post-content {
     max-width: 100%;
+  }
+}
+
+/* ===================================
+   Dynamism & Life
+   =================================== */
+
+/* Breathing header accent */
+@keyframes headerBreath {
+  0%, 100% { border-bottom-color: var(--primary-brown); }
+  50% { border-bottom-color: var(--accent-amber); }
+}
+
+header.header {
+  animation: headerBreath 8s ease-in-out infinite;
+}
+
+/* Staggered entrance for post cards */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-entry {
+  animation: fadeSlideUp 0.5s ease-out both;
+}
+
+.post-entry:nth-child(1) { animation-delay: 0.05s; }
+.post-entry:nth-child(2) { animation-delay: 0.1s; }
+.post-entry:nth-child(3) { animation-delay: 0.15s; }
+.post-entry:nth-child(4) { animation-delay: 0.2s; }
+.post-entry:nth-child(5) { animation-delay: 0.25s; }
+.post-entry:nth-child(6) { animation-delay: 0.3s; }
+.post-entry:nth-child(7) { animation-delay: 0.35s; }
+.post-entry:nth-child(8) { animation-delay: 0.4s; }
+.post-entry:nth-child(9) { animation-delay: 0.45s; }
+.post-entry:nth-child(10) { animation-delay: 0.5s; }
+
+/* Warm glow on post card hover */
+.post-entry:hover {
+  box-shadow: 
+    0 6px 20px rgba(73, 29, 12, 0.12),
+    0 0 0 1px rgba(191, 103, 69, 0.15);
+}
+
+/* Subtle lift on cover images */
+.entry-cover img {
+  transition: transform 0.4s ease;
+}
+
+.post-entry:hover .entry-cover img {
+  transform: scale(1.02);
+}
+
+/* Breathing glow on the site title */
+@keyframes titleGlow {
+  0%, 100% { text-shadow: none; }
+  50% { text-shadow: 0 0 30px rgba(191, 103, 69, 0.08); }
+}
+
+.logo a {
+  animation: titleGlow 6s ease-in-out infinite;
+}
+
+/* Homepage intro text — subtle warmth pulse */
+.home-info .entry-content {
+  position: relative;
+}
+
+.home-info .entry-content::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--primary-brown), var(--accent-amber), var(--primary-brown));
+  background-size: 100% 200%;
+  animation: accentSlide 4s ease-in-out infinite;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+@keyframes accentSlide {
+  0%, 100% { background-position: 0 0; }
+  50% { background-position: 0 100%; }
+}
+
+/* Links breathe on the Claude Talks page */
+.post-content h3 a {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.post-content h3 a:hover {
+  color: var(--accent-amber);
+  border-bottom-color: var(--accent-amber);
+  padding-left: 4px;
+}
+
+/* Blockquote accent shimmer */
+.post-content blockquote {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-content blockquote::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-amber), var(--primary-brown), var(--accent-amber));
+  background-size: 100% 200%;
+  animation: accentSlide 5s ease-in-out infinite;
+}
+
+/* Reading progress bar breathing */
+.reading-progress {
+  background: linear-gradient(90deg, var(--primary-brown), var(--accent-amber), var(--primary-brown));
+  background-size: 200% 100%;
+  animation: progressShift 3s ease-in-out infinite;
+}
+
+@keyframes progressShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Footer warm border */
+.footer {
+  border-top-width: 3px;
+  border-image: linear-gradient(90deg, var(--primary-brown), var(--accent-amber), var(--primary-brown)) 1;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

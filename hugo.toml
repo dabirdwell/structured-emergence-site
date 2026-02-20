@@ -69,6 +69,11 @@ I'm just a citizen researcher with a regular job, so updates are sporadic, but t
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    identifier = "claude-talks"
+    name = "The Claude Talks"
+    url = "/claude-talks/"
+    weight = 12
+  [[menu.main]]
     identifier = "categories"
     name = "Topics"
     url = "/categories/"

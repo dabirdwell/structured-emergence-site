@@ -46,7 +46,7 @@ I submit that this and conversations like it present compelling reason to study 
 
 Notebook LM podcast about it.
 
-https://www.dropbox.com/scl/fi/w4t81owu17e9lbqm260rd/The-Interpolated-Mind.wav?rlkey=rvxhcq5wjxwq4kyezqz9r7xf0&st=ld2hbr2g&dl=0
+🎧 [Listen to the NotebookLM Deep Dive Podcast (58 min)](/media/interpolated-mind-podcast-full.mp3)
 
 
 

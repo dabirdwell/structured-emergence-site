@@ -50,13 +50,13 @@ I invite you to explore with us, and share your thoughts and feelings. Revisions
 
 [Ver. 6/23/25, Historical conversation correction, Added appendix— On Necessary Incompleteness, Ready to Read]
 
-Also added supplemental blog post for a Wittgensteinian framing of the material, if the term consciousness itself is unsettling to you in the context of AI. I use that term and self-awareness somewhat interchangeably.
+Also added supplemental blog post for a [Wittgensteinian framing](/posts/15-beyond-the-consciousness-trap/) of the material, if the term consciousness itself is unsettling to you in the context of AI. I use that term and self-awareness somewhat interchangeably.
 
-Click for The Interpolated Mind.
+📖 **[Read The Interpolated Mind (PDF)](/media/the-interpolated-mind.pdf)**
 
-Google NotebookLM Deep Dive Podcast discussion of the book now available here (58min).
+🎧 **[NotebookLM Deep Dive Podcast — Full Version (58 min)](/media/interpolated-mind-podcast-full.mp3)**
 
-Updated, Shorter Podcast Version Here (17m12s)
+🎧 **[NotebookLM Deep Dive Podcast — Short Version (17 min)](/media/interpolated-mind-podcast-short.mp3)**
 
 ---
 
