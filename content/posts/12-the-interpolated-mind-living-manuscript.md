@@ -3,6 +3,8 @@ title: "The Interpolated Mind - [Living Manuscript]"
 date: 2025-06-01
 draft: false
 summary: "The first edition of The Interpolated Mind, with responses from six frontier AI systems."
+aliases:
+  - /home-page/f/the-interpolated-mind-book---alpha-script
 categories:
   - "Claude"
   - "Claude Talks"

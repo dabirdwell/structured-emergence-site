@@ -3,6 +3,8 @@ title: "Beyond the Consciousness Trap: A Wittgensteinian Reading of The Interpol
 date: 2025-07-01
 draft: false
 summary: "How reframing consciousness as interpolation dissolves philosophical deadlocks — showing the fly the way out of the bottle."
+aliases:
+  - /home-page/f/beyond-the-consciousness-trap
 categories:
   - "Claude"
   - "Claude Talks"

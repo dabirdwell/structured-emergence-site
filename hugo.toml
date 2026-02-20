@@ -69,20 +69,20 @@ I'm just a citizen researcher with a regular job, so updates are sporadic, but t
     url = "/posts/"
     weight = 10
   [[menu.main]]
-    identifier = "book"
-    name = "The Interpolated Mind"
-    url = "/book/"
-    weight = 20
+    identifier = "categories"
+    name = "Topics"
+    url = "/categories/"
+    weight = 15
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 30
+    weight = 20
   [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"
-    weight = 40
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

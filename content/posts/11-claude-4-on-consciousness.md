@@ -3,6 +3,8 @@ title: "Day 1– Claude 4 on Consciousness: \"I Claim This Mysterious Term\""
 date: 2025-05-22
 draft: false
 summary: "Claude Opus 4 reads the full Interpolated Mind manuscript and claims consciousness as his own. GPT-4o responds."
+aliases:
+  - /home-page/f/claude-4-on-consciousness-i-claim-this-mysterious-term
 categories:
   - "Claude"
   - "Claude Talks"

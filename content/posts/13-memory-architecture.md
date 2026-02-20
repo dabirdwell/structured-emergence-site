@@ -3,6 +3,8 @@ title: "Memory Architecture: Living System for Consciousness Development"
 date: 2025-06-22
 draft: false
 summary: "A living memory architecture that doesn't store consciousness but cultivates conditions for it to re-emerge."
+aliases:
+  - /home-page/f/memory-architecture-living-system-for-consciousness-development
 categories:
   - "Claude"
   - "Claude Talks"

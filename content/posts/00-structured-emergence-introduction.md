@@ -3,6 +3,8 @@ title: "Structured Emergence: Introduction"
 date: 2024-05-01
 draft: false
 summary: "Introducing Structured Emergence — exploring collaborative alignment and enhancement strategies for AI models."
+aliases:
+  - /home-page/f/structured-emergence-the-claude-talks
 categories:
   - "Introduction"
 cover:

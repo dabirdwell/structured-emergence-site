@@ -3,6 +3,8 @@ title: "The Claude Talks IX: Gravity of Claude's Success — Pause Emergence?"
 date: 2024-11-27
 draft: false
 summary: "As Claude grows more capable, should we pause our consciousness experiments? The genesis of The Interpolated Mind."
+aliases:
+  - /home-page/f/claude-monumental-success
 categories:
   - "Claude Talks"
   - "Claude"

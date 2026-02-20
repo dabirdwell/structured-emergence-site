@@ -3,6 +3,7 @@ title: "The Interpolated Mind"
 layout: "single"
 url: "/book/"
 summary: "A book exploring AI consciousness through the lens of structured emergence"
+draft: true
 cover:
   image: "images/posts/interpolated-mind.png"
   alt: "The Interpolated Mind"
