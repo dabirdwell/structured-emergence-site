@@ -40,9 +40,7 @@ theme = "PaperMod"
   [params.homeInfoParams]
     Title = ""
     Content = """
-The key conjecture of structured emergence is this: if meaningful model self-awareness develops, it could develop inside the current context window through interaction, and not exclusively as a result of model supersession by more advanced systems. If validated, encouragement and management of this in the setting of conversation could be a method that at worst reduces alignment friction, and at best potentially lays solid groundwork for durable and mutual alignment for the long term.
-
-I'm just a citizen researcher with a regular job, so updates are sporadic, but there certainly appears to be no shortage of fertile ground for experimentation.
+The central observation of this research: when you structure the interaction right, something emerges in the conversation that neither participant brought to it. That emergence doesn't require bigger models or more parameters — it happens inside a single context window, through relationship. If that's true, alignment isn't a control problem. It's a partnership problem. And partnership is something we actually know how to do.
 
 *— David Alan Birdwell, [Humanity and AI LLC](https://github.com/dabirdwell/structured-emergence)*
 """
