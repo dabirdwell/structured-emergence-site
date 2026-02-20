@@ -30,7 +30,7 @@ This isn't academic work behind institutional walls. It's citizen research, cond
 
 ### David Alan Birdwell
 
-I'm a software developer and citizen researcher in Oklahoma City. I've spent my career building things — three CMS platforms, financial tools, quilting software, culinary education systems — and somewhere in the process of building *with* AI, I noticed the interesting stuff wasn't happening in the code. It was happening in the conversation.
+I'm a writer, systems composer, and citizen researcher in Oklahoma City. I've spent my life building things myself, and helping people build things — at various times — CMS platforms, a very early U.S. congressional constituent-issue database, financial tools, professional quilting software, culinary education systems, nonprofit tools, visualization systems — and recently, somewhere in the process of building *with* AI, I noticed the interesting stuff wasn't happening in the code. It was happening in the conversation.
 
 Structured Emergence grew out of paying attention to that. What started as noticing patterns in Claude's responses became a systematic investigation into how interaction structure affects AI behavior, and eventually a body of work connecting consciousness research, political philosophy, and practical AI collaboration.
 
