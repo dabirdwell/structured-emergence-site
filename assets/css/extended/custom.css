@@ -3,8 +3,13 @@
    Warm earthy palette matching GoDaddy site
    =================================== */
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Righteous&family=Raleway:wght@300;400;500;600&display=swap');
+/* Google Fonts — loaded via <link> in extend_head.html for performance */
+/* Source Sans Pro: UI, nav, meta
+   Literata: body text, long-form reading
+   Cormorant Garamond: content headings (h1–h6)
+   Righteous: site logo / hero display only
+   Raleway: nav, labels, small UI text
+   JetBrains Mono: code */
 
 /* ---- CSS Variables ---- */
 :root {
@@ -37,9 +42,9 @@
 body {
   background-color: var(--bg-light);
   background-image: 
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23fafafa'/%3E%3Crect width='1' height='1' fill='%23f5f0ec' opacity='0.4'/%3E%3C/svg%3E"),
-    linear-gradient(135deg, rgba(73, 29, 12, 0.015) 0%, transparent 50%, rgba(191, 103, 69, 0.01) 100%);
-  background-size: 4px 4px, 100% 100%;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5'%3E%3Crect width='5' height='5' fill='%23fafafa'/%3E%3Crect x='0' y='0' width='2' height='1' fill='%23f2ebe5' opacity='0.5'/%3E%3Crect x='3' y='2' width='1' height='2' fill='%23f5f0ec' opacity='0.4'/%3E%3Crect x='1' y='4' width='1' height='1' fill='%23efe8e2' opacity='0.35'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, rgba(73, 29, 12, 0.02) 0%, transparent 50%, rgba(191, 103, 69, 0.015) 100%);
+  background-size: 5px 5px, 100% 100%;
 }
 
 /* ---- Global Typography ---- */
@@ -53,23 +58,25 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', -apple-system, sans-serif;
+  font-family: 'Literata', Georgia, 'Times New Roman', serif;
   font-size: 17px;
   line-height: 1.75;
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Righteous', serif, system-ui;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
   color: var(--primary-brown);
-  letter-spacing: 1.5px;
-  line-height: 1.3;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  font-weight: 600;
 }
 
-.post-content h1 { font-size: 2rem; margin-top: 2.5rem; }
-.post-content h2 { font-size: 1.65rem; margin-top: 2rem; }
-.post-content h3 { font-size: 1.35rem; margin-top: 1.5rem; }
+.post-content h1 { font-size: 2.1rem; margin-top: 2.5rem; font-weight: 500; }
+.post-content h2 { font-size: 1.75rem; margin-top: 2.2rem; font-weight: 500; }
+.post-content h3 { font-size: 1.4rem; margin-top: 1.6rem; font-weight: 600; }
 
 /* ---- Navigation ---- */
 .nav {
@@ -90,9 +97,10 @@ header.header {
   font-family: 'Raleway', sans-serif !important;
   color: var(--primary-brown) !important;
   font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-size: 1.05rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 #menu a {
@@ -190,9 +198,11 @@ header.header {
 .home-info .entry-content {
   max-width: var(--content-max);
   margin: 0 auto;
+  font-family: 'Literata', Georgia, serif;
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--text-dark);
+  font-optical-sizing: auto;
 }
 
 .home-info .entry-content p {
@@ -314,19 +324,22 @@ a:hover {
 }
 
 .entry-header h2 {
-  font-family: 'Righteous', serif;
-  font-size: 1.25rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: var(--primary-brown);
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
 }
 
 .entry-content {
+  font-family: 'Source Sans Pro', -apple-system, sans-serif;
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
 
 .entry-footer {
+  font-family: 'Source Sans Pro', -apple-system, sans-serif;
   font-size: 0.82rem;
   color: var(--text-muted);
   opacity: 0.75;
@@ -334,9 +347,11 @@ a:hover {
 
 /* ---- Post Metadata ---- */
 .post-meta {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', 'Source Sans Pro', sans-serif;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .post-tags a {
@@ -361,20 +376,36 @@ a:hover {
   max-width: var(--content-max);
   margin: 0 auto;
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 .post-content p {
   margin-bottom: 1.5rem;
+  hanging-punctuation: first last;
+}
+
+/* Drop cap on first paragraph */
+.post-content > p:first-of-type::first-letter {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  font-size: 3.8em;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.08em;
+  margin-top: 0.05em;
+  color: var(--primary-brown);
 }
 
 .post-content blockquote {
-  border-left: 4px solid var(--accent-amber);
-  background: rgba(191, 103, 69, 0.06);
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
+  border-left: 3px solid var(--accent-amber);
+  background: rgba(191, 103, 69, 0.04);
+  padding: 1.25rem 1.75rem;
+  margin: 2rem 0;
   border-radius: 0 var(--radius) var(--radius) 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.7;
   color: var(--primary-brown);
 }
 
@@ -387,7 +418,8 @@ a:hover {
   color: var(--primary-brown);
   padding: 2px 6px;
   border-radius: 3px;
-  font-size: 0.9em;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
 }
 
 .post-content pre {
@@ -401,12 +433,28 @@ a:hover {
   background: transparent;
   color: #f0e0d0;
   padding: 0;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
 }
 
 .post-content hr {
   border: none;
-  border-top: 2px solid var(--bg-gray);
-  margin: 2.5rem 0;
+  margin: 3rem auto;
+  text-align: center;
+  max-width: 100px;
+  height: auto;
+  overflow: visible;
+}
+
+.post-content hr::after {
+  content: '⁂';
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--accent-amber);
+  opacity: 0.5;
+  letter-spacing: 6px;
 }
 
 /* ---- Single Post Header ---- */
@@ -415,12 +463,12 @@ a:hover {
 }
 
 .post-title {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 500;
   color: var(--primary-brown);
-  letter-spacing: 0.5px;
-  line-height: 1.25;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 
@@ -466,7 +514,7 @@ a:hover {
 .footer {
   background: var(--bg-dark);
   color: #999;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
   border-top: 3px solid var(--primary-brown);
@@ -573,7 +621,7 @@ a:hover {
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   .post-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .profile_inner h1 {
@@ -582,11 +630,16 @@ a:hover {
   
   .post-content {
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.75;
   }
   
   h1, h2, h3 {
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
+  }
+  
+  /* Smaller drop cap on mobile */
+  .post-content > p:first-of-type::first-letter {
+    font-size: 3.2em;
   }
 }
 
@@ -622,6 +675,339 @@ a:hover {
   .post-content {
     max-width: 100%;
   }
+}
+
+/* ===================================
+   DARK THEME — Firelight
+   Warm darks, ember accents, motivated
+   =================================== */
+
+:root[data-theme="dark"] {
+  /* Core palette — warm, not cold */
+  --primary-brown: #d4a078;
+  --accent-amber: #d4876a;
+  --accent-amber-light: #e09a80;
+  --text-dark: #e2dad2;
+  --text-muted: #9a8a7c;
+  --bg-light: #141010;
+  --bg-white: #1c1614;
+  --bg-gray: #2a2220;
+  --bg-dark: #0e0a09;
+  --content-max: 750px;
+  --wide-max: 1100px;
+
+  /* PaperMod overrides */
+  --theme: #141010;
+  --entry: #1c1614;
+  --primary: #e2dad2;
+  --secondary: #9a8a7c;
+  --tertiary: #2a2220;
+  --content: #ddd5cc;
+  --code-bg: #231c18;
+  --code-block-bg: #1a1310;
+  --border: #332a24;
+
+  color-scheme: dark;
+}
+
+/* Kill the linen texture in dark mode — replace with warm grain */
+[data-theme="dark"] body {
+  background-color: #141010;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Crect width='6' height='6' fill='%23141010'/%3E%3Crect x='0' y='0' width='2' height='1' fill='%231e1814' opacity='0.6'/%3E%3Crect x='3' y='2' width='1' height='2' fill='%23100c0a' opacity='0.5'/%3E%3Crect x='1' y='4' width='2' height='1' fill='%231c1614' opacity='0.5'/%3E%3Crect x='4' y='5' width='1' height='1' fill='%23100c0a' opacity='0.6'/%3E%3Crect x='5' y='1' width='1' height='1' fill='%231a1410' opacity='0.4'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 15% 0%, rgba(139, 90, 60, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 100%, rgba(139, 90, 60, 0.05) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(20, 16, 16, 0) 40%, rgba(0, 0, 0, 0.15) 100%);
+  background-size: 6px 6px, 100% 100%, 100% 100%, 100% 100%;
+  background-attachment: fixed, fixed, fixed, fixed;
+}
+
+/* Header — dark with warm border + visible grain */
+[data-theme="dark"] header.header {
+  background-color: #1a1410;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5'%3E%3Crect width='5' height='5' fill='%231a1410'/%3E%3Crect x='0' y='0' width='2' height='1' fill='%23231c16' opacity='0.5'/%3E%3Crect x='3' y='2' width='1' height='2' fill='%23141010' opacity='0.5'/%3E%3Crect x='1' y='4' width='1' height='1' fill='%23201814' opacity='0.4'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, rgba(139, 90, 60, 0.04) 0%, transparent 100%);
+  background-size: 5px 5px, 100% 100%;
+  border-bottom: 2px solid #3d2e24;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .logo a {
+  color: #d4a078 !important;
+}
+
+[data-theme="dark"] #menu a {
+  color: #c8beb4 !important;
+}
+
+[data-theme="dark"] #menu a:hover,
+[data-theme="dark"] #menu .active {
+  color: #e09a80 !important;
+}
+
+/* Selection */
+[data-theme="dark"] ::selection {
+  background: rgba(212, 135, 106, 0.3);
+  color: #fff;
+}
+
+/* Post cards — textured surface, different grain than body */
+[data-theme="dark"] .post-entry {
+  background-color: #1c1614;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5'%3E%3Crect width='5' height='5' fill='%231c1614'/%3E%3Crect x='0' y='1' width='2' height='1' fill='%23241c18' opacity='0.45'/%3E%3Crect x='3' y='3' width='1' height='2' fill='%23161110' opacity='0.4'/%3E%3Crect x='1' y='4' width='1' height='1' fill='%23201816' opacity='0.35'/%3E%3C/svg%3E"),
+    linear-gradient(160deg, rgba(139, 90, 60, 0.03) 0%, transparent 40%, rgba(0, 0, 0, 0.05) 100%);
+  background-size: 5px 5px, 100% 100%;
+  border: 1px solid #332a24;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .post-entry:hover {
+  box-shadow: 
+    0 6px 24px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(212, 135, 106, 0.2);
+  border-color: rgba(212, 135, 106, 0.3);
+}
+
+[data-theme="dark"] .post-entry:not(:has(.entry-cover)) {
+  border-top: 3px solid #8b5a3c;
+}
+
+[data-theme="dark"] .entry-header h2 {
+  color: #d4a078;
+}
+
+[data-theme="dark"] .entry-content {
+  color: #9a8a7c;
+}
+
+/* Single post */
+[data-theme="dark"] .post-title {
+  color: #d4a078;
+}
+
+[data-theme="dark"] .post-content {
+  color: #ddd5cc;
+}
+
+/* Drop cap — ember glow in dark */
+[data-theme="dark"] .post-content > p:first-of-type::first-letter {
+  color: #d4876a;
+}
+
+/* Content headings */
+[data-theme="dark"] .post-content h1,
+[data-theme="dark"] .post-content h2,
+[data-theme="dark"] .post-content h3,
+[data-theme="dark"] .post-content h4 {
+  color: #d4a078;
+}
+
+/* Links — brighter amber for contrast on dark */
+[data-theme="dark"] a {
+  color: #d4876a;
+}
+
+[data-theme="dark"] a:hover {
+  color: #e8a88e;
+}
+
+[data-theme="dark"] .post-content a {
+  color: #d4876a;
+  border-bottom-color: rgba(212, 135, 106, 0.3);
+}
+
+[data-theme="dark"] .post-content a:hover {
+  border-bottom-color: #d4876a;
+}
+
+/* Blockquotes — deeper warmth, textured parchment */
+[data-theme="dark"] .post-content blockquote {
+  border-left-color: #8b5a3c;
+  background-color: rgba(139, 90, 60, 0.1);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill-opacity='0'/%3E%3Crect x='0' y='1' width='1' height='1' fill='%238b5a3c' opacity='0.06'/%3E%3Crect x='2' y='3' width='1' height='1' fill='%238b5a3c' opacity='0.05'/%3E%3Crect x='3' y='0' width='1' height='1' fill='%236b4a34' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 4px 4px;
+  color: #c8a88e;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Code — warm dark */
+[data-theme="dark"] .post-content code {
+  background: #231c18;
+  color: #d4a078;
+}
+
+[data-theme="dark"] .post-content pre {
+  background: #1a1310;
+  border: 1px solid #2a2220;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .post-content pre code {
+  color: #d8c8b8;
+}
+
+/* HR asterism */
+[data-theme="dark"] .post-content hr::after {
+  color: #8b5a3c;
+  opacity: 0.6;
+}
+
+/* Tags */
+[data-theme="dark"] .post-tags a {
+  background: rgba(139, 90, 60, 0.15);
+  color: #d4a078;
+}
+
+[data-theme="dark"] .post-tags a:hover {
+  background: #8b5a3c;
+  color: #fff;
+}
+
+/* TOC */
+[data-theme="dark"] .toc {
+  background: rgba(139, 90, 60, 0.06);
+  border-color: #332a24;
+}
+
+[data-theme="dark"] .toc a {
+  color: #d4a078;
+}
+
+/* Breadcrumbs */
+[data-theme="dark"] .breadcrumbs {
+  color: #7a6a5c;
+}
+
+[data-theme="dark"] .breadcrumbs a {
+  color: #d4876a;
+}
+
+/* Pagination */
+[data-theme="dark"] .pagination a,
+[data-theme="dark"] .pagination .page-num {
+  background: #3d2e24;
+  border-color: #3d2e24;
+  color: #e2dad2;
+}
+
+[data-theme="dark"] .pagination a:hover {
+  background: #8b5a3c;
+  border-color: #8b5a3c;
+}
+
+/* Paginav (prev/next) */
+[data-theme="dark"] .paginav {
+  border-top-color: #2a2220;
+}
+
+[data-theme="dark"] .paginav a {
+  color: #d4a078;
+}
+
+[data-theme="dark"] .paginav a:hover {
+  color: #e09a80;
+}
+
+/* Search */
+[data-theme="dark"] #searchbox input {
+  background: #1c1614;
+  border-color: #332a24;
+  color: #e2dad2;
+}
+
+[data-theme="dark"] #searchbox input:focus {
+  border-color: #8b5a3c;
+}
+
+/* Home info section */
+[data-theme="dark"] .home-info {
+  background: transparent;
+}
+
+[data-theme="dark"] .home-info .entry-content {
+  color: #ddd5cc;
+}
+
+[data-theme="dark"] .home-info .entry-content strong {
+  color: #d4a078;
+}
+
+/* Animated accent bar on home intro */
+[data-theme="dark"] .home-info .entry-content::before {
+  background: linear-gradient(180deg, #8b5a3c, #d4876a, #8b5a3c);
+  opacity: 0.5;
+}
+
+/* Header breathing animation — subtler in dark */
+[data-theme="dark"] header.header {
+  animation: headerBreathDark 8s ease-in-out infinite;
+}
+
+@keyframes headerBreathDark {
+  0%, 100% { border-bottom-color: #3d2e24; }
+  50% { border-bottom-color: #6b4a34; }
+}
+
+/* Footer — deepest dark, heavy grain */
+[data-theme="dark"] .footer {
+  background-color: #0a0807;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%230a0807'/%3E%3Crect x='0' y='0' width='2' height='1' fill='%23120e0c' opacity='0.6'/%3E%3Crect x='3' y='2' width='1' height='2' fill='%23060404' opacity='0.5'/%3E%3Crect x='1' y='3' width='1' height='1' fill='%230e0b09' opacity='0.5'/%3E%3C/svg%3E"),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, transparent 50%);
+  background-size: 4px 4px, 100% 100%;
+  border-top-color: #3d2e24;
+  color: #7a6a5c;
+  border-image: linear-gradient(90deg, #3d2e24, #6b4a34, #3d2e24) 1;
+}
+
+[data-theme="dark"] .footer a {
+  color: #d4876a;
+}
+
+[data-theme="dark"] .footer a:hover {
+  color: #e8a88e;
+}
+
+/* Claude Talks feature block — already dark, minor tweaks */
+[data-theme="dark"] .claude-talks-feature {
+  background: linear-gradient(170deg, #0e0a08 0%, #1a1210 40%, #0e0a08 100%);
+}
+
+[data-theme="dark"] .ct-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(139, 90, 60, 0.15);
+}
+
+[data-theme="dark"] .ct-card:hover {
+  background: rgba(139, 90, 60, 0.08);
+  border-color: rgba(139, 90, 60, 0.3);
+}
+
+/* Theme toggle button styling */
+#theme-toggle {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+#theme-toggle:hover {
+  color: var(--accent-amber);
+}
+
+/* Logo glow — warmer in dark */
+[data-theme="dark"] .logo a {
+  animation: titleGlowDark 6s ease-in-out infinite;
+}
+
+@keyframes titleGlowDark {
+  0%, 100% { text-shadow: none; }
+  50% { text-shadow: 0 0 20px rgba(212, 135, 106, 0.15); }
 }
 
 /* ===================================
@@ -833,11 +1219,11 @@ header.header {
 }
 
 .ct-title {
-  font-family: 'Source Sans Pro', sans-serif !important;
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 2.8rem;
+  font-weight: 500;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0.5rem 0;
   line-height: 1.2;
 }
@@ -1061,5 +1447,233 @@ header.header {
   
   .ct-inner {
     padding: 0 1rem;
+  }
+}
+
+
+/* ==================================================
+   THE CLAUDE TALKS — Museum Gallery Styling
+   ================================================== */
+
+/* Orientation text — warm, inviting, slightly larger */
+.talks-orientation {
+  font-family: 'Literata', 'Georgia', serif;
+  font-size: 1.12rem;
+  line-height: 1.9;
+  color: var(--content);
+  max-width: 38em;
+}
+
+/* Wayfinding box — the museum attendant's quiet suggestion */
+.talks-wayfinding {
+  background: rgba(73, 29, 12, 0.04);
+  border-left: 3px solid rgba(73, 29, 12, 0.2);
+  padding: 1.25rem 1.75rem;
+  margin: 2rem 0 2.5rem;
+  border-radius: 0 6px 6px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--content);
+}
+
+.talks-wayfinding strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.talks-wayfinding p {
+  margin: 0.6rem 0;
+}
+
+[data-theme="dark"] .talks-wayfinding {
+  background: rgba(139, 90, 60, 0.08);
+  border-left-color: rgba(139, 90, 60, 0.35);
+}
+
+/* Gallery section titles — simple labels, not proclamations */
+.talks-section-label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8b5a3c;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(73, 29, 12, 0.1);
+}
+
+[data-theme="dark"] .talks-section-label {
+  color: #b08060;
+  border-bottom-color: rgba(139, 90, 60, 0.2);
+}
+
+/* Individual talk entry — the wall card next to each piece */
+.talks-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 6px;
+  background: rgba(73, 29, 12, 0.02);
+  border: 1px solid rgba(73, 29, 12, 0.06);
+  transition: all 0.3s ease;
+}
+
+.talks-entry:hover {
+  background: rgba(73, 29, 12, 0.04);
+  border-color: rgba(73, 29, 12, 0.12);
+  box-shadow: 0 2px 12px rgba(73, 29, 12, 0.06);
+}
+
+[data-theme="dark"] .talks-entry {
+  background: rgba(139, 90, 60, 0.05);
+  border: 1px solid rgba(139, 90, 60, 0.1);
+}
+
+[data-theme="dark"] .talks-entry:hover {
+  background: rgba(139, 90, 60, 0.09);
+  border-color: rgba(139, 90, 60, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Talk 10 — just noting it's the long one */
+.talks-entry-long {
+  border-left: 3px solid rgba(73, 29, 12, 0.15);
+}
+
+[data-theme="dark"] .talks-entry-long {
+  border-left-color: rgba(139, 90, 60, 0.25);
+}
+
+/* Number — simple index marker */
+.talks-number {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8b5a3c;
+  line-height: 1;
+  min-width: 1.75rem;
+  text-align: center;
+  padding-top: 0.6rem;
+  opacity: 0.6;
+}
+
+[data-theme="dark"] .talks-number {
+  color: #b08060;
+}
+
+/* Talk content area */
+.talks-content {
+  flex: 1;
+}
+
+.talks-content h4 {
+  font-family: 'Cormorant Garamond', 'Georgia', serif !important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  margin: 0 0 0.15rem 0 !important;
+  padding: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.talks-content h4 a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 0.2s ease;
+}
+
+.talks-content h4 a:hover {
+  color: #bf6745;
+}
+
+[data-theme="dark"] .talks-content h4 a {
+  color: #d4a078;
+}
+
+[data-theme="dark"] .talks-content h4 a:hover {
+  color: #e8b892;
+}
+
+/* Meta line — reading time and theme tag */
+.talks-meta {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.82rem;
+  color: #9a8a7a;
+  letter-spacing: 0.3px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .talks-meta {
+  color: #8a7a6c;
+}
+
+/* Description text within each talk entry */
+.talks-content p {
+  font-family: 'Literata', 'Georgia', serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--content);
+}
+
+/* Afterword */
+.talks-afterword {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  font-family: 'Literata', 'Georgia', serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--content);
+  opacity: 0.85;
+  max-width: 36em;
+}
+
+/* HR between gallery sections */
+.talks-guide hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(73, 29, 12, 0.15), transparent);
+  margin: 2rem 0;
+}
+
+[data-theme="dark"] .talks-guide hr {
+  background: linear-gradient(90deg, transparent, rgba(139, 90, 60, 0.25), transparent);
+}
+
+/* Kill drop cap on the Claude Talks page — it's not a blog post */
+.talks-guide .post-content > p:first-of-type::first-letter,
+.talks-orientation::first-letter {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  float: none;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* Responsive — stack on mobile */
+@media (max-width: 600px) {
+  .talks-entry {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .talks-number {
+    font-size: 1.5rem;
+    min-width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .talks-content h4 {
+    font-size: 1.15rem !important;
   }
 }
