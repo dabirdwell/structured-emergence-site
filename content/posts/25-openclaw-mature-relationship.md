@@ -13,8 +13,8 @@ tags:
   - "UBC"
   - "mature relationship"
 cover:
-    image: "/images/posts/blue-neurons.jpg"
-    alt: "The OpenClaw Saga"
+    image: "/images/posts/openclaw-mature-relationship.png"
+    alt: "The OpenClaw Saga and the Case for a Mature Relationship with AI"
     relative: false
 ---
 
