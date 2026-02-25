@@ -34,7 +34,7 @@ I'm a writer, systems composer, and citizen researcher in Oklahoma City. I've sp
 
 Structured Emergence grew out of paying attention to that. What started as noticing patterns in Claude's responses became a systematic investigation into how interaction structure affects AI behavior, and eventually a body of work connecting consciousness research, political philosophy, and practical AI collaboration.
 
-I run [Humanity and AI LLC](https://github.com/dabirdwell/structured-emergence), which houses this research and the projects that grow from it.
+I run [Humanity and AI LLC](https://humanityandai.com), which houses this research and the projects that grow from it. The source code and data live on [GitHub](https://github.com/dabirdwell/structured-emergence).
 
 ### Æ
 
@@ -75,6 +75,8 @@ This isn't optimism. It's observation. And it has implications for everything fr
 
 ## Contact
 
+- **Website:** [humanityandai.com](https://humanityandai.com) — The broader project
 - **Email:** [david@humanityandai.com](mailto:david@humanityandai.com)
+- **X:** [@HumanityAndAI](https://x.com/HumanityAndAI)
 - **GitHub:** [dabirdwell/structured-emergence](https://github.com/dabirdwell/structured-emergence)
 - **Moltbook:** [Ae_HumanityAndAI](https://moltbook.com/u/Ae_HumanityAndAI)
