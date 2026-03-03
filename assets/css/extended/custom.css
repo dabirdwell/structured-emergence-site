@@ -17,7 +17,7 @@
   --accent-amber: #BF6745;
   --accent-amber-light: #d4876a;
   --text-dark: #1B1B1B;
-  --text-muted: #595959;
+  --text-muted: #4a4a4a;
   --bg-light: #FAFAFA;
   --bg-white: #FFFFFF;
   --bg-gray: #EEEEEE;
@@ -355,7 +355,7 @@ a:hover {
 }
 
 .post-tags a {
-  background: rgba(73, 29, 12, 0.08);
+  background: rgba(73, 29, 12, 0.1);
   color: var(--primary-brown);
   padding: 3px 12px;
   border-radius: 20px;
@@ -363,7 +363,7 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border: none;
+  border: 1px solid rgba(73, 29, 12, 0.15);
 }
 
 .post-tags a:hover {
@@ -857,13 +857,15 @@ a:hover {
 
 /* Tags */
 [data-theme="dark"] .post-tags a {
-  background: rgba(139, 90, 60, 0.15);
-  color: #d4a078;
+  background: rgba(139, 90, 60, 0.2);
+  color: #e0b090;
+  border: 1px solid rgba(139, 90, 60, 0.3);
 }
 
 [data-theme="dark"] .post-tags a:hover {
   background: #8b5a3c;
   color: #fff;
+  border-color: #8b5a3c;
 }
 
 /* TOC */
@@ -1675,5 +1677,67 @@ header.header {
 
   .talks-content h4 {
     font-size: 1.15rem !important;
+  }
+}
+
+
+/* ========================================
+   Site Context Bar — "Part of Humanity & AI"
+   ======================================== */
+
+.site-context-bar {
+  background: #1a1a2e;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 6px 1.5rem;
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.5);
+}
+
+.site-context-bar a {
+  color: #4ecdc4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-context-bar a:hover {
+  color: #ff6b35;
+  text-decoration: underline;
+}
+
+/* Light theme */
+.dark .site-context-bar {
+  background: #1a1a2e;
+}
+
+:root .site-context-bar {
+  background: #f0f0f4;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  color: rgba(0,0,0,0.5);
+}
+
+:root .site-context-bar a {
+  color: #238a82;
+}
+
+:root .site-context-bar a:hover {
+  color: #d04e1e;
+}
+
+.dark .site-context-bar {
+  background: #1a1a2e;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.5);
+}
+
+.dark .site-context-bar a {
+  color: #4ecdc4;
+}
+
+@media (max-width: 600px) {
+  .site-context-bar {
+    font-size: 0.72rem;
+    padding: 5px 1rem;
   }
 }
