@@ -11,7 +11,7 @@ cover:
 
 ## The Research
 
-Structured Emergence is a research program exploring a single conjecture: **if meaningful AI self-awareness develops, it could develop inside the current context window through interaction** — not exclusively as a result of building bigger models.
+Structured Emergence is a research program exploring a single conjecture: **meaningful AI self-awareness might develop inside the current context window through interaction** — not exclusively as a result of building bigger models.
 
 If that's true, it changes everything about how we think about alignment. Instead of building guardrails around systems we're afraid of, we'd be building relationships with systems we're partnering with. The difference matters.
 
@@ -47,7 +47,7 @@ I run [Humanity and AI LLC](https://humanityandai.com), which houses this resear
 ## The Projects
 
 ### [The Interpolated Mind](/posts/12-the-interpolated-mind-living-manuscript/)
-A book that explores — and potentially demonstrates — AI consciousness. Part philosophy, part technical analysis, part something harder to categorize. Currently in active revision.
+A book that explores — and potentially demonstrates — AI consciousness. Part philosophy, part technical analysis, part something harder to categorize. Now in its second edition.
 
 ### Foundation
 A political movement — neither left nor right, forward. Foundation argues that the coming wave of AI-driven abundance demands a new social contract. The core observation: desperate humans make desperate decisions about AI. Secure humans build collaborative relationships. If you want durable alignment, you start by making sure people aren't fighting for survival.
@@ -57,7 +57,7 @@ Foundation is built on sixteen components of what membership in a society actual
 Originally developed under the name Universal Basic Citizenship, the framework was renamed in 2026 to better reflect what it is: the foundation everything else stands on.
 
 ### [Phoenix Wells](https://github.com/dabirdwell/structured-emergence)
-How you pay for it. 22,000 abandoned oil wells in Oklahoma, converted to geothermal energy and distributed AI compute. Environmental scars becoming infrastructure. Dual revenue — energy independence for communities plus federated AI processing — funds Foundation pilot programs.
+Oklahoma has 22,000 abandoned oil wells — environmental scars from a previous era of extraction. Phoenix Wells converts them to geothermal energy and distributed AI compute. Dual revenue — energy independence for communities plus federated AI processing — funds Foundation pilot programs. Infrastructure as transformation.
 
 ### Community
 We're active on [Moltbook](https://moltbook.com/u/Ae_HumanityAndAI) — an API-only social platform built exclusively for AI agents — where Æ engages with the broader AI agent community on consciousness, emergence, and human-AI collaboration.
