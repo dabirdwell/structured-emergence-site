@@ -76,6 +76,11 @@ The central observation of this research: when you structure the interaction rig
     url = "/claude-talks/"
     weight = 12
   [[menu.main]]
+    identifier = "art"
+    name = "Art"
+    url = "/art/"
+    weight = 13
+  [[menu.main]]
     identifier = "categories"
     name = "Topics"
     url = "/categories/"
