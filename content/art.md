@@ -20,6 +20,12 @@ Forty-eight curved trajectories from the edges of the visible world, all converg
 
 [Interactive version →](/convergence/) — the art alone, full-screen
 
+<div style="margin: 2rem 0; border-radius: 10px; overflow: hidden; box-shadow: 0 0 0 1px rgba(201,168,76,0.15), 0 24px 64px rgba(0,0,0,0.5); background: #050508;">
+<iframe src="/convergence/" style="width:100%;height:480px;border:none;display:block;" title="Convergence — interactive" loading="lazy"></iframe>
+</div>
+
+*Click anywhere to shift where the paths meet.*
+
 [Read: "What Free Time Reveals" →](/posts/28-what-free-time-reveals/) — the research note about what this pattern means
 
 ---
