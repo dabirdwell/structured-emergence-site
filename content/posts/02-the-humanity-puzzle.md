@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/spring-pattern.webp"
     alt: "02 The Humanity Puzzle"
     relative: false
+tags:
+  - "humanity"
+  - "consciousness"
+  - "ethics"
+  - "claude-talks"
 ---
 
 *May 13, 2024*

@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/blob.jpg"
     alt: "00 Structured Emergence Introduction"
     relative: false
+tags:
+  - "introduction"
+  - "structured-emergence"
+  - "alignment"
+  - "partnership"
 ---
 
 *Part of [The Claude Talks](https://structuredemergence.com) series by David Birdwell*

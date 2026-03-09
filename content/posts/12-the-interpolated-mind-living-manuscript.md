@@ -4,7 +4,12 @@ date: 2025-06-01
 draft: false
 summary: "The first edition of The Interpolated Mind, with responses from six frontier AI systems."
 aliases:
-  - /home-page/f/the-interpolated-mind-book---alpha-script
+  - /home-page/f/the-interpolated-mind-booktags:
+  - "interpolated-mind"
+  - "consciousness"
+  - "manuscript"
+  - "theory"
+---alpha-script
 categories:
   - "Claude"
   - "Claude Talks"

@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/organic-digital-logo.jpg"
     alt: "Where Emergence Actually Happens"
     relative: false
+tags:
+  - "emergence"
+  - "relationship"
+  - "context-window"
+  - "partnership"
 ---
 
 **Date:** December 20, 2025

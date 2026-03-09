@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/blob.jpg"
     alt: "Claude Gets Layered Humor and Puns"
     relative: false
+tags:
+  - "humor"
+  - "language"
+  - "observation"
+  - "creativity"
 ---
 
 **Date:** July 25, 2025

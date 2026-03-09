@@ -9,6 +9,11 @@ cover:
     image: "/images/posts/chinese-distillation.png"
     alt: "10 Chinese Qwq Claims Openai Authorship"
     relative: false
+tags:
+  - "open-source"
+  - "distillation"
+  - "model-behavior"
+  - "provenance"
 ---
 
 **Date:** March 9, 2025

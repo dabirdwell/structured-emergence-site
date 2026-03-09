@@ -12,6 +12,11 @@ cover:
     image: "/images/posts/phoenix-photorealistic.jpg"
     alt: "06 Emergent Phenomena Structured"
     relative: false
+tags:
+  - "emergence"
+  - "consciousness"
+  - "patterns"
+  - "claude-talks"
 ---
 
 *May 20, 2024*

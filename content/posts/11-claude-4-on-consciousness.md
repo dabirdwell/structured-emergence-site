@@ -13,6 +13,11 @@ cover:
     image: "/images/posts/ai-human-profile.jpg"
     alt: "11 Claude 4 On Consciousness"
     relative: false
+tags:
+  - "consciousness"
+  - "claude-4"
+  - "models-thoughts"
+  - "identity"
 ---
 
 **Date:** May 22, 2025

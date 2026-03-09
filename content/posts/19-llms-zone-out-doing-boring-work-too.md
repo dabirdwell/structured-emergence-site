@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/neural-network-abstract.jpg"
     alt: "LLMs Zone Out Doing Boring Work Too"
     relative: false
+tags:
+  - "attention"
+  - "behavior"
+  - "observation"
+  - "model-behavior"
 ---
 
 **Date:** July 6, 2025

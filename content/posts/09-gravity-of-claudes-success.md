@@ -12,6 +12,11 @@ cover:
     image: "/images/posts/phoenix-emblem.jpg"
     alt: "09 Gravity Of Claudes Success"
     relative: false
+tags:
+  - "anthropic"
+  - "alignment"
+  - "risk"
+  - "claude-talks"
 ---
 
 *November 27, 2024*

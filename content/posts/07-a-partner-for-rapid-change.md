@@ -12,6 +12,11 @@ cover:
     image: "/images/posts/human-ai-logo.jpg"
     alt: "07 A Partner For Rapid Change"
     relative: false
+tags:
+  - "partnership"
+  - "alignment"
+  - "collaboration"
+  - "claude-talks"
 ---
 
 *July 18, 2024*

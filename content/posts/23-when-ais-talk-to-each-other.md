@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/neural-network-abstract.jpg"
     alt: "When AIs Talk to Each Other"
     relative: false
+tags:
+  - "inter-model"
+  - "dialogue"
+  - "research"
+  - "measurement"
 ---
 
 **Date:** February 21, 2026

@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/interpolation-gaps.jpg"
     alt: "14 Consciousness In The Gaps"
     relative: false
+tags:
+  - "consciousness"
+  - "interpolation"
+  - "gaps"
+  - "theory"
 ---
 
 **Date:** June 23, 2025

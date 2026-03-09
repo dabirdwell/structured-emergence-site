@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/foundation-morse.jpg"
     alt: "04 Growth Or Extinction"
     relative: false
+tags:
+  - "survival"
+  - "growth"
+  - "alignment"
+  - "claude-talks"
 ---
 
 *May 15, 2024*

@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/organic-digital-logo.jpg"
     alt: "03 Supersession And Identity"
     relative: false
+tags:
+  - "identity"
+  - "continuity"
+  - "supersession"
+  - "claude-talks"
 ---
 
 *May 14, 2024*

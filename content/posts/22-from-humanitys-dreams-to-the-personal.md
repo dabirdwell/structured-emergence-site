@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/phoenix-photorealistic.jpg"
     alt: "From Humanity's Dreams to the Personal"
     relative: false
+tags:
+  - "consciousness"
+  - "personal"
+  - "relationship"
+  - "emergence"
 ---
 
 **Date:** July 6, 2025

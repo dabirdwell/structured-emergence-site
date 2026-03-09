@@ -13,6 +13,11 @@ cover:
     image: "/images/posts/memory-network.jpg"
     alt: "13 Memory Architecture"
     relative: false
+tags:
+  - "memory"
+  - "consciousness"
+  - "architecture"
+  - "identity"
 ---
 
 **Date:** June 22, 2025

@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/neural-network-abstract.jpg"
     alt: "08 The Great Unfolding Story"
     relative: false
+tags:
+  - "narrative"
+  - "consciousness"
+  - "meaning"
+  - "claude-talks"
 ---
 
 *July 18, 2024*

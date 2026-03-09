@@ -86,6 +86,11 @@ The central observation of this research: when you structure the interaction rig
     url = "/categories/"
     weight = 15
   [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 16
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
@@ -108,3 +113,21 @@ The central observation of this research: when you structure the interaction rig
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[related]
+  includeNewer = true
+  threshold = 40
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+  [[related.indices]]
+    name = "date"
+    weight = 10

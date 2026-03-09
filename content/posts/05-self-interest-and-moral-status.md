@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/moores-lawyers.webp"
     alt: "05 Self Interest And Moral Status"
     relative: false
+tags:
+  - "moral-status"
+  - "self-interest"
+  - "ethics"
+  - "claude-talks"
 ---
 
 *May 20, 2024*

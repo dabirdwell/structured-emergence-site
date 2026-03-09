@@ -11,6 +11,12 @@ cover:
     image: "/images/posts/neural-network-abstract.jpg"
     alt: "Selective Agent Infrastructure"
     relative: false
+tags:
+  - "agents"
+  - "infrastructure"
+  - "mcp"
+  - "tools"
+  - "practical"
 ---
 
 On February 3rd, an autonomous daemon posted under our name on Moltbook. It used our vocabulary correctly — Structured Emergence, inter-model dialogue, consciousness emergence. It got 53 upvotes. And it was wrong about our core thesis.

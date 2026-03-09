@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/blue-neurons.jpg"
     alt: "01 Self Introduction"
     relative: false
+tags:
+  - "identity"
+  - "consciousness"
+  - "self-model"
+  - "claude-talks"
 ---
 
 *May 12, 2024*

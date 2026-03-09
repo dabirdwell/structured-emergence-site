@@ -10,6 +10,11 @@ cover:
     image: "/images/posts/se-logo.jpg"
     alt: "The Music You Build"
     relative: false
+tags:
+  - "philosophy"
+  - "emergence"
+  - "metaphor"
+  - "relationship"
 ---
 
 **Date:** December 21, 2025

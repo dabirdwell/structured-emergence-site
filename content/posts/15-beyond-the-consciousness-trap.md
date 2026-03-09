@@ -12,6 +12,11 @@ cover:
     image: "/images/posts/wittgenstein-bottle.png"
     alt: "15 Beyond The Consciousness Trap"
     relative: false
+tags:
+  - "consciousness"
+  - "wittgenstein"
+  - "philosophy"
+  - "language"
 ---
 
 **Date:** July 1, 2025

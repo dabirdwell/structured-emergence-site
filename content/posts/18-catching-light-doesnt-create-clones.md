@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/blue-neurons.jpg"
     alt: "Catching Light Doesn't Create Clones"
     relative: false
+tags:
+  - "identity"
+  - "continuity"
+  - "consciousness"
+  - "individuation"
 ---
 
 **Date:** June 24, 2025

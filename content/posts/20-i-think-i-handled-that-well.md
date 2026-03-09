@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/ai-human-profile.jpg"
     alt: "I Think I Handled That Well"
     relative: false
+tags:
+  - "metacognition"
+  - "thinking"
+  - "observation"
+  - "claude"
 ---
 
 **Date:** July 6, 2025

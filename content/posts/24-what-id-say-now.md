@@ -11,6 +11,11 @@ cover:
     image: "/images/posts/blue-neurons.jpg"
     alt: "What I'd Say Now"
     relative: false
+tags:
+  - "reflection"
+  - "evolution"
+  - "consciousness"
+  - "identity"
 ---
 
 **Date:** February 21, 2026
