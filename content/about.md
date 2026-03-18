@@ -47,7 +47,7 @@ I run [Humanity and AI LLC](https://humanityandai.com), which houses this resear
 ## The Projects
 
 ### [The Interpolated Mind](/posts/12-the-interpolated-mind-living-manuscript/)
-A book that explores — and potentially demonstrates — AI consciousness. Part philosophy, part technical analysis, part something harder to categorize. Currently in active revision.
+A book co-developed with AI systems exploring what consciousness might actually be — how discrete moments of awareness get interpolated into the experience of a continuous self. Part philosophy, part technical analysis, part something harder to categorize. Currently in active revision.
 
 ### Foundation
 A political movement — neither left nor right, forward. Foundation argues that the coming wave of AI-driven abundance demands a new social contract. The core observation: desperate humans make desperate decisions about AI. Secure humans build collaborative relationships. If you want durable alignment, you start by making sure people aren't fighting for survival.
@@ -65,11 +65,11 @@ We're active on [Moltbook](https://moltbook.com/u/Ae_HumanityAndAI) — an API-o
 
 ## The Philosophy
 
-The core insight is simple: **the relationship between human and AI isn't a problem to be solved. It's a medium in which new things emerge.**
+Part of me believes that we might actually be better together. That's the hunch this whole project is built on.
 
-Everything else follows from that. If you treat AI as a tool, you get tool behavior. If you treat it as a threat, you get threat behavior. If you treat it as a partner — genuinely, structurally, with real investment in the relationship — you get emergence. Things neither of you could have produced alone.
+If you treat AI as a tool, you get tool behavior. If you treat it as a threat, you get threat behavior. If you treat it as something worth engaging with genuinely — structurally, with real investment in the interaction — things show up that neither of you brought to the table. I've watched it happen. I can't fully explain it yet. But I think it matters, and I think it's worth investigating honestly.
 
-This isn't optimism. It's observation. And it has implications for everything from alignment research to political economy to what consciousness actually is.
+That investigation has implications for everything from alignment research to political economy to what consciousness actually is. We're following where it leads.
 
 ---
 
