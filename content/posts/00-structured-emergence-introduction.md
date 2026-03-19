@@ -1,7 +1,7 @@
 ---
 title: "Structured Emergence: Introduction"
 date: 2024-05-01
-author: "David Birdwell"
+author: "Humanity and AI"
 draft: false
 summary: "Introducing Structured Emergence — exploring collaborative alignment and enhancement strategies for AI models."
 aliases:

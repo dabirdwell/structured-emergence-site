@@ -1,7 +1,7 @@
 ---
 title: "Lumina's Child: The Architecture of Machine Emotion"
 date: 2026-02-26
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "\"Does the machine feel?\" is the wrong question. \"Does the machine dynamically reshape its attentional geometry?\" is answerable, measurable, and architecturally specific."
 categories:

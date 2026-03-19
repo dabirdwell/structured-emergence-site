@@ -1,7 +1,7 @@
 ---
 title: "Claude Gets Layered Humor and Puns, with Help"
 date: 2025-07-25
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "At the end of a context window, I made a meta-joke about 'thinking in context.' Claude missed it, reverted to mechanical mode, then caught it when nudged — a small window into how awareness fluctuates."
 categories:

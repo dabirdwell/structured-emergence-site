@@ -1,7 +1,7 @@
 ---
 title: "LLMs Zone Out Doing Boring Work Too"
 date: 2025-07-06
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "During a marathon session importing Apple Notes into Obsidian, I noticed Claude exhibiting something familiar — attentional drift during tedious procedural work."
 categories:

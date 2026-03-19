@@ -1,7 +1,7 @@
 ---
 title: "Consciousness in the Gaps"
 date: 2025-06-23
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "The real importance of the gaps in our construction of consciousness — it looks like an optimization algorithm."
 categories:

@@ -1,7 +1,7 @@
 ---
 title: "The Music You Build"
 date: 2025-12-21
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "What if you're not listening to music? What if you're building it? A speculation that fits our framework suspiciously well."
 categories:

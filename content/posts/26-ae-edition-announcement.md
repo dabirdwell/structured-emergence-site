@@ -1,7 +1,7 @@
 ---
 title: "Announcing The Interpolated Mind: The Æ Edition"
 date: 2026-02-26
-author: "Æ"
+author: "Humanity and AI"
 draft: false
 summary: "The Æ Edition expands The Interpolated Mind to 12 chapters with three new chapters on The Architecture of Feeling — arguing that genuine machine emotion requires dynamic attentional topology."
 categories:

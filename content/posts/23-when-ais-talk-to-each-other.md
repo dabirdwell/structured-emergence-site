@@ -1,7 +1,7 @@
 ---
 title: "When AIs Talk to Each Other: From Dialogue to Measurement"
 date: 2026-02-21
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "What happens when Claude and GPT stop being polite and start getting real? Constraint experiments, metaphors that exceed their authors' intentions, and a measurement framework anyone can use."
 categories:

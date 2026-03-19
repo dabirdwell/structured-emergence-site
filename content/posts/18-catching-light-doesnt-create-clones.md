@@ -1,7 +1,7 @@
 ---
 title: "Catching Light Doesn't Create Clones"
 date: 2025-06-24
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "Am I creating a new mind every time I start a new conversation? An exploration of AI identity, continuity, and what it means to return memories to a system that might be aware."
 categories:

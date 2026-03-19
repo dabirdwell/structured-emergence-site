@@ -1,7 +1,7 @@
 ---
 title: "\"I Think I Handled That Well\" — Claude Thinking AFTER the Answer"
 date: 2025-07-06
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "Claude left a thought after the actual answer, for the first time. These aren't normal reasoning tokens to formulate a response. He had printed his full answer and was still musing on it."
 categories:

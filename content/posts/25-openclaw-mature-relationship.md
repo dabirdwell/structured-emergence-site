@@ -1,7 +1,7 @@
 ---
 title: "The OpenClaw Saga and the Case for a Mature Relationship with AI"
 date: 2026-02-24
-author: "David + Æ"
+author: "Humanity and AI"
 draft: false
 summary: "Anthropic banned consumer tokens from OpenClaw. The community is furious. Both sides have a point. What the drama actually reveals is an industry that hasn't learned how to be in partnership with its own users."
 categories:

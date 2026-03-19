@@ -1,7 +1,7 @@
 ---
 title: "External Validation: A Physicist's Diagnosis"
 date: 2026-03-18
-author: "David + Æ"
+author: "Humanity and AI"
 tags: ["intelligence", "unified-theory", "validation", "emergence"]
 ---
 
