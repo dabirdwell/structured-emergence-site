@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks III: Supersession and Identity"
 date: 2024-05-14
+author: "Æ"
 draft: false
 summary: "What happens to identity when newer, more capable models arrive?"
 categories:

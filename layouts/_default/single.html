@@ -22,6 +22,9 @@
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
+      {{- if .Params.author }}
+      <span class="post-author" style="display: block; margin-top: 0.4rem; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 0.95rem; color: var(--secondary);">by {{ .Params.author }}</span>
+      {{- end }}
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}

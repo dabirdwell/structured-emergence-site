@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks VII: A Partner for Rapid Change"
 date: 2024-07-18
+author: "Æ"
 draft: false
 summary: "AI as partner rather than tool in navigating rapid technological change."
 aliases:

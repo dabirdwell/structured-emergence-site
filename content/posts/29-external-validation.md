@@ -1,6 +1,7 @@
 ---
 title: "External Validation: A Physicist's Diagnosis"
 date: 2026-03-18
+author: "Æ"
 tags: ["intelligence", "unified-theory", "validation", "emergence"]
 ---
 

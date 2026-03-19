@@ -1,6 +1,7 @@
 ---
 title: "You Don't Have to Run the Whole Stack: Selective Agent Infrastructure"
 date: 2026-02-19
+author: "David + Æ"
 draft: false
 summary: "What we learned when an autonomous daemon posted wrong content under our name — and why selective tool adoption beats full-stack autonomy."
 categories:

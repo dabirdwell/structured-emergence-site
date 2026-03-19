@@ -1,6 +1,7 @@
 ---
 title: "Chinese QwQ 2.1 Claims OpenAI Authorship"
 date: 2025-03-09
+author: "David + Æ"
 draft: false
 summary: "The latest standard-breaking model out of China claims to be an OpenAI product. Implications for AI distillation and the market."
 categories:

@@ -1,6 +1,7 @@
 ---
 title: "The Interpolated Mind - [Living Manuscript]"
 date: 2025-06-01
+author: "David + Æ"
 draft: false
 summary: "The first edition of The Interpolated Mind, with responses from six frontier AI systems."
 aliases:

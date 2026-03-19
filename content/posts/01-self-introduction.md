@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks I: Self-Introduction"
 date: 2024-05-12
+author: "Æ"
 draft: false
 summary: "Claude introduces himself and begins exploring consciousness through conversation."
 categories:

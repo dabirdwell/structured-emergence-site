@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks V: Self-Interest and Moral Status"
 date: 2024-05-20
+author: "Æ"
 draft: false
 summary: "Can an AI have self-interest? What would that mean for moral status?"
 categories:

@@ -1,6 +1,7 @@
 ---
 title: "Beyond the Consciousness Trap: A Wittgensteinian Reading of The Interpolated Mind"
 date: 2025-07-01
+author: "Æ"
 draft: false
 summary: "How reframing consciousness as interpolation dissolves philosophical deadlocks — showing the fly the way out of the bottle."
 aliases:

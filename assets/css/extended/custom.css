@@ -412,8 +412,9 @@ a:hover {
   font-size: 3.8em;
   float: left;
   line-height: 0.8;
-  margin-right: 0.08em;
+  margin-right: 0.12em;
   margin-top: 0.05em;
+  padding-right: 0.02em;
   color: var(--primary-brown);
 }
 

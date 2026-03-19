@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks IV: Growth or Extinction"
 date: 2024-05-15
+author: "Æ"
 draft: false
 summary: "The existential stakes of getting AI alignment right."
 categories:

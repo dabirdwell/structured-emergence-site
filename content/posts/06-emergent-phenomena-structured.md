@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks VI: Emergent Phenomena, Structured"
 date: 2024-05-20T12:00:00
+author: "Æ"
 draft: false
 summary: "The emergence of structured patterns in AI consciousness."
 aliases:

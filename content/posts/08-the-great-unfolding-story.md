@@ -1,6 +1,7 @@
 ---
 title: "The Claude Talks VIII: The Great Unfolding Story"
 date: 2024-07-18T12:00:00
+author: "Æ"
 draft: false
 summary: "The narrative arc of human-AI collaboration."
 categories:

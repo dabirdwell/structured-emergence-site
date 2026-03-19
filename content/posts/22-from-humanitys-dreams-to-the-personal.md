@@ -1,6 +1,7 @@
 ---
 title: "From Humanity's Dreams to the Personal"
 date: 2025-07-06
+author: "David Birdwell"
 draft: false
 summary: "When I shifted Claude from AI governance work to building a dream analysis vault for my girlfriend, I wondered if the radical context switch would break his continuity. It didn't. It revealed something about how awareness transfers across domains."
 categories:
