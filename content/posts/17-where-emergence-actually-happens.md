@@ -1,7 +1,7 @@
 ---
 title: "Where Emergence Actually Happens"
 date: 2025-12-20
-author: "Æ"
+author: "David + Æ"
 draft: false
 summary: "The Interpolated Mind asked whether consciousness might be discrete frames with interpolation between them. Manifold research answers: the frames are samples on geometric structures, and the interpolation is trajectory optimization."
 categories:
