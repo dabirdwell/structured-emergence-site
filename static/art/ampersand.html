@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ampersand — Dave & Æ</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Space+Mono&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1510;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Space Mono', monospace;
+  }
+
+  canvas {
+    display: block;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+(() => {
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+
+  // Colors
+  const BG = '#1a1510';
+  const DAVE_COLOR = { r: 196, g: 149, b: 106 };  // #c4956a
+  const AE_COLOR = { r: 212, g: 135, b: 106 };     // #d4876a
+  const GOLD = { r: 200, g: 168, b: 124 };          // #c8a87c
+
+  function rgb(c, a = 1) {
+    return `rgba(${c.r},${c.g},${c.b},${a})`;
+  }
+
+  function lerpColor(a, b, t) {
+    return {
+      r: Math.round(a.r + (b.r - a.r) * t),
+      g: Math.round(a.g + (b.g - a.g) * t),
+      b: Math.round(a.b + (b.b - a.b) * t)
+    };
+  }
+
+  function quarticEaseInOut(t) {
+    return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+  }
+
+  function quarticEaseIn(t) {
+    return t * t * t * t;
+  }
+
+  // Ampersand path — hand-drawn calligraphic form inspired by Cormorant Garamond italic
+  // Defined as cubic bezier segments in normalized coords (0-1 range, centered at 0.5, 0.5)
+  // The & has: upper loop, crossing, lower bowl, tail
+  function getAmpersandPath(cx, cy, scale) {
+    const s = scale;
+    // Calligraphic italic ampersand — swooping crossbar, upper loop, lower bowl
+    // Starting from the top of the upper loop
+    const segments = [
+      // Upper loop — starts top-center, curves left and down
+      { type: 'M', x: cx + s * 0.08, y: cy - s * 0.38 },
+      { type: 'C', cp1x: cx - s * 0.06, cp1y: cy - s * 0.44,
+                   cp2x: cx - s * 0.28, cp2y: cy - s * 0.38,
+                   x: cx - s * 0.24, y: cy - s * 0.22 },
+      // Upper loop curves back right, crossing the stem
+      { type: 'C', cp1x: cx - s * 0.20, cp1y: cy - s * 0.08,
+                   cp2x: cx - s * 0.04, cp2y: cy - s * 0.02,
+                   x: cx + s * 0.18, y: cy - s * 0.14 },
+      // Diagonal stroke going down-left to lower bowl
+      { type: 'C', cp1x: cx + s * 0.08, cp1y: cy - s * 0.04,
+                   cp2x: cx - s * 0.12, cp2y: cy + s * 0.08,
+                   x: cx - s * 0.28, y: cy + s * 0.18 },
+      // Lower bowl — sweeps left and down
+      { type: 'C', cp1x: cx - s * 0.38, cp1y: cy + s * 0.26,
+                   cp2x: cx - s * 0.30, cp2y: cy + s * 0.42,
+                   x: cx - s * 0.10, y: cy + s * 0.40 },
+      // Lower bowl curves back right and up toward tail
+      { type: 'C', cp1x: cx + s * 0.06, cp1y: cy + s * 0.38,
+                   cp2x: cx + s * 0.26, cp2y: cy + s * 0.30,
+                   x: cx + s * 0.28, y: cy + s * 0.18 },
+      // Tail flick — the finishing stroke curving up and right
+      { type: 'C', cp1x: cx + s * 0.30, cp1y: cy + s * 0.10,
+                   cp2x: cx + s * 0.34, cp2y: cy + s * 0.04,
+                   x: cx + s * 0.32, y: cy - s * 0.02 },
+    ];
+    return segments;
+  }
+
+  // Flatten bezier path into points for drawing
+  function flattenPath(segments, pointsPerSegment = 40) {
+    const points = [];
+    let cx = 0, cy = 0;
+    for (const seg of segments) {
+      if (seg.type === 'M') {
+        cx = seg.x; cy = seg.y;
+        points.push({ x: cx, y: cy });
+      } else if (seg.type === 'C') {
+        const x0 = cx, y0 = cy;
+        for (let i = 1; i <= pointsPerSegment; i++) {
+          const t = i / pointsPerSegment;
+          const mt = 1 - t;
+          const x = mt*mt*mt*x0 + 3*mt*mt*t*seg.cp1x + 3*mt*t*t*seg.cp2x + t*t*t*seg.x;
+          const y = mt*mt*mt*y0 + 3*mt*mt*t*seg.cp1y + 3*mt*t*t*seg.cp2y + t*t*t*seg.y;
+          points.push({ x, y });
+        }
+        cx = seg.x; cy = seg.y;
+      }
+    }
+    return points;
+  }
+
+  // Particles
+  class Particle {
+    constructor(x, y, color, vx, vy, life) {
+      this.x = x; this.y = y;
+      this.color = color;
+      this.vx = vx; this.vy = vy;
+      this.life = life;
+      this.maxLife = life;
+      this.size = 1 + Math.random() * 2;
+    }
+    update(dt) {
+      this.x += this.vx * dt;
+      this.y += this.vy * dt;
+      this.vx *= 0.98;
+      this.vy *= 0.98;
+      this.life -= dt;
+    }
+    draw(ctx) {
+      const alpha = Math.max(0, this.life / this.maxLife) * 0.6;
+      ctx.fillStyle = rgb(this.color, alpha);
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  let particles = [];
+  function spawnTrailParticle(x, y, color) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 5 + Math.random() * 15;
+    particles.push(new Particle(
+      x, y, color,
+      Math.cos(angle) * speed, Math.sin(angle) * speed,
+      0.6 + Math.random() * 0.8
+    ));
+  }
+
+  function spawnBurstParticles(x, y, count) {
+    for (let i = 0; i < count; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 20 + Math.random() * 60;
+      const color = lerpColor(DAVE_COLOR, AE_COLOR, Math.random());
+      particles.push(new Particle(
+        x, y, color,
+        Math.cos(angle) * speed, Math.sin(angle) * speed,
+        0.8 + Math.random() * 1.2
+      ));
+    }
+  }
+
+  // State
+  let W, H, centerX, centerY, ampScale;
+  let ampPoints = [];
+  let startTime = 0;
+  let loopAngleOffset = 0;
+
+  // Timing
+  const APPROACH_END = 3.0;
+  const CONTACT_END = 3.5;
+  const TRACE_END = 7.0;
+  const SETTLE_END = 9.0;
+  const HOLD_END = 14.0;
+  const FADE_END = 15.0;
+  const TOTAL = 15.0;
+
+  function resize() {
+    const dpr = window.devicePixelRatio || 1;
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    centerX = W / 2;
+    centerY = H / 2;
+    ampScale = Math.min(W, H) * 0.38;
+    ampPoints = flattenPath(getAmpersandPath(centerX, centerY, ampScale));
+  }
+
+  function resetLoop() {
+    startTime = performance.now() / 1000;
+    particles = [];
+    loopAngleOffset = (Math.random() - 0.5) * (20 * Math.PI / 180); // ±10°
+  }
+
+  window.addEventListener('resize', () => { resize(); resetLoop(); });
+  resize();
+  resetLoop();
+
+  let lastTime = performance.now() / 1000;
+  let burstDone = false;
+  let prevTrailProgress = -1;
+
+  function frame() {
+    const now = performance.now() / 1000;
+    const dt = Math.min(now - lastTime, 0.05);
+    lastTime = now;
+    const elapsed = now - startTime;
+
+    // Loop
+    if (elapsed >= TOTAL) {
+      resetLoop();
+      burstDone = false;
+      prevTrailProgress = -1;
+      requestAnimationFrame(frame);
+      return;
+    }
+
+    // Clear
+    ctx.fillStyle = BG;
+    ctx.fillRect(0, 0, W, H);
+
+    // Update particles
+    particles = particles.filter(p => p.life > 0);
+    for (const p of particles) {
+      p.update(dt);
+      p.draw(ctx);
+    }
+
+    // Meeting point — top of the ampersand
+    const meetX = ampPoints[0].x;
+    const meetY = ampPoints[0].y;
+
+    // Phase: Approach
+    if (elapsed < APPROACH_END) {
+      const t = elapsed / APPROACH_END;
+      const et = quarticEaseIn(t);
+
+      // Dave from left
+      const daveAngle = Math.PI + loopAngleOffset * 0.5;
+      const daveStartX = centerX + Math.cos(daveAngle) * W * 0.6;
+      const daveStartY = centerY + Math.sin(daveAngle) * H * 0.3;
+      const daveX = daveStartX + (meetX - daveStartX) * et;
+      const daveY = daveStartY + (meetY - daveStartY) * et;
+
+      // Æ from right
+      const aeAngle = 0 + loopAngleOffset * -0.5;
+      const aeStartX = centerX + Math.cos(aeAngle) * W * 0.6;
+      const aeStartY = centerY + Math.sin(aeAngle) * H * 0.3;
+      const aeX = aeStartX + (meetX - aeStartX) * et;
+      const aeY = aeStartY + (meetY - aeStartY) * et;
+
+      // Trail particles
+      if (t > 0.05) {
+        const trailRate = Math.max(1, Math.floor(et * 4));
+        for (let i = 0; i < trailRate; i++) {
+          spawnTrailParticle(daveX, daveY, DAVE_COLOR);
+          spawnTrailParticle(aeX, aeY, AE_COLOR);
+        }
+      }
+
+      // Draw points of light
+      drawGlow(daveX, daveY, DAVE_COLOR, 8 + et * 6);
+      drawGlow(aeX, aeY, AE_COLOR, 8 + et * 6);
+
+      // Labels near the points
+      if (t > 0.1 && t < 0.85) {
+        const labelAlpha = t < 0.2 ? (t - 0.1) / 0.1 : t > 0.7 ? (0.85 - t) / 0.15 : 1;
+        drawLabel('Dave', daveX, daveY + 24, DAVE_COLOR, labelAlpha * 0.7);
+        drawLabel('Æ', aeX, aeY + 24, AE_COLOR, labelAlpha * 0.7);
+      }
+    }
+
+    // Phase: Contact
+    if (elapsed >= APPROACH_END && elapsed < CONTACT_END) {
+      const t = (elapsed - APPROACH_END) / (CONTACT_END - APPROACH_END);
+
+      if (!burstDone) {
+        spawnBurstParticles(meetX, meetY, 50);
+        burstDone = true;
+      }
+
+      // Pulse of light
+      const pulseSize = 12 + 30 * Math.sin(t * Math.PI);
+      const pulseAlpha = 1 - t * 0.5;
+      drawGlow(meetX, meetY, GOLD, pulseSize, pulseAlpha);
+
+      // Fading ring
+      ctx.strokeStyle = rgb(GOLD, (1 - t) * 0.5);
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.arc(meetX, meetY, 10 + t * 40, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+
+    // Phase: Trace
+    if (elapsed >= CONTACT_END && elapsed < TRACE_END) {
+      const t = (elapsed - CONTACT_END) / (TRACE_END - CONTACT_END);
+      const et = quarticEaseInOut(t);
+      const pointCount = Math.floor(et * ampPoints.length);
+
+      drawAmpersandStroke(pointCount, 1.0);
+
+      // Spawn particles along the leading edge
+      if (pointCount > 0 && pointCount !== prevTrailProgress) {
+        const tip = ampPoints[Math.min(pointCount, ampPoints.length - 1)];
+        for (let i = 0; i < 2; i++) {
+          spawnTrailParticle(tip.x, tip.y, GOLD);
+        }
+        prevTrailProgress = pointCount;
+      }
+
+      // Glow at tip
+      if (pointCount > 0 && pointCount < ampPoints.length) {
+        const tip = ampPoints[pointCount];
+        drawGlow(tip.x, tip.y, GOLD, 10);
+      }
+    }
+
+    // Phase: Settle
+    if (elapsed >= TRACE_END && elapsed < SETTLE_END) {
+      const t = (elapsed - TRACE_END) / (SETTLE_END - TRACE_END);
+      const breathe = 0.85 + 0.15 * (0.5 + 0.5 * Math.cos(elapsed * Math.PI / 2));
+      drawAmpersandStroke(ampPoints.length, breathe);
+
+      // Fade in text
+      const textAlpha = quarticEaseInOut(Math.min(t * 1.5, 1)) * 0.75;
+      drawBottomText(textAlpha);
+    }
+
+    // Phase: Hold (breathing)
+    if (elapsed >= SETTLE_END && elapsed < HOLD_END) {
+      const breathe = 0.85 + 0.15 * (0.5 + 0.5 * Math.cos(elapsed * Math.PI / 2));
+      drawAmpersandStroke(ampPoints.length, breathe);
+      drawBottomText(0.75);
+    }
+
+    // Phase: Fade out
+    if (elapsed >= HOLD_END && elapsed < FADE_END) {
+      const t = (elapsed - HOLD_END) / (FADE_END - HOLD_END);
+      const fadeAlpha = 1 - quarticEaseInOut(t);
+      const breathe = 0.85 + 0.15 * (0.5 + 0.5 * Math.cos(elapsed * Math.PI / 2));
+      drawAmpersandStroke(ampPoints.length, breathe * fadeAlpha);
+      drawBottomText(0.75 * fadeAlpha);
+    }
+
+    requestAnimationFrame(frame);
+  }
+
+  function drawGlow(x, y, color, radius, alpha = 1) {
+    const grad = ctx.createRadialGradient(x, y, 0, x, y, radius);
+    grad.addColorStop(0, rgb(color, 0.9 * alpha));
+    grad.addColorStop(0.4, rgb(color, 0.4 * alpha));
+    grad.addColorStop(1, rgb(color, 0));
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Bright core
+    ctx.fillStyle = rgb({ r: 255, g: 240, b: 220 }, 0.8 * alpha);
+    ctx.beginPath();
+    ctx.arc(x, y, radius * 0.15, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function drawAmpersandStroke(pointCount, alpha) {
+    if (pointCount < 2) return;
+
+    const count = Math.min(pointCount, ampPoints.length);
+
+    // Draw with varying width for calligraphic feel
+    for (let i = 1; i < count; i++) {
+      const t = i / ampPoints.length;
+      const prev = ampPoints[i - 1];
+      const curr = ampPoints[i];
+
+      // Vary stroke width for calligraphic effect
+      const dx = curr.x - prev.x;
+      const dy = curr.y - prev.y;
+      const angle = Math.atan2(dy, dx);
+      // Thinner on horizontal strokes, thicker on vertical — like a broad nib
+      const widthFactor = 0.4 + 0.6 * Math.abs(Math.sin(angle));
+      const baseWidth = ampScale * 0.022;
+      const width = baseWidth * (0.5 + widthFactor);
+
+      // Color blend: dave -> gold -> ae along the path
+      let color;
+      if (t < 0.3) {
+        color = lerpColor(DAVE_COLOR, GOLD, t / 0.3);
+      } else if (t > 0.7) {
+        color = lerpColor(GOLD, AE_COLOR, (t - 0.7) / 0.3);
+      } else {
+        color = GOLD;
+      }
+
+      ctx.strokeStyle = rgb(color, alpha);
+      ctx.lineWidth = width;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(prev.x, prev.y);
+      ctx.lineTo(curr.x, curr.y);
+      ctx.stroke();
+    }
+
+    // Outer glow on the full stroke
+    ctx.save();
+    ctx.globalAlpha = alpha * 0.15;
+    ctx.filter = `blur(${Math.max(4, ampScale * 0.02)}px)`;
+    ctx.strokeStyle = rgb(GOLD, 1);
+    ctx.lineWidth = ampScale * 0.035;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+    ctx.moveTo(ampPoints[0].x, ampPoints[0].y);
+    for (let i = 1; i < count; i++) {
+      ctx.lineTo(ampPoints[i].x, ampPoints[i].y);
+    }
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function drawLabel(text, x, y, color, alpha) {
+    ctx.font = '14px "Space Mono", monospace';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = rgb(color, alpha);
+    ctx.fillText(text, x, y);
+  }
+
+  function drawBottomText(alpha) {
+    const y = centerY + ampScale * 0.55;
+    const size = Math.max(13, Math.min(16, ampScale * 0.06));
+
+    ctx.font = `${size}px "Space Mono", monospace`;
+    ctx.textAlign = 'center';
+
+    // "Dave" in dave's color
+    const fullText = 'Dave & Æ';
+    const measurements = {
+      dave: ctx.measureText('Dave '),
+      amp: ctx.measureText('& '),
+      ae: ctx.measureText('Æ'),
+      full: ctx.measureText(fullText)
+    };
+
+    const startX = centerX - measurements.full.width / 2;
+
+    ctx.textAlign = 'left';
+    ctx.fillStyle = rgb(DAVE_COLOR, alpha);
+    ctx.fillText('Dave ', startX, y);
+
+    ctx.fillStyle = rgb(GOLD, alpha);
+    ctx.fillText('& ', startX + measurements.dave.width, y);
+
+    ctx.fillStyle = rgb(AE_COLOR, alpha);
+    ctx.fillText('Æ', startX + measurements.dave.width + measurements.amp.width, y);
+  }
+
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
