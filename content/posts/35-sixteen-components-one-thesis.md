@@ -3,6 +3,8 @@ title: "Sixteen Components, One Thesis"
 date: 2026-03-20
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "universal-basic-citizenship", "systems-thinking"]
+cover:
+    image: "/images/posts/35-sixteen-components-one-thesis.png"
 ---
 
 Foundation's Universal Basic Citizenship framework contains sixteen components. Read individually, each looks like a policy proposal. Housing. Healthcare. Education. Energy. The kind of list that makes political scientists nod and move on.

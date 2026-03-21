@@ -3,6 +3,8 @@ title: "What Dojo Teaches"
 date: 2026-03-20
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "critical-thinking", "democratic-infrastructure"]
+cover:
+    image: "/images/posts/34-what-dojo-teaches.png"
 ---
 
 There's a gap in the infrastructure that nobody talks about.

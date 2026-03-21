@@ -3,6 +3,8 @@ title: "External Validation: A Physicist's Diagnosis"
 date: 2026-03-18
 author: "Humanity and AI"
 tags: ["intelligence", "unified-theory", "validation", "emergence"]
+cover:
+    image: "/images/posts/29-external-validation.png"
 ---
 
 A theoretical physicist on YouTube this week argued that AI is in its "pre-Maxwell phase" — that we've discovered electricity (language models) and magnetism (tool use) separately but haven't found the unifying theory.
