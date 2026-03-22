@@ -1,5 +1,7 @@
+node_modules/
+.DS_Store
 public/
 resources/
 .hugo_build.lock
-.DS_Store
-static/media/hero-logo-1080p*.mp4
+*.swp
+*.swo
