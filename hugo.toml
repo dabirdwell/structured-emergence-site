@@ -76,10 +76,15 @@ The key insight of this research is simple: if meaningful development happens in
     url = "/claude-talks/"
     weight = 12
   [[menu.main]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/talks/"
+    weight = 13
+  [[menu.main]]
     identifier = "art"
     name = "Art"
     url = "/art/"
-    weight = 13
+    weight = 14
   [[menu.main]]
     identifier = "categories"
     name = "Topics"
