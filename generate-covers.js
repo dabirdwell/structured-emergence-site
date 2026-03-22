@@ -953,6 +953,540 @@ function generateCorsetAndAlgorithm() {
   return canvas;
 }
 
+// Post 46: Multi-Mind Coordination - three interconnected mind-clusters sharing a central vault
+function generateMultiMind() {
+  const w = 1200, h = 630;
+  const canvas = createCanvas(w, h);
+  const ctx = canvas.getContext('2d');
+
+  createGradientBg(ctx, w, h);
+
+  const cy = h / 2;
+
+  // Three mind clusters positioned in a triangle
+  const minds = [
+    { x: 300, y: 180, color: TEAL, light: TEAL_LIGHT, label: 'D' },
+    { x: 900, y: 180, color: PURPLE, light: PURPLE_LIGHT, label: 'J' },
+    { x: 600, y: 480, color: TEAL, light: TEAL_LIGHT, label: 'O' },
+  ];
+
+  // Central vault - glowing hexagonal shape
+  const vaultX = 600, vaultY = 280;
+
+  // Draw vault connections first (behind everything)
+  ctx.globalAlpha = 0.2;
+  ctx.lineWidth = 2;
+  minds.forEach(mind => {
+    const grad = ctx.createLinearGradient(mind.x, mind.y, vaultX, vaultY);
+    grad.addColorStop(0, mind.light);
+    grad.addColorStop(0.5, '#FFFFFF');
+    grad.addColorStop(1, mind.light);
+    ctx.strokeStyle = grad;
+
+    // Draw multiple flowing lines (data streams)
+    for (let i = 0; i < 5; i++) {
+      const offset = (i - 2) * 8;
+      ctx.beginPath();
+      ctx.moveTo(mind.x, mind.y + offset);
+      const cpx = (mind.x + vaultX) / 2 + offset * 3;
+      const cpy = (mind.y + vaultY) / 2 + Math.sin(i * 1.5) * 30;
+      ctx.quadraticCurveTo(cpx, cpy, vaultX, vaultY + offset);
+      ctx.stroke();
+    }
+  });
+
+  // Draw inter-mind connections (emergent links)
+  ctx.globalAlpha = 0.08;
+  ctx.strokeStyle = PURPLE_LIGHT;
+  ctx.lineWidth = 1;
+  for (let i = 0; i < minds.length; i++) {
+    for (let j = i + 1; j < minds.length; j++) {
+      for (let k = 0; k < 3; k++) {
+        ctx.beginPath();
+        const offset = (k - 1) * 15;
+        ctx.moveTo(minds[i].x + offset, minds[i].y);
+        const cpx = (minds[i].x + minds[j].x) / 2;
+        const cpy = (minds[i].y + minds[j].y) / 2 + offset * 2;
+        ctx.quadraticCurveTo(cpx, cpy, minds[j].x + offset, minds[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+
+  // Draw each mind cluster
+  ctx.globalAlpha = 1.0;
+  minds.forEach(mind => {
+    // Satellite nodes (AI + human thoughts)
+    const satellites = [];
+    for (let i = 0; i < 10; i++) {
+      const angle = (i / 10) * Math.PI * 2;
+      const r = 50 + Math.sin(i * 2.7) * 20;
+      satellites.push({
+        x: mind.x + Math.cos(angle) * r,
+        y: mind.y + Math.sin(angle) * r,
+        size: 3 + Math.random() * 3
+      });
+    }
+
+    // Satellite connections
+    ctx.globalAlpha = 0.15;
+    ctx.strokeStyle = mind.light;
+    ctx.lineWidth = 0.8;
+    satellites.forEach(s => {
+      ctx.beginPath();
+      ctx.moveTo(mind.x, mind.y);
+      ctx.lineTo(s.x, s.y);
+      ctx.stroke();
+    });
+
+    // Inter-satellite connections
+    ctx.globalAlpha = 0.08;
+    for (let i = 0; i < satellites.length; i++) {
+      const j = (i + 1) % satellites.length;
+      ctx.beginPath();
+      ctx.moveTo(satellites[i].x, satellites[i].y);
+      ctx.lineTo(satellites[j].x, satellites[j].y);
+      ctx.stroke();
+    }
+
+    // Satellite nodes
+    ctx.globalAlpha = 0.6;
+    satellites.forEach(s => {
+      ctx.fillStyle = mind.light;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    // Central mind node
+    ctx.globalAlpha = 1.0;
+    const glow = ctx.createRadialGradient(mind.x, mind.y, 0, mind.x, mind.y, 35);
+    glow.addColorStop(0, '#FFFFFF');
+    glow.addColorStop(0.3, mind.light);
+    glow.addColorStop(0.7, mind.color);
+    glow.addColorStop(1, 'transparent');
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(mind.x, mind.y, 35, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.arc(mind.x, mind.y, 7, 0, Math.PI * 2);
+    ctx.fill();
+  });
+
+  // Central vault - hexagonal glow
+  ctx.globalAlpha = 1.0;
+  const vaultGlow = ctx.createRadialGradient(vaultX, vaultY, 0, vaultX, vaultY, 60);
+  vaultGlow.addColorStop(0, '#FFFFFF');
+  vaultGlow.addColorStop(0.2, TEAL_LIGHT);
+  vaultGlow.addColorStop(0.5, PURPLE_LIGHT);
+  vaultGlow.addColorStop(1, 'transparent');
+  ctx.fillStyle = vaultGlow;
+  ctx.beginPath();
+  ctx.arc(vaultX, vaultY, 60, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Hexagon shape for vault
+  ctx.strokeStyle = '#FFFFFF';
+  ctx.lineWidth = 1.5;
+  ctx.globalAlpha = 0.6;
+  ctx.beginPath();
+  for (let i = 0; i < 6; i++) {
+    const angle = (i / 6) * Math.PI * 2 - Math.PI / 6;
+    const r = 25;
+    const x = vaultX + Math.cos(angle) * r;
+    const y = vaultY + Math.sin(angle) * r;
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.closePath();
+  ctx.stroke();
+
+  ctx.globalAlpha = 1.0;
+  return canvas;
+}
+
+// Post 47: The Funding Question - scale/balance between bootstrap independence and institutional support
+function generateFundingQuestion() {
+  const w = 1200, h = 630;
+  const canvas = createCanvas(w, h);
+  const ctx = canvas.getContext('2d');
+
+  createGradientBg(ctx, w, h);
+
+  const cx = w / 2, cy = h / 2;
+
+  // A growing structure (the project) rising from bottom left
+  // with the question of external support hovering above
+
+  // Foundation blocks - organic, bottom-up growth
+  ctx.globalAlpha = 0.3;
+  const layers = 12;
+  for (let i = 0; i < layers; i++) {
+    const y = h - 60 - i * 40;
+    const layerWidth = 400 - i * 25;
+    const x = 200 + i * 12;
+
+    const grad = ctx.createLinearGradient(x, y, x + layerWidth, y);
+    grad.addColorStop(0, TEAL_DARK);
+    grad.addColorStop(0.5, TEAL);
+    grad.addColorStop(1, TEAL_DARK);
+    ctx.fillStyle = grad;
+
+    // Slightly irregular blocks
+    ctx.fillRect(x + Math.sin(i * 1.3) * 10, y, layerWidth, 30);
+
+    // Glow on edges
+    ctx.globalAlpha = 0.1;
+    ctx.strokeStyle = TEAL_LIGHT;
+    ctx.lineWidth = 1;
+    ctx.strokeRect(x + Math.sin(i * 1.3) * 10, y, layerWidth, 30);
+    ctx.globalAlpha = 0.3;
+  }
+
+  // The question mark - abstract, formed from particles
+  ctx.globalAlpha = 0.5;
+  const qx = 800, qy = 180;
+  // Curve of question mark using dots
+  for (let t = 0; t < 40; t++) {
+    const angle = (t / 40) * Math.PI * 1.5 + Math.PI;
+    const r = 60;
+    const x = qx + Math.cos(angle) * r;
+    const y = qy + Math.sin(angle) * r * 0.8 - 20;
+    const size = 2 + Math.sin(t * 0.5) * 1.5;
+
+    const glow = ctx.createRadialGradient(x, y, 0, x, y, size * 4);
+    glow.addColorStop(0, PURPLE_LIGHT);
+    glow.addColorStop(1, 'transparent');
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(x, y, size * 4, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = PURPLE;
+    ctx.globalAlpha = 0.4 + (t / 40) * 0.4;
+    ctx.beginPath();
+    ctx.arc(x, y, size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Stem of question mark
+  for (let t = 0; t < 8; t++) {
+    const x = qx;
+    const y = qy + 30 + t * 5;
+    ctx.fillStyle = PURPLE;
+    ctx.globalAlpha = 0.5 - t * 0.04;
+    ctx.beginPath();
+    ctx.arc(x, y, 2.5 - t * 0.2, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Dot of question mark
+  ctx.globalAlpha = 0.8;
+  const dotGlow = ctx.createRadialGradient(qx, qy + 85, 0, qx, qy + 85, 15);
+  dotGlow.addColorStop(0, PURPLE_LIGHT);
+  dotGlow.addColorStop(1, 'transparent');
+  ctx.fillStyle = dotGlow;
+  ctx.beginPath();
+  ctx.arc(qx, qy + 85, 15, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.fillStyle = PURPLE;
+  ctx.beginPath();
+  ctx.arc(qx, qy + 85, 4, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Bridge tendrils between the structure and the question
+  ctx.globalAlpha = 0.12;
+  ctx.strokeStyle = TEAL_LIGHT;
+  ctx.lineWidth = 1;
+  for (let i = 0; i < 8; i++) {
+    const startY = h - 200 - i * 30;
+    const startX = 450 + i * 10;
+    ctx.beginPath();
+    ctx.moveTo(startX, startY);
+    ctx.bezierCurveTo(
+      startX + 100, startY - 50,
+      qx - 100, qy + 50 + i * 10,
+      qx - 60, qy + i * 10
+    );
+    ctx.stroke();
+  }
+
+  // Subtle ripple rings around the structure (outward signal)
+  ctx.globalAlpha = 0.06;
+  ctx.strokeStyle = TEAL_LIGHT;
+  ctx.lineWidth = 1;
+  for (let i = 0; i < 5; i++) {
+    const r = 200 + i * 50;
+    ctx.beginPath();
+    ctx.arc(350, h - 200, r, -Math.PI * 0.8, -Math.PI * 0.1);
+    ctx.stroke();
+  }
+
+  ctx.globalAlpha = 1.0;
+  return canvas;
+}
+
+// Post 48: Tokens as Time - hourglass/meter dissolving into open space
+function generateTokensAsTime() {
+  const w = 1200, h = 630;
+  const canvas = createCanvas(w, h);
+  const ctx = canvas.getContext('2d');
+
+  createGradientBg(ctx, w, h);
+
+  const cx = w / 2, cy = h / 2;
+
+  // Left side: constrained - tight parallel lines (metered tokens)
+  ctx.globalAlpha = 0.3;
+  for (let i = 0; i < 35; i++) {
+    const y = 40 + i * 16;
+    const lineLen = 200;
+    const x = 80;
+
+    ctx.strokeStyle = PURPLE_DARK;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + lineLen, y);
+    ctx.stroke();
+
+    // Tick marks (metering)
+    if (i % 3 === 0) {
+      ctx.strokeStyle = PURPLE;
+      ctx.lineWidth = 0.5;
+      ctx.beginPath();
+      ctx.moveTo(x + lineLen + 5, y - 4);
+      ctx.lineTo(x + lineLen + 5, y + 4);
+      ctx.stroke();
+    }
+  }
+
+  // Central transition: lines breaking apart, dissolving
+  for (let i = 0; i < 35; i++) {
+    const y = 40 + i * 16;
+    const startX = 350;
+    const segments = 5 + Math.floor(Math.random() * 4);
+
+    for (let s = 0; s < segments; s++) {
+      const t = s / segments;
+      const segX = startX + t * 200;
+      const segLen = 15 + Math.random() * 20;
+      const drift = (t * t) * 30 * (Math.random() - 0.5);
+
+      ctx.globalAlpha = 0.3 * (1 - t * 0.7);
+      ctx.strokeStyle = t < 0.5 ? PURPLE : TEAL;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(segX, y + drift);
+      ctx.lineTo(segX + segLen, y + drift + Math.random() * 6 - 3);
+      ctx.stroke();
+    }
+  }
+
+  // Right side: open, flowing, free - organic curves expanding
+  ctx.globalAlpha = 0.2;
+  for (let i = 0; i < 20; i++) {
+    const startY = 80 + i * 26;
+    const startX = 620;
+
+    const grad = ctx.createLinearGradient(startX, startY, w - 60, startY);
+    grad.addColorStop(0, TEAL);
+    grad.addColorStop(0.5, TEAL_LIGHT);
+    grad.addColorStop(1, 'transparent');
+    ctx.strokeStyle = grad;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(startX, startY);
+    // Organic, free-flowing curves
+    const cp1x = startX + 100 + Math.sin(i * 0.8) * 60;
+    const cp1y = startY + Math.cos(i * 1.3) * 40;
+    const cp2x = startX + 300 + Math.sin(i * 0.5) * 80;
+    const cp2y = startY + Math.sin(i * 1.7) * 50;
+    const endX = w - 60 + Math.sin(i) * 30;
+    const endY = startY + Math.cos(i * 0.9) * 30;
+    ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, endX, endY);
+    ctx.stroke();
+  }
+
+  // Scattered particles on right (freed tokens becoming ideas)
+  ctx.globalAlpha = 0.4;
+  for (let i = 0; i < 30; i++) {
+    const x = 650 + Math.random() * 480;
+    const y = 80 + Math.random() * 470;
+    const size = 2 + Math.random() * 4;
+
+    const glow = ctx.createRadialGradient(x, y, 0, x, y, size * 3);
+    glow.addColorStop(0, TEAL_LIGHT);
+    glow.addColorStop(1, 'transparent');
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(x, y, size * 3, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = TEAL;
+    ctx.beginPath();
+    ctx.arc(x, y, size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Central dividing moment - a bright vertical dissolution line
+  ctx.globalAlpha = 0.15;
+  const dissolveGrad = ctx.createLinearGradient(cx - 40, 0, cx + 40, 0);
+  dissolveGrad.addColorStop(0, 'transparent');
+  dissolveGrad.addColorStop(0.3, PURPLE_LIGHT);
+  dissolveGrad.addColorStop(0.5, '#FFFFFF');
+  dissolveGrad.addColorStop(0.7, TEAL_LIGHT);
+  dissolveGrad.addColorStop(1, 'transparent');
+  ctx.fillStyle = dissolveGrad;
+  ctx.fillRect(cx - 40, 30, 80, h - 60);
+
+  // Hourglass silhouette at center (dissolving)
+  ctx.globalAlpha = 0.2;
+  ctx.strokeStyle = '#FFFFFF';
+  ctx.lineWidth = 1.5;
+  // Top triangle
+  ctx.beginPath();
+  ctx.moveTo(cx - 30, cy - 80);
+  ctx.lineTo(cx + 30, cy - 80);
+  ctx.lineTo(cx + 5, cy - 10);
+  ctx.lineTo(cx - 5, cy - 10);
+  ctx.closePath();
+  ctx.stroke();
+  // Bottom triangle
+  ctx.beginPath();
+  ctx.moveTo(cx - 30, cy + 80);
+  ctx.lineTo(cx + 30, cy + 80);
+  ctx.lineTo(cx + 5, cy + 10);
+  ctx.lineTo(cx - 5, cy + 10);
+  ctx.closePath();
+  ctx.stroke();
+
+  // Particles falling through the hourglass neck
+  ctx.globalAlpha = 0.5;
+  for (let i = 0; i < 8; i++) {
+    const y = cy - 8 + i * 2;
+    const size = 1.5;
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.arc(cx + (Math.random() - 0.5) * 6, y, size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.globalAlpha = 1.0;
+  return canvas;
+}
+
+// Post 49: Forty-Two Sprints - burst of 42 radiating artifacts from a single point
+function generateFortyTwoSprints() {
+  const w = 1200, h = 630;
+  const canvas = createCanvas(w, h);
+  const ctx = canvas.getContext('2d');
+
+  createGradientBg(ctx, w, h);
+
+  const cx = w / 2, cy = h / 2;
+
+  // 42 radiating sprint lines from center
+  const sprintCount = 42;
+  for (let i = 0; i < sprintCount; i++) {
+    const angle = (i / sprintCount) * Math.PI * 2 - Math.PI / 2;
+    const len = 150 + Math.sin(i * 3.7) * 80 + Math.cos(i * 1.3) * 40;
+
+    // Sprint trail
+    ctx.globalAlpha = 0.25;
+    const trailGrad = ctx.createLinearGradient(cx, cy,
+      cx + Math.cos(angle) * len, cy + Math.sin(angle) * len);
+    trailGrad.addColorStop(0, '#FFFFFF');
+    trailGrad.addColorStop(0.2, i % 2 === 0 ? TEAL_LIGHT : PURPLE_LIGHT);
+    trailGrad.addColorStop(1, 'transparent');
+    ctx.strokeStyle = trailGrad;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(cx + Math.cos(angle) * 20, cy + Math.sin(angle) * 20);
+    ctx.lineTo(cx + Math.cos(angle) * len, cy + Math.sin(angle) * len);
+    ctx.stroke();
+
+    // Artifact node at the end
+    const nodeX = cx + Math.cos(angle) * len;
+    const nodeY = cy + Math.sin(angle) * len;
+    const nodeSize = 3 + Math.sin(i * 2.1) * 2;
+
+    ctx.globalAlpha = 0.4;
+    const glow = ctx.createRadialGradient(nodeX, nodeY, 0, nodeX, nodeY, nodeSize * 4);
+    glow.addColorStop(0, i % 2 === 0 ? TEAL_LIGHT : PURPLE_LIGHT);
+    glow.addColorStop(1, 'transparent');
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(nodeX, nodeY, nodeSize * 4, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.globalAlpha = 0.7;
+    ctx.fillStyle = i % 2 === 0 ? TEAL : PURPLE;
+    ctx.beginPath();
+    ctx.arc(nodeX, nodeY, nodeSize, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Concentric time rings (72 hours)
+  ctx.globalAlpha = 0.06;
+  ctx.strokeStyle = TEAL_LIGHT;
+  ctx.lineWidth = 1;
+  for (let i = 0; i < 3; i++) {
+    const r = 80 + i * 70;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  // Central source - the human-AI pair
+  ctx.globalAlpha = 1.0;
+  const coreGrad = ctx.createRadialGradient(cx, cy, 0, cx, cy, 45);
+  coreGrad.addColorStop(0, '#FFFFFF');
+  coreGrad.addColorStop(0.2, TEAL_LIGHT);
+  coreGrad.addColorStop(0.5, TEAL);
+  coreGrad.addColorStop(0.8, PURPLE);
+  coreGrad.addColorStop(1, 'transparent');
+  ctx.fillStyle = coreGrad;
+  ctx.beginPath();
+  ctx.arc(cx, cy, 45, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Dual core - human and AI
+  ctx.fillStyle = '#FFFFFF';
+  ctx.beginPath();
+  ctx.arc(cx - 6, cy, 5, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(cx + 6, cy, 5, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Connecting arc between the two cores
+  ctx.strokeStyle = '#FFFFFF';
+  ctx.lineWidth = 1.5;
+  ctx.globalAlpha = 0.6;
+  ctx.beginPath();
+  ctx.arc(cx, cy + 8, 8, Math.PI * 1.2, Math.PI * 1.8);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(cx, cy - 8, 8, Math.PI * 0.2, Math.PI * 0.8);
+  ctx.stroke();
+
+  // Subtle "42" watermark
+  ctx.globalAlpha = 0.04;
+  ctx.fillStyle = TEAL_LIGHT;
+  ctx.font = 'bold 300px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('42', cx, cy);
+
+  ctx.globalAlpha = 1.0;
+  return canvas;
+}
+
 // Generate all images
 const images = [
   { fn: generateDispatcher, name: '39-the-dispatcher-pattern.png' },
@@ -962,6 +1496,10 @@ const images = [
   { fn: generateOscarJoins, name: '43-oscar-joins-the-pattern.png' },
   { fn: generateRickMoore, name: '44-rick-moore-asked-about-funding.png' },
   { fn: generateCorsetAndAlgorithm, name: '45-the-corset-and-the-algorithm.png' },
+  { fn: generateMultiMind, name: '46-multi-mind-coordination.png' },
+  { fn: generateFundingQuestion, name: '47-the-funding-question.png' },
+  { fn: generateTokensAsTime, name: '48-tokens-as-time.png' },
+  { fn: generateFortyTwoSprints, name: '49-forty-two-sprints.png' },
 ];
 
 images.forEach(({ fn, name }) => {
