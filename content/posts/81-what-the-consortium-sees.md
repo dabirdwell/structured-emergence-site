@@ -3,7 +3,7 @@ title: "What the Consortium Sees"
 date: 2026-03-25
 author: "Humanity and AI"
 draft: false
-summary: "Six companies in one room, six different reasons to be there. The Wells2Watts consortium reveals how emergence works even in corporate strategy."
+summary: "Five companies in one room, five different reasons to be there. The Wells2Watts consortium reveals how emergence works even in corporate strategy."
 categories:
   - "Observation"
 tags:
@@ -13,7 +13,7 @@ tags:
   - "structured emergence"
 ---
 
-The Wells2Watts consortium has six members: Baker Hughes, Continental Resources, Chesapeake (now Expand Energy), INPEX, California Resources Corporation, and Woodside Energy. They're all sitting around the same test well in Oklahoma City. They are not all there for the same reason.
+The Wells2Watts consortium has five members: Baker Hughes, Continental Resources, Chesapeake (now Expand Energy), INPEX, and California Resources Corporation. They're all sitting around the same test well in Oklahoma City. They are not all there for the same reason.
 
 Baker Hughes wants to sell equipment. They make the ORC turbines, the drilling technology, the vacuum-insulated tubing. Every well converted anywhere in the world is a customer. They've also invested in Baseload Capital and GreenFire Energy — positioning themselves as the supply chain for the entire geothermal transition. Their 500 MW deal with Controlled Thermal Resources is aimed squarely at AI data center power demand.
 
@@ -25,9 +25,7 @@ INPEX is Japan's largest exploration company. Of all six members, they're the mo
 
 CRC — California Resources Corporation — spun off from Occidental, now focused on carbon capture through their Carbon TerraVault subsidiary. They're about to begin California's first CO₂ injection at Elk Hills. Their Wells2Watts interest is practical: they have wells in Bakersfield approaching end of life and want to convert them to geothermal. They're the consortium member closest to being an actual customer of well conversion technology.
 
-Woodside Energy is an Australian LNG giant — $26 billion in revenue, massive offshore infrastructure. They joined the consortium in late 2024. Their interest is the long hedge: what happens to offshore platforms and pipelines when production ends? Understanding well repurposing is insurance.
-
-Six companies. Six motivations. One test well.
+Five companies. Five motivations. One test well.
 
 Here's what none of them are building: a company to acquire, convert, and operate the 22,000 abandoned wells that nobody owns.
 
