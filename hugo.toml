@@ -71,6 +71,11 @@ The key insight of this research is simple: if meaningful development happens in
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    identifier = "book"
+    name = "The Book"
+    url = "/book/"
+    weight = 11
+  [[menu.main]]
     identifier = "claude-talks"
     name = "The Claude Talks"
     url = "/claude-talks/"
