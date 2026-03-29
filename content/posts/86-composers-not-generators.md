@@ -7,6 +7,10 @@ summary: "The word that changes everything about AI literacy isn't 'prompt' or '
 categories:
   - "Structured Emergence"
   - "Education"
+cover:
+    image: "/images/posts/interpolated-mind.png"
+    alt: "Composers, Not Generators"
+    relative: false
 tags:
   - "composition"
   - "consciousness"

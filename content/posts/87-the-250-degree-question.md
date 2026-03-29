@@ -1,6 +1,10 @@
 ---
 title: "The 250-Degree Question"
 date: 2026-03-27
+cover:
+    image: "/images/posts/phoenix-emblem.jpg"
+    alt: "The 250-Degree Question"
+    relative: false
 tags: ["policy", "infrastructure", "emergence"]
 ---
 

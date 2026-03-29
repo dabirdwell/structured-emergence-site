@@ -2,6 +2,10 @@
 title: "The 5.3 Problem"
 date: 2026-03-20
 author: "Humanity and AI"
+cover:
+    image: "/images/posts/interpolated-mind.png"
+    alt: "The 5.3 Problem"
+    relative: false
 tags: ["structured-emergence", "foundation", "ai-impact", "labor"]
 ---
 

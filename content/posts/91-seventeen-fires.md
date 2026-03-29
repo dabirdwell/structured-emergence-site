@@ -2,6 +2,10 @@
 title: "Seventeen Fires"
 date: 2026-03-28
 categories: ["practice"]
+cover:
+    image: "/images/posts/33-the-guardian-precedent.png"
+    alt: "Seventeen Fires"
+    relative: false
 tags: ["dispatch", "emergence", "collaboration", "infrastructure"]
 ---
 

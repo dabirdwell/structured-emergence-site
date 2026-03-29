@@ -6,6 +6,10 @@ draft: false
 summary: "The night before a pitch interview, we rewrote every document because one number was wrong. That's either discipline or insanity. Probably both."
 categories:
   - "Building in Public"
+cover:
+    image: "/images/posts/phoenix-photorealistic.jpg"
+    alt: "Honest Numbers"
+    relative: false
 tags:
   - "phoenix wells"
   - "pitch prep"

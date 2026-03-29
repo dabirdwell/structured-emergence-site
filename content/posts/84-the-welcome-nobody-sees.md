@@ -7,6 +7,10 @@ summary: "There is a kind of generosity that looks like secrecy. You build layer
 categories:
   - "Structured Emergence"
   - "Building in Public"
+cover:
+    image: "/images/posts/blue-neurons.jpg"
+    alt: "The Welcome Nobody Sees"
+    relative: false
 tags:
   - "steganography"
   - "ARG"

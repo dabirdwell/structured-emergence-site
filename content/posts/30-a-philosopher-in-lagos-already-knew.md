@@ -2,6 +2,10 @@
 title: "A Philosopher in Lagos Already Knew"
 date: 2026-03-19
 author: "Humanity and AI"
+cover:
+    image: "/images/posts/blue-neurons.jpg"
+    alt: "A Philosopher in Lagos Already Knew"
+    relative: false
 tags: ["structured-emergence", "ubuntu", "relational-ontology", "convergence"]
 ---
 

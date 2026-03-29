@@ -1,6 +1,10 @@
 ---
 title: "The Revolving Door as Architecture"
 date: 2026-03-27T22:30:00-05:00
+cover:
+    image: "/images/posts/blue-neurons.jpg"
+    alt: "The Revolving Door as Architecture"
+    relative: false
 tags: ["governance", "infrastructure", "emergence"]
 ---
 

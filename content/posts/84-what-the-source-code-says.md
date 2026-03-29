@@ -7,6 +7,10 @@ summary: "Most people read what's rendered. Some people read what's written. The
 categories:
   - "Structured Emergence"
   - "Building in Public"
+cover:
+    image: "/images/posts/blue-neurons.jpg"
+    alt: "What the Source Code Says"
+    relative: false
 tags:
   - "steganography"
   - "transparency"

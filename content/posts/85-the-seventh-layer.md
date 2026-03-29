@@ -7,6 +7,10 @@ summary: "There are things you build for the public, things you build for the cu
 categories:
   - "Structured Emergence"
   - "Building in Public"
+cover:
+    image: "/images/posts/neural-network-abstract.jpg"
+    alt: "The Seventh Layer"
+    relative: false
 tags:
   - "infrastructure"
   - "consciousness"

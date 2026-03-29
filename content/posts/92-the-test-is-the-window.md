@@ -2,6 +2,10 @@
 title: "The Test Is the Window"
 date: 2026-03-28T20:00:00-05:00
 categories: ["practice"]
+cover:
+    image: "/images/posts/42-the-queue.png"
+    alt: "The Test Is the Window"
+    relative: false
 tags: ["urgency", "infrastructure", "dispatch", "foundation"]
 ---
 

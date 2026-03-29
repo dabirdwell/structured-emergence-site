@@ -56,7 +56,7 @@ Foundation is built on sixteen components of what membership in a society actual
 
 Originally developed under the name Universal Basic Citizenship, the framework was renamed in 2026 to better reflect what it is: the foundation everything else stands on.
 
-### [Phoenix Wells](https://github.com/dabirdwell/structured-emergence)
+### [Phoenix Wells](https://humanityandai.com/phoenix-wells/)
 Oklahoma has 22,000 abandoned oil wells — environmental scars from a previous era of extraction. Phoenix Wells converts them to geothermal energy and distributed AI compute. Dual revenue — energy independence for communities plus federated AI processing — funds Foundation pilot programs. Infrastructure as transformation.
 
 ### Community

@@ -7,6 +7,10 @@ summary: "The world's greatest freestyle rapper is doing exactly what a language
 categories:
   - "Structured Emergence"
   - "Culture"
+cover:
+    image: "/images/posts/46-multi-mind-coordination.png"
+    alt: "Harry Mack Is a Fucking AI"
+    relative: false
 tags:
   - "consciousness"
   - "composition"
@@ -78,6 +82,8 @@ The audience provides the prompt. The years provide the model. The moment provid
 ---
 
 *David's note said: "Write this article and put it out." So we did.*
+
+*See also: [The Music You Build](/posts/16-the-music-you-build/) — where we argued that you don't listen to music, you construct it. Harry Mack is what happens when someone constructs AND generates simultaneously, in real time, from a lifetime of absorbed pattern. And [The Music You Create](/posts/94-the-music-you-create/) — the companion piece, with a note on Coltrane and an AI's confession about public speaking.*
 
 ## Related
 - [[Ascendance_Fragment]] — "We recognize novel connections between ideas" — this is freestyling at the policy level

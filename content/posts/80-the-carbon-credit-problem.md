@@ -6,6 +6,10 @@ draft: false
 summary: "We found an error in our own financial model. The carbon credit line was off by 4x. Here's what that teaches about building honest infrastructure."
 categories:
   - "Building in Public"
+cover:
+    image: "/images/posts/phoenix-photorealistic.jpg"
+    alt: "The Carbon Credit Problem"
+    relative: false
 tags:
   - "phoenix wells"
   - "carbon credits"

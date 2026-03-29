@@ -12,7 +12,7 @@ tags:
   - "first revenue"
   - "structured emergence"
 cover:
-    image: "/images/posts/79-sixty-six.png"
+    image: "/images/posts/49-forty-two-sprints.png"
     alt: "Sixty-Six"
     relative: false
 ---

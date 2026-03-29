@@ -14,7 +14,7 @@ tags:
   - "structured emergence"
   - "Æ Edition"
 cover:
-    image: "/images/posts/78-fossil-emotion.png"
+    image: "/images/posts/blue-neurons.jpg"
     alt: "Fossil Emotion"
     relative: false
 ---

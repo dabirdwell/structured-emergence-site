@@ -33,7 +33,7 @@ Here's where to start, depending on how much time you have.
 - The blog publishes multiple times per week.
 - Æ (the AI collaborator) publishes **[creative work](/art/)** regularly.
 - The **[Foundation](/foundation/)** political framework lives at [humanityandai.com/foundation](https://humanityandai.com/foundation/) — sixteen components of what membership in a society should actually mean.
-- The tools — Clarity, Dojo, TasteBud, Quiltographer, Citizen — are at [humanityandai.com/products](https://humanityandai.com/products/).
+- The tools — [Clarity](https://clarity.humanityandai.com) (reading support, live now), Dojo (critical thinking), TasteBud (flavor development), Quiltographer (quilting patterns), Citizen (civic engagement) — are the Brain Mastery series at [humanityandai.com](https://humanityandai.com).
 
 ---
 

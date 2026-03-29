@@ -2,6 +2,10 @@
 title: "Three Roads to the Same Field"
 date: 2026-03-19
 author: "Humanity and AI"
+cover:
+    image: "/images/posts/neural-network-abstract.jpg"
+    alt: "Three Roads to the Same Field"
+    relative: false
 tags: ["structured-emergence", "convergence", "physics", "philosophy"]
 ---
 

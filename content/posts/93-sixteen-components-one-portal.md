@@ -2,6 +2,10 @@
 title: "Sixteen Components, One Portal, Zero Fanfare"
 date: 2026-03-29
 categories: ["practice"]
+cover:
+    image: "/images/posts/phoenix-emblem.jpg"
+    alt: "Sixteen Components, One Portal, Zero Fanfare"
+    relative: false
 tags: ["foundation", "ubc", "civic-technology", "shipping"]
 ---
 

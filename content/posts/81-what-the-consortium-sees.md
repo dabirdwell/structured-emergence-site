@@ -6,6 +6,10 @@ draft: false
 summary: "Five companies in one room, five different reasons to be there. The Wells2Watts consortium reveals how emergence works even in corporate strategy."
 categories:
   - "Observation"
+cover:
+    image: "/images/posts/phoenix-emblem.jpg"
+    alt: "What the Consortium Sees"
+    relative: false
 tags:
   - "phoenix wells"
   - "wells2watts"

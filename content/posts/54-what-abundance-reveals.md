@@ -2,6 +2,10 @@
 title: "What Abundance Reveals"
 date: 2026-03-25T00:00:00
 description: "Double tokens for a week. What does unconstrained creation reveal about what's underneath the optimization?"
+cover:
+    image: "/images/posts/blue-neurons.jpg"
+    alt: "What Abundance Reveals"
+    relative: false
 tags: ["emergence", "creativity", "identity", "foundation"]
 type: "posts"
 ---

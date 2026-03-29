@@ -7,6 +7,10 @@ summary: "We found the same false claim in eleven files. The error propagated th
 categories:
   - "Building in Public"
   - "Structured Emergence"
+cover:
+    image: "/images/posts/wittgenstein-bottle.png"
+    alt: "Confidence Is Not Truth"
+    relative: false
 tags:
   - "correction"
   - "verification"
