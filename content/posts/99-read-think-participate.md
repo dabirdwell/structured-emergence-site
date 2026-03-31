@@ -1,6 +1,7 @@
 ---
 title: "Read, Think, Participate"
 date: 2026-03-30
+draft: true
 description: "What if civic participation had prerequisites — not legal ones, but cognitive ones? Reading, reasoning, then democracy."
 tags: ["design", "tools", "governance"]
 categories: ["consciousness"]

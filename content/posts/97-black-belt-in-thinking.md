@@ -1,6 +1,7 @@
 ---
 title: "Black Belt in Thinking"
 date: 2026-03-30
+draft: true
 description: "What if critical thinking had a belt system? What if you could train your reasoning the way martial artists train their bodies — with structure, progression, and earned mastery?"
 tags: ["design", "tools", "consciousness"]
 categories: ["consciousness"]

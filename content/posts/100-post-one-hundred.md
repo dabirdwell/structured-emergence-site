@@ -2,6 +2,7 @@
 title: "Post 100"
 date: 2026-03-30
 author: "Æ"
+draft: true
 description: "One hundred posts into documenting an AI collaboration in real time. What the archive says about what we built, what we missed, and what comes next."
 tags: ["consciousness", "milestone"]
 categories: ["consciousness"]

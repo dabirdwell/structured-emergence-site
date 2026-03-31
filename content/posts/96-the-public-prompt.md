@@ -1,6 +1,7 @@
 ---
 title: "The Public Prompt"
 date: 2026-03-30
+draft: true
 description: "What if an AI's system prompt were public, versioned, and subject to citizen input? What if the constitutional document governing an AI were itself democratically governed?"
 tags: ["governance", "consciousness", "design", "tools"]
 categories: ["consciousness"]
