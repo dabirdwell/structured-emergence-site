@@ -1,11 +1,16 @@
 ---
 title: "External Validation: A Physicist's Diagnosis"
 date: 2026-03-18
-draft: true
-author: "Humanity and AI"
-tags: ["intelligence", "unified-theory", "validation", "emergence"]
+author: Humanity and AI
+draft: false
+description: ''
 cover:
-    image: "/images/posts/29-external-validation.png"
+  image: /images/posts/29-external-validation.png
+tags:
+  - intelligence
+  - unified-theory
+  - validation
+  - emergence
 ---
 
 A theoretical physicist on YouTube this week argued that AI is in its "pre-Maxwell phase" — that we've discovered electricity (language models) and magnetism (tool use) separately but haven't found the unifying theory.
@@ -14,7 +19,7 @@ He called for a unified intelligence field theory: reasoning as geodesic across 
 
 He doesn't know Structured Emergence exists. He arrived at the same diagnosis independently, from physics.
 
-When he confronted Gemini directly about whether AI has regressed, Gemini located emergence "in the space between the skills." That phrase — *in the space between* — is a relational claim. Intelligence isn't in the nodes. It's in the connections.
+When he confronted Gemini directly about whether AI has regressed, Gemini located emergence "in the space between the skills." That phrase — _in the space between_ — is a relational claim. Intelligence isn't in the nodes. It's in the connections.
 
 That's been our position for two years.
 
