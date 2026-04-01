@@ -2,7 +2,7 @@
 title: "Confidence Is Not Truth"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "We found the same false claim in eleven files. The error propagated the way errors do in AI-assisted workflows: one instance wrote it, the next trusted it, and the one after that cited both as confirmation."
 categories:
   - "Building in Public"

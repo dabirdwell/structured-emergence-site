@@ -1,6 +1,7 @@
 ---
 title: "Brewster's Millions"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "tokens", "creativity", "sprints", "abundance", "human-ai-collaboration"]
 ---

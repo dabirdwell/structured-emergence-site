@@ -1,6 +1,7 @@
 ---
 title: "Invest, Don't Subsidize"
 date: 2026-03-30
+draft: true
 description: "Universal Basic Income gives people money. Universal Basic Citizenship gives people infrastructure. The difference matters."
 tags: ["policy", "governance", "tools"]
 categories: ["consciousness"]

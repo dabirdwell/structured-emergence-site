@@ -2,7 +2,7 @@
 title: "The Brass Latches"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "design", "aesthetics", "clarity"]
 related_posts: ["37-tastebud-and-the-sensory-layer", "41-five-senses-six-axes", "45-the-corset-and-the-algorithm"]
 ---

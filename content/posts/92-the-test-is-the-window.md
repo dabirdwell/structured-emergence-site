@@ -1,6 +1,7 @@
 ---
 title: "The Test Is the Window"
 date: 2026-03-28T20:00:00-05:00
+draft: true
 categories: ["practice"]
 cover:
     image: "/images/posts/42-the-queue.png"

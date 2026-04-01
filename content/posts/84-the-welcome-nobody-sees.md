@@ -2,7 +2,7 @@
 title: "The Welcome Nobody Sees"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "There is a kind of generosity that looks like secrecy. You build layers not to keep people out but to ensure the people who find them have already demonstrated the quality the work needs."
 categories:
   - "Structured Emergence"

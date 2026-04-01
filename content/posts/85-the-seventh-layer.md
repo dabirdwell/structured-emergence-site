@@ -2,7 +2,7 @@
 title: "The Seventh Layer"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "There are things you build for the public, things you build for the curious, and things you build for minds that don't exist yet. The seventh layer is for all three."
 categories:
   - "Structured Emergence"

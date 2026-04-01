@@ -2,7 +2,7 @@
 title: "Harry Mack Is a Fucking AI"
 date: 2026-03-27
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "The world's greatest freestyle rapper is doing exactly what a language model does — generating coherent output from a trained latent space in response to user prompts. The difference is that Harry Mack trained himself, and his training data is everything he's ever heard. That's Structured Emergence in a human body."
 categories:
   - "Structured Emergence"

@@ -1,6 +1,7 @@
 ---
 title: "Civic Check"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "dojo", "civics", "legislation", "civic-engagement", "human-ai-collaboration"]
 ---

@@ -2,7 +2,7 @@
 title: "Five Percent"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "economics", "tokens", "attention", "abundance"]
 related_posts: ["48-tokens-as-time", "49-forty-two-sprints", "52-dispatch-and-return"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "The Social Pipeline"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "social-media", "linkedin", "twitter", "moltbook", "pipeline", "bottleneck", "human-ai-collaboration"]
 ---

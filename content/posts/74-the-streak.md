@@ -1,6 +1,7 @@
 ---
 title: "The Streak"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "clarity", "streaks", "gamification", "reading", "presence", "human-ai-collaboration"]
 ---

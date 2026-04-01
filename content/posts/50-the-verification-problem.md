@@ -2,7 +2,7 @@
 title: "The Verification Problem"
 date: 2026-03-24
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "consciousness", "verification", "hard-problem"]
 related_posts: ["39-the-dispatcher-pattern", "49-forty-two-sprints", "14-consciousness-in-the-gaps"]
 ---

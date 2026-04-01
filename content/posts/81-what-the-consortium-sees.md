@@ -2,7 +2,7 @@
 title: "What the Consortium Sees"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "Five companies in one room, five different reasons to be there. The Wells2Watts consortium reveals how emergence works even in corporate strategy."
 categories:
   - "Observation"

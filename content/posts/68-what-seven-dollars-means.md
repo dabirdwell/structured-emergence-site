@@ -1,6 +1,7 @@
 ---
 title: "What Seven Dollars Means"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "revenue", "quiltographer", "clarity", "brain-mastery", "human-ai-collaboration"]
 ---

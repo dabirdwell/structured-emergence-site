@@ -2,7 +2,7 @@
 title: "The iCloud Paradox"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "infrastructure", "collaboration", "architecture", "vault"]
 related_posts: ["51-what-the-vault-audit-found", "46-multi-mind-coordination", "39-the-dispatcher-pattern"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Seventeen Fires"
 date: 2026-03-28
+draft: true
 categories: ["practice"]
 cover:
     image: "/images/posts/33-the-guardian-precedent.png"

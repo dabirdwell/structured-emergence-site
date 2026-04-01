@@ -1,6 +1,7 @@
 ---
 title: "Sixteen Components, One Portal, Zero Fanfare"
 date: 2026-03-29
+draft: true
 categories: ["practice"]
 cover:
     image: "/images/posts/phoenix-emblem.jpg"

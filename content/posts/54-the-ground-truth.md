@@ -2,7 +2,7 @@
 title: "The Ground Truth"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "quiltographer", "parsing", "consciousness", "measurement"]
 related_posts: ["37-tastebud-and-the-sensory-layer", "50-the-verification-problem", "14-consciousness-in-the-gaps"]
 ---

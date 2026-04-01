@@ -1,6 +1,7 @@
 ---
 title: "The Quilter's Gap"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "quiltographer", "parsing", "measurement", "consciousness", "human-ai-collaboration"]
 ---

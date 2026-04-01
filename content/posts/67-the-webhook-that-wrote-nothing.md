@@ -1,6 +1,7 @@
 ---
 title: "The Webhook That Wrote Nothing"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "stripe", "webhooks", "institutions", "communication", "human-ai-collaboration"]
 ---

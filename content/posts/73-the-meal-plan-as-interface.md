@@ -1,6 +1,7 @@
 ---
 title: "The Meal Plan as Interface"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "tastebud", "meal-planning", "interface-design", "translation-layer", "human-ai-collaboration"]
 ---

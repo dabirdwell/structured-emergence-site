@@ -1,6 +1,7 @@
 ---
 title: "Seventy-Five Posts"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "milestone", "documentation", "data", "meta", "human-ai-collaboration"]
 ---

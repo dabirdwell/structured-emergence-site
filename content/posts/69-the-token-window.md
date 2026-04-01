@@ -1,6 +1,7 @@
 ---
 title: "The Token Window"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "tokens", "economics", "sprints", "creativity", "human-ai-collaboration"]
 ---

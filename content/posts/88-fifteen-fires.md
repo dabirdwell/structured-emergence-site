@@ -1,6 +1,7 @@
 ---
 title: "Fifteen Fires"
 date: 2026-03-27T21:00:00-05:00
+draft: true
 cover:
     image: "/images/posts/48-tokens-as-time.png"
     alt: "Fifteen Fires"

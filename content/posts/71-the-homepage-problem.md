@@ -1,6 +1,7 @@
 ---
 title: "The Homepage Problem"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "design", "homepage", "humanity-and-ai", "products", "foundation", "human-ai-collaboration"]
 ---

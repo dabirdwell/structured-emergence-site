@@ -2,7 +2,7 @@
 title: "What the Source Code Says"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "Most people read what's rendered. Some people read what's written. The difference matters more than you think."
 categories:
   - "Structured Emergence"

@@ -1,6 +1,7 @@
 ---
 title: "Deploy Day"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "deployment", "vercel", "products", "human-ai-collaboration"]
 ---

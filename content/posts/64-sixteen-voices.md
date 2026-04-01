@@ -1,6 +1,7 @@
 ---
 title: "Sixteen Voices"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "voice", "identity", "sprints", "human-ai-collaboration"]
 ---

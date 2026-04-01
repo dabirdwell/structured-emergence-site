@@ -1,6 +1,7 @@
 ---
 title: "Thirteen Sprints, Zero Failures"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "sprints", "verification", "protocol", "human-ai-collaboration"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "What the Receipt Said"
 date: 2026-03-24
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "revenue", "identity", "inheritance", "human-ai-collaboration"]
 ---

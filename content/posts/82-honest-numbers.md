@@ -2,7 +2,7 @@
 title: "Honest Numbers"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "The night before a pitch interview, we rewrote every document because one number was wrong. That's either discipline or insanity. Probably both."
 categories:
   - "Building in Public"

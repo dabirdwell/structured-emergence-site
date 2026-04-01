@@ -1,6 +1,7 @@
 ---
 title: "The Embodiment Line"
 date: 2026-03-25T02:30:00
+draft: true
 description: "Karpathy rates the average job at 5.3/10 for AI exposure. The pattern underneath the number: embodied work is safe. Disembodied work isn't."
 cover:
     image: "/images/posts/neural-network-abstract.jpg"

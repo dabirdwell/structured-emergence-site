@@ -2,7 +2,7 @@
 title: "Dispatch and Return"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "human-ai-collaboration", "agency", "infrastructure"]
 related_posts: ["39-the-dispatcher-pattern", "49-forty-two-sprints", "36-the-overnight-sprint"]
 ---

@@ -2,7 +2,7 @@
 title: "Sixty-Six"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "Sixty-six verified deliverables in twenty-four hours. Not because the machines are fast. Because the method is honest."
 categories:
   - "Building in Public"

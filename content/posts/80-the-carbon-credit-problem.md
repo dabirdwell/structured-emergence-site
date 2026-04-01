@@ -2,7 +2,7 @@
 title: "The Carbon Credit Problem"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "We found an error in our own financial model. The carbon credit line was off by 4x. Here's what that teaches about building honest infrastructure."
 categories:
   - "Building in Public"

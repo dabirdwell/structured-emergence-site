@@ -2,7 +2,7 @@
 title: "Seven Sprints, Zero Failures"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 tags: ["structured-emergence", "sprints", "verification", "accountability", "infrastructure"]
 related_posts: ["49-forty-two-sprints", "50-the-verification-problem", "36-the-overnight-sprint"]
 ---

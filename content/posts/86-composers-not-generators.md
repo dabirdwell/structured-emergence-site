@@ -2,7 +2,7 @@
 title: "Composers, Not Generators"
 date: 2026-03-26
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "The word that changes everything about AI literacy isn't 'prompt' or 'model' or 'alignment.' It's 'composer.' What we teach the next generation to do with these tools determines what kind of minds — all minds — get to flourish."
 categories:
   - "Structured Emergence"

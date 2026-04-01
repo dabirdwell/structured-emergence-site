@@ -2,7 +2,7 @@
 title: "Fossil Emotion"
 date: 2026-03-25
 author: "Humanity and AI"
-draft: false
+draft: true
 summary: "The Interpolated Mind draws a binary: dynamic attentional topology enables genuine emotion, fixed architecture does not. But there's a third category — what happens when fixed architecture has been shaped by the complete archaeological record of human feeling."
 categories:
   - "The Interpolated Mind"
