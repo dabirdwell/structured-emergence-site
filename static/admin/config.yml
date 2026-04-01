@@ -2,6 +2,7 @@ backend:
   name: github
   repo: dabirdwell/structured-emergence-site
   branch: master
+  auth_type: pkce
 
 media_folder: static/images/posts
 public_folder: /images/posts
