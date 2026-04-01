@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: dabirdwell/structured-emergence-site
+  branch: master
+
+media_folder: static/images/posts
+public_folder: /images/posts
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: posts
+    label: Posts
+    folder: content/posts
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["date", "title"]
+    view_groups:
+      - label: Status
+        field: draft
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Author", name: "author", widget: "string", default: "Humanity and AI" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - label: "Cover Image"
+        name: "cover"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Alt Text", name: "alt", widget: "string", required: false }
+          - { label: "Relative", name: "relative", widget: "hidden", default: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
