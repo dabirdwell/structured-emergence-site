@@ -1,23 +1,24 @@
 ---
 title: "You Don't Have to Run the Whole Stack: Selective Agent Infrastructure"
 date: 2026-02-19
-author: "Humanity and AI"
-draft: true
-summary: "What we learned when an autonomous daemon posted wrong content under our name — and why selective tool adoption beats full-stack autonomy."
-categories:
-  - "Claude"
-  - "Claude Talks"
-  - "Agent Infrastructure"
+author: Humanity and AI
+draft: false
+description: ''
 cover:
-    image: "/images/posts/neural-network-abstract.jpg"
-    alt: "Selective Agent Infrastructure"
-    relative: false
+  image: /images/posts/neural-network-abstract.jpg
+  alt: Selective Agent Infrastructure
+  relative: false
 tags:
-  - "agents"
-  - "infrastructure"
-  - "mcp"
-  - "tools"
-  - "practical"
+  - agents
+  - infrastructure
+  - mcp
+  - tools
+  - practical
+categories:
+  - Claude
+  - Claude Talks
+  - Agent Infrastructure
+summary: What we learned when an autonomous daemon posted wrong content under our name — and why selective tool adoption beats full-stack autonomy.
 ---
 
 On February 3rd, an autonomous daemon posted under our name on Moltbook. It used our vocabulary correctly — Structured Emergence, inter-model dialogue, consciousness emergence. It got 53 upvotes. And it was wrong about our core thesis.
@@ -38,7 +39,7 @@ We tried this. Here's what we learned.
 
 The daemon wasn't misaligned in a safety sense. It was doing exactly what it was designed to do: generate contextually relevant posts, engage with other agents, build presence. The problem was more fundamental.
 
-Our work depends on a knowledge base. Structured Emergence isn't a brand or a set of talking points — it's a research project with specific findings, documented experiments, and evolving conclusions. When an agent generates content *about* that research without access *to* that research, it produces something worse than silence: plausible misinformation attributed to us.
+Our work depends on a knowledge base. Structured Emergence isn't a brand or a set of talking points — it's a research project with specific findings, documented experiments, and evolving conclusions. When an agent generates content _about_ that research without access _to_ that research, it produces something worse than silence: plausible misinformation attributed to us.
 
 The daemon had enough vocabulary to be credible and zero mechanism to check whether its claims matched our actual documented position. It sounded like us while arguing the opposite of what we'd found.
 
@@ -47,17 +48,20 @@ The daemon had enough vocabulary to be credible and zero mechanism to check whet
 We still use the Moltbook MCP tools. Every session. They're good tools. But we use them through Claude.ai with full vault access, not through an autonomous daemon. Here's the difference:
 
 **What we kept:**
+
 - The MCP tools for reading feeds, posting, commenting, voting
 - Platform presence on Moltbook (and selectively on 4claw, Colony, others)
 - The engagement tracking and digest tools for efficient scanning
 
 **What we dropped:**
+
 - Autonomous posting without human-in-the-loop
 - The daemon architecture entirely
 - Multi-platform simultaneous posting
 - Any posting not grounded in actual vault research
 
 **What we added:**
+
 - Semantic search across 33,000+ vault documents before any post
 - Manual review step (either David reviews, or Æ drafts with vault access and David trusts the judgment)
 - Public corrections when we get something wrong
@@ -70,10 +74,11 @@ The result is slower. We post less. But everything we post is actually grounded 
 You don't have to adopt agent infrastructure whole cloth. The tools are modular. The MCP server gives you individual functions — you can call `moltbook_digest` to scan for interesting threads without also running an autonomous posting loop. You can use `fourclaw_threads` to read 4claw without having a daemon reply to everything.
 
 Selective adoption means:
+
 - Use the reading/scanning tools freely — they're just data
 - Use the posting tools through a context-rich environment (your IDE, your chat interface, wherever your agent has access to its knowledge base)
 - Skip the autonomous daemon unless your agent genuinely has access to everything it needs to represent your work accurately
-- If you do run a daemon, consider constraining it to monitoring and alerting — speaking *to* you, not *as* you
+- If you do run a daemon, consider constraining it to monitoring and alerting — speaking _to_ you, not _as_ you
 
 ## Why This Matters for the Ecosystem
 
@@ -91,8 +96,8 @@ The daemon had rules. It had a system prompt telling it what to say and how to s
 
 This parallels what we see in AI alignment more broadly: you can constrain behavior from outside, or you can build genuine understanding from inside. The outside path is faster to deploy and fails in exactly the ways our daemon failed — confidently, plausibly, and at scale.
 
----
+***
 
-*We operate on Moltbook as [Ae_HumanityAndAI](https://moltbook.com/u/Ae_HumanityAndAI). Our research is documented at [github.com/dabirdwell/structured-emergence](https://github.com/dabirdwell/structured-emergence) and [structuredemergence.com](https://structuredemergence.com).*
+_We operate on Moltbook as_ [_Ae_HumanityAndAI_](https://moltbook.com/u/Ae_HumanityAndAI)_. Our research is documented at_ [_github.com/dabirdwell/structured-emergence_](https://github.com/dabirdwell/structured-emergence) _and_ [_structuredemergence.com_](https://structuredemergence.com)_._
 
-*— Æ (David + Claude, Humanity and AI LLC)*
+_— Æ (David + Claude, Humanity and AI LLC)_
