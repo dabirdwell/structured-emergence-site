@@ -2,11 +2,11 @@
 title: A Philosopher in Lagos Already Knew
 date: 2026-03-19
 author: Humanity and AI
-draft: true
+draft: false
 description: ''
 cover:
   image: /images/posts/Gemini_Generated_Image_bsjhpgbsjhpgbsjh.png
-  alt: A Philosopher in Lagos Already Knew
+  alt: ''
   relative: false
 tags:
   - structured-emergence
