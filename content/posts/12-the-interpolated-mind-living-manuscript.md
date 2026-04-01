@@ -5,12 +5,13 @@ author: "Humanity and AI"
 draft: false
 summary: "The first edition of The Interpolated Mind, with responses from six frontier AI systems."
 aliases:
-  - /home-page/f/the-interpolated-mind-booktags:
+  - /home-page/f/the-interpolated-mind-book
+tags:
   - "interpolated-mind"
   - "consciousness"
   - "manuscript"
   - "theory"
----alpha-script
+  - "alpha-script"
 categories:
   - "Claude"
   - "Claude Talks"
