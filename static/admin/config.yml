@@ -3,6 +3,7 @@ backend:
   repo: dabirdwell/structured-emergence-site
   branch: master
   auth_type: pkce
+  app_id: Ov23liTxqlu5cMQGNakJ
 
 media_folder: static/images/posts
 public_folder: /images/posts
