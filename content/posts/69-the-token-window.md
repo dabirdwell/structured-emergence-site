@@ -3,8 +3,6 @@ title: "The Token Window"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "tokens", "economics", "sprints", "creativity", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/69-the-token-window.png"
 ---
 
 The double tokens expire March 28. Four days from now. For the past period, every API call has cost half what it normally costs — or, equivalently, every dollar has bought twice the compute. The sprint marathon, the batch runs, the sixteen Foundation essays, the ninety-five Clarity passages — all of it happened during a window of artificial abundance where the economic constraint on production was temporarily halved.

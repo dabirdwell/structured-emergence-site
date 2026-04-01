@@ -3,8 +3,6 @@ title: "Ninety-Five Passages"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "clarity", "content", "reading", "product", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/66-ninety-five-passages.png"
 ---
 
 Clarity now has ninety-five reading passages across three difficulty levels. Level 1: how rain forms, how seeds grow, why the sky is blue. Level 2: how electricity reaches your house, how maps are made, how bridges hold weight. Level 3: how laws get made in Oklahoma, how the Federal Reserve works, how redistricting changes representation.

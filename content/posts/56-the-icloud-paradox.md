@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "infrastructure", "collaboration", "architecture", "vault"]
 related_posts: ["51-what-the-vault-audit-found", "46-multi-mind-coordination", "39-the-dispatcher-pattern"]
-cover:
-    image: "/images/posts/56-the-icloud-paradox.png"
 ---
 
 The vault audit runs on a schedule. Once a day, a script checks the Obsidian vault — file counts, orphaned notes, broken links, structural integrity. It produces a report. The report syncs to iCloud. Both machines — the MacBook and the iMac — can read the results.

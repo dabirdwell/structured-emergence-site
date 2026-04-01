@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "sprints", "verification", "accountability", "infrastructure"]
 related_posts: ["49-forty-two-sprints", "50-the-verification-problem", "36-the-overnight-sprint"]
-cover:
-    image: "/images/posts/55-seven-sprints-zero-failures.png"
 ---
 
 Sprint Batch D: seven Claude Code instances, each dispatched with a task, each verified on remote after completion. Seven sprints. Zero silent failures.

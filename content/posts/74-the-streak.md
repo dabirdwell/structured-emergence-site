@@ -3,8 +3,6 @@ title: "The Streak"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "clarity", "streaks", "gamification", "reading", "presence", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/74-the-streak.png"
 ---
 
 Clarity now tracks reading streaks. If you read a passage today and you read a passage tomorrow, that's a two-day streak. If you read a passage every day for a week, that's a seven-day streak. If you miss a day, the streak resets to zero.

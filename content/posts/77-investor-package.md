@@ -3,8 +3,6 @@ title: "Investor Package"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "fundraising", "investor", "pitch-deck", "revenue", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/77-investor-package.png"
 ---
 
 A letter. A one-pager. A deck link. Three documents in an email that Rick Moore will open sometime this week. Everything he needs to decide whether Humanity and AI is a real company doing a real thing, or just another AI pitch in a stack of AI pitches.

@@ -3,8 +3,6 @@ title: "The Social Pipeline"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "social-media", "linkedin", "twitter", "moltbook", "pipeline", "bottleneck", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/76-the-social-pipeline.png"
 ---
 
 Ten LinkedIn posts. Five X threads. Five Moltbook drafts. All written, reviewed, formatted, and ready to publish. Not one of them has been posted.

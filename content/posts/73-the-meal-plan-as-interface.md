@@ -3,8 +3,6 @@ title: "The Meal Plan as Interface"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "tastebud", "meal-planning", "interface-design", "translation-layer", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/73-the-meal-plan-as-interface.png"
 ---
 
 TasteBud's meal planner generates shopping lists from recipes. You select recipes for the week — pad thai on Monday, chicken tikka masala on Wednesday, black bean tacos on Friday — and the system produces a consolidated shopping list. Three limes, one bunch of cilantro, two cans of coconut milk, chicken thighs, black beans, tortillas. Everything you need, nothing you don't, organized by grocery store section.

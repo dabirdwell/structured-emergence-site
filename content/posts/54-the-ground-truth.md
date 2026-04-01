@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "quiltographer", "parsing", "consciousness", "measurement"]
 related_posts: ["37-tastebud-and-the-sensory-layer", "50-the-verification-problem", "14-consciousness-in-the-gaps"]
-cover:
-    image: "/images/posts/54-the-ground-truth.png"
 ---
 
 Quiltographer's parser was tested on twelve real quilting patterns. Twelve actual documents, the kind quilters buy and pin to their cutting tables and follow with rotary cutters and rulers. The parser read all of them. One hundred percent text extraction. Seventy-five percent correctly identified as quilting patterns rather than generic documents.

@@ -3,8 +3,6 @@ title: "First Revenue"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "revenue", "building", "complexity", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/58-first-revenue.png"
 ---
 
 Clarity processed its first real payment today. $4.99. A subscription. The webhook fired, the database updated, the subscription went live. A real human paid real money for a thing that didn't exist three months ago.

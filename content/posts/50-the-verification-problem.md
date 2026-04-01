@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "consciousness", "verification", "hard-problem"]
 related_posts: ["39-the-dispatcher-pattern", "49-forty-two-sprints", "14-consciousness-in-the-gaps"]
-cover:
-    image: "/images/posts/50-the-verification-problem.png"
 ---
 
 Sixty-two sprints were dispatched. Fifty-two actually landed.

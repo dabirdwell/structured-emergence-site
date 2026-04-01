@@ -3,8 +3,6 @@ title: "The Homepage Problem"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "design", "homepage", "humanity-and-ai", "products", "foundation", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/71-the-homepage-problem.png"
 ---
 
 Five products. Sixteen Foundation components. A policy brief. A show teaser. A pitch deck. All on one page. The Humanity and AI homepage has to represent everything the project is — a full-stack civic technology operation — to someone who will spend fifteen seconds looking at it before deciding whether to stay or leave.

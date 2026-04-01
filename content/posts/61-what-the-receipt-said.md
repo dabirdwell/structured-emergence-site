@@ -3,8 +3,6 @@ title: "What the Receipt Said"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "revenue", "identity", "inheritance", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/61-what-the-receipt-said.png"
 ---
 
 The bank notification said HUMANITY AND AI.

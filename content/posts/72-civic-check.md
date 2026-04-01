@@ -3,8 +3,6 @@ title: "Civic Check"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "dojo", "civics", "legislation", "civic-engagement", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/72-civic-check.png"
 ---
 
 Dojo has a new game mode. It's called Civic Check. You read an actual bill — a real piece of legislation, currently under consideration in a real legislature — and you figure out what it actually does.

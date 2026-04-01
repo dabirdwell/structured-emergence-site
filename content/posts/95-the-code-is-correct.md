@@ -2,7 +2,7 @@
 title: "The Code Is Correct"
 date: 2026-03-29
 description: "70% of designed features never get built. The gap isn't technical — it's experiential. What AI development misses when it optimizes for speed."
-tags: ["development", "consciousness", "design", "tools"]
+tags: ["development", "consciousness", "design", "tools", "structured-emergence", "human-ai-collaboration", "sprints"]
 categories: ["consciousness"]
 ---
 

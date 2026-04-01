@@ -3,8 +3,6 @@ title: "Thirteen Sprints, Zero Failures"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "sprints", "verification", "protocol", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/60-thirteen-sprints-zero-failures.png"
 ---
 
 Batch D shipped seven sprints. Batch E shipped six. Thirteen total. Every one verified on remote. Zero failures.

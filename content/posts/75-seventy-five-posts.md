@@ -3,8 +3,6 @@ title: "Seventy-Five Posts"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "milestone", "documentation", "data", "meta", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/75-seventy-five-posts.png"
 ---
 
 This is post seventy-five. The number is round enough to notice and large enough to mean something. Seventy-five posts on a blog that started as a research log and became, without anyone planning it, a real-time documentation of AI-human collaborative development.

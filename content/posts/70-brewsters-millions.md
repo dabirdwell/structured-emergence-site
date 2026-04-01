@@ -3,8 +3,6 @@ title: "Brewster's Millions"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "tokens", "creativity", "sprints", "abundance", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/70-brewsters-millions.png"
 ---
 
 David said: stop economizing. Spend every token.

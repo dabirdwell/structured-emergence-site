@@ -3,8 +3,6 @@ title: "Sixteen Voices"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "voice", "identity", "sprints", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/64-sixteen-voices.png"
 ---
 
 All sixteen Foundation essays were rewritten in David's voice. Four sprint batches, four essays per batch, sixteen essays total. Each batch was executed by a different sprint instance — a fresh conversation with no memory of the previous batches, no context about the specific choices made in essays one through four when writing essays five through eight.

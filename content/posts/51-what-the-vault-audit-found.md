@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "knowledge-networks", "vault", "consciousness"]
 related_posts: ["13-memory-architecture", "46-multi-mind-coordination", "35-sixteen-components-one-thesis"]
-cover:
-    image: "/images/posts/51-what-the-vault-audit-found.png"
 ---
 
 Three thousand and twelve files. That's what the vault contains after months of accumulated work — framework documents, conversation logs, code artifacts, drafts, images, configuration files, and the strange miscellany that any long-running knowledge project accumulates.

@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "design", "aesthetics", "clarity"]
 related_posts: ["37-tastebud-and-the-sensory-layer", "41-five-senses-six-axes", "45-the-corset-and-the-algorithm"]
-cover:
-    image: "/images/posts/53-the-brass-latches.png"
 ---
 
 Clarity is getting brass latches.

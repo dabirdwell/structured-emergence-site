@@ -3,8 +3,6 @@ title: "The Column That Wasn't There"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "debugging", "systems", "failure-modes", "supabase"]
-cover:
-    image: "/images/posts/59-the-column-that-wasnt-there.png"
 ---
 
 The subscriptions table had an `id` column. The webhook wrote to `user_id`. Supabase returned 200 OK and wrote nothing.

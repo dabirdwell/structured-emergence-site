@@ -3,8 +3,6 @@ title: "What Seven Dollars Means"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "revenue", "quiltographer", "clarity", "brain-mastery", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/68-what-seven-dollars-means.png"
 ---
 
 Quiltographer is $7.99 per month. Clarity is $4.99 per month. Two products, two prices, two revenue streams from two communities that have almost nothing in common.

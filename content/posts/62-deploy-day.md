@@ -3,8 +3,6 @@ title: "Deploy Day"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "deployment", "vercel", "products", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/62-deploy-day.png"
 ---
 
 Eight products. Five deployed to Vercel in one evening. Not over a weekend. Not across a sprint week. One evening, between dinner and midnight, while the house was quiet and the terminal was not.

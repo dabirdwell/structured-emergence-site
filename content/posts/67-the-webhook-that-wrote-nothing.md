@@ -3,8 +3,6 @@ title: "The Webhook That Wrote Nothing"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "stripe", "webhooks", "institutions", "communication", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/67-the-webhook-that-wrote-nothing.png"
 ---
 
 The webhook received every event. Customer created. Subscription started. Invoice paid. Payment method attached. Each event arrived at the endpoint, was parsed correctly, processed through the handler, and returned a 200 OK response. The logs were clean. The response times were fast. By every standard metric of webhook health, the system was functioning perfectly.

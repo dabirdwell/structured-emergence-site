@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "human-ai-collaboration", "agency", "infrastructure"]
 related_posts: ["39-the-dispatcher-pattern", "49-forty-two-sprints", "36-the-overnight-sprint"]
-cover:
-    image: "/images/posts/52-dispatch-and-return.png"
 ---
 
 Anthropic released a feature: you can now assign Claude a task from your phone, walk away, and come back to the finished work. They're calling it agentic background tasks, or something to that effect. Dispatch from anywhere. Return to results.

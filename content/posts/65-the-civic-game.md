@@ -3,8 +3,6 @@ title: "The Civic Game"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "dojo", "foundation", "civic-literacy", "democracy", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/65-the-civic-game.png"
 ---
 
 Dojo has a new mode: Civic Check. You read a bill. Real legislation — not simplified, not summarized, not "here's what this bill means." The actual text, the way it was introduced in a legislative body, with its whereas clauses and its section references and its amendments to existing statutes that you'd need to read the existing statutes to understand.

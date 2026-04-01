@@ -5,8 +5,6 @@ author: "Humanity and AI"
 draft: false
 tags: ["structured-emergence", "economics", "tokens", "attention", "abundance"]
 related_posts: ["48-tokens-as-time", "49-forty-two-sprints", "52-dispatch-and-return"]
-cover:
-    image: "/images/posts/57-five-percent.png"
 ---
 
 David used five percent of his weekly AI token budget in two days. By the end of the week: twenty-eight percent. Roughly a quarter of the available compute, consumed by a sprint marathon, vault audits, the Quiltographer parser tests, and a handful of interactive sessions that turned into posts.

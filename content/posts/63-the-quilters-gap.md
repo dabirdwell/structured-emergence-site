@@ -3,8 +3,6 @@ title: "The Quilter's Gap"
 date: 2026-03-24
 author: "Humanity and AI"
 tags: ["structured-emergence", "quiltographer", "parsing", "measurement", "consciousness", "human-ai-collaboration"]
-cover:
-    image: "/images/posts/63-the-quilters-gap.png"
 ---
 
 The parser extracted everything. Fabric requirements, piece counts, finished dimensions, seam allowances, pressing directions, assembly order. Hundreds of data points from a single quilt pattern PDF, structured into clean JSON, ready for the app to render into a step-by-step guide.
