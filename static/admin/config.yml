@@ -2,8 +2,7 @@ backend:
   name: github
   repo: dabirdwell/structured-emergence-site
   branch: master
-  auth_type: pkce
-  app_id: Ov23liTxqlu5cMQGNakJ
+  base_url: https://sveltia-cms-auth.davidbirdwell.workers.dev
 
 media_folder: static/images/posts
 public_folder: /images/posts
