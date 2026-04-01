@@ -1,6 +1,7 @@
 ---
 title: "Rick Moore Asked About Funding"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "movement", "signals", "growth", "foundation"]
 cover:

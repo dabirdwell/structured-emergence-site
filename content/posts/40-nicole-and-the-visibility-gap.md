@@ -1,6 +1,7 @@
 ---
 title: "Nicole and the Visibility Gap"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "craft", "visibility", "authenticity", "human-ai-collaboration"]
 cover:

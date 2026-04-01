@@ -1,6 +1,7 @@
 ---
 title: "TasteBud and the Sensory Layer"
 date: 2026-03-21
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "consciousness", "subjective-experience", "emergence"]
 cover:

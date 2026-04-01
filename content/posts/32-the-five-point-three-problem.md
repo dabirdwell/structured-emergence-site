@@ -1,6 +1,7 @@
 ---
 title: "The 5.3 Problem"
 date: 2026-03-20
+draft: true
 author: "Humanity and AI"
 cover:
     image: "/images/posts/interpolated-mind.png"

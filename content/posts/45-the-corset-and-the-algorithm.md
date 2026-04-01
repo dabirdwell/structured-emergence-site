@@ -1,6 +1,7 @@
 ---
 title: "The Corset and the Algorithm"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "craft", "visibility", "foundation", "skills-training", "nicole-moan"]
 cover:

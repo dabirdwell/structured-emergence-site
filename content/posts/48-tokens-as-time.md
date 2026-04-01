@@ -1,6 +1,7 @@
 ---
 title: "Tokens as Time"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "tokens", "scarcity", "creativity", "UBI", "human-ai-collaboration"]
 cover:

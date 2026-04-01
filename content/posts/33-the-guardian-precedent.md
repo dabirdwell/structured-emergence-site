@@ -1,6 +1,7 @@
 ---
 title: "The Guardian Precedent"
 date: 2026-03-20
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "ai-governance", "guardian-ai"]
 cover:

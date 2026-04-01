@@ -1,6 +1,7 @@
 ---
 title: "The Funding Question"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "bootstrap", "infrastructure", "independence"]
 cover:

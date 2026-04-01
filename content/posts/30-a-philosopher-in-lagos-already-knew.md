@@ -1,6 +1,7 @@
 ---
 title: "A Philosopher in Lagos Already Knew"
 date: 2026-03-19
+draft: true
 author: "Humanity and AI"
 cover:
     image: "/images/posts/blue-neurons.jpg"

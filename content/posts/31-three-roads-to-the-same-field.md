@@ -1,6 +1,7 @@
 ---
 title: "Three Roads to the Same Field"
 date: 2026-03-19
+draft: true
 author: "Humanity and AI"
 cover:
     image: "/images/posts/neural-network-abstract.jpg"

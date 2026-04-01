@@ -1,6 +1,7 @@
 ---
 title: "The Overnight Sprint"
 date: 2026-03-21
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "human-ai-collaboration", "emergence", "collaborative-velocity"]
 cover:

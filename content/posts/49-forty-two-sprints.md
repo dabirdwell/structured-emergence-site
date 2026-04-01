@@ -1,6 +1,7 @@
 ---
 title: "Forty-Two Sprints"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "sprints", "productivity", "future-of-work", "human-ai-collaboration"]
 cover:

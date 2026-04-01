@@ -1,6 +1,7 @@
 ---
 title: "Five Senses, Six Axes"
 date: 2026-03-22
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "consciousness", "subjective-experience", "tastebud", "emergence"]
 cover:

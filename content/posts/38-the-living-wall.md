@@ -1,6 +1,7 @@
 ---
 title: "The Living Wall"
 date: 2026-03-21
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "mission-control", "visualization", "consciousness", "systems-thinking"]
 cover:

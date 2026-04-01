@@ -1,6 +1,7 @@
 ---
 title: "Sixteen Components, One Thesis"
 date: 2026-03-20
+draft: true
 author: "Humanity and AI"
 tags: ["structured-emergence", "foundation", "universal-basic-citizenship", "systems-thinking"]
 cover:
