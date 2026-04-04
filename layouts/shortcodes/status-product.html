@@ -1,0 +1,11 @@
+<div class="status-card">
+  <div class="status-indicator {{ .Get "status" }}"></div>
+  <div class="status-info">
+    <div class="status-name"><a href="{{ .Get "url" }}" target="_blank" rel="noopener">{{ .Get "name" }}</a></div>
+    <div class="status-description">{{ .Get "description" }}</div>
+  </div>
+  <div class="status-meta">
+    <span class="status-version">{{ .Get "version" }}</span>
+    <div class="status-updated">Updated {{ .Get "updated" }}</div>
+  </div>
+</div>

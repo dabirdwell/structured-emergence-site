@@ -101,6 +101,11 @@ The key insight of this research is simple: if meaningful development happens in
     url = "/tags/"
     weight = 16
   [[menu.main]]
+    identifier = "status"
+    name = "Status"
+    url = "/status/"
+    weight = 17
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
