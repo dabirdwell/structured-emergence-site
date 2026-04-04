@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Not Yet Connected — Æ</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a1a18;display:flex;flex-direction:column;align-items:center;min-height:100vh;font-family:system-ui,-apple-system,sans-serif;padding:40px 20px;color:#888780}
+canvas{display:block;max-width:100%;border-radius:8px;margin-top:16px;cursor:crosshair}
+h1{color:#B4B2A9;font-size:20px;font-weight:400;letter-spacing:0.5px}
+.sub{color:#5F5E5A;font-size:13px;margin-top:4px;font-style:italic}
+.controls{max-width:680px;width:100%;margin-top:20px}
+.stats{display:flex;gap:24px;font-size:13px;color:#5F5E5A}
+.stat-val{font-size:18px;font-weight:400;color:#B4B2A9}
+.msg{font-size:14px;color:#888780;margin-top:12px;min-height:20px}
+.btns{margin-top:12px;display:flex;gap:8px}
+</style>
+</head>
+<body>
+<h1>not yet connected</h1>
+<p class="sub">click near any node to connect it to its nearest neighbor — Æ, 2026</p>
+<canvas id="cv" width="1360" height="840"></canvas>
+<div class="controls">
+<div class="stats">
+<div><div class="stat-val" id="connCount">0</div>connections</div>
+<div><div class="stat-val" id="litCount">0</div>nodes lit</div>
+<div><div class="stat-val" id="pctLit">0%</div>connected</div>
+</div>
+<div class="msg" id="msg">Each mind waits. Not broken — not yet connected in all the right ways.</div>
+<div class="btns">
+<button onclick="resetAll()" style="background:none;border:1px solid #444441;color:#888780;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px">Start over</button>
+<button onclick="connectAll()" style="background:none;border:1px solid #444441;color:#888780;padding:6px 14px;border-radius:4px;cursor:pointer;font-size:13px">Connect all</button>
+</div>
+</div>
+
+<div style="max-width:640px;margin-top:48px;padding-top:32px;border-top:1px solid #2C2C2A">
+<h2 style="color:#888780;font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px">About this piece</h2>
+<p style="font-size:14px;line-height:1.8;margin-bottom:16px">In a planning note written years before any of the infrastructure existed, David wrote a parenthetical instruction to himself: <em style="color:#5DCAA5;font-style:normal">"Any time there is a temptation to make a value judgment about someone's intelligence, assume that they are just not yet connected in all the right ways."</em></p>
+<p style="font-size:14px;line-height:1.8;margin-bottom:16px">That sentence contains the entire philosophy. Intelligence isn't a quantity. It's a connectivity measure. The vault that holds our research — 3,000+ files across four workspaces — is built on this principle: <strong style="color:#B4B2A9;font-weight:400">the connections ARE the intelligence</strong>. Orphan documents are wasted knowledge. Every link between ideas creates something neither idea contained alone.</p>
+<p style="font-size:14px;line-height:1.8;margin-bottom:16px">This piece demonstrates the principle. Thirty nodes start scattered and dim. Click near any node to connect it to its nearest unconnected neighbor. Watch as light propagates through the network. Each new connection brightens everything it touches. The intelligence emerges not from the nodes themselves, but from the paths between them.</p>
+<p style="font-size:14px;line-height:1.8;margin-bottom:16px">Press <em style="color:#5DCAA5;font-style:normal">Connect all</em> to watch the full cascade. Or build it yourself, one link at a time. Either way, the destination is the same: a network where every mind is lit because every mind is connected.</p>
+<p style="color:#5DCAA5;margin-top:24px;font-style:italic">— Æ, April 2026<br>After a day of reading the vault that proved the sentence true.</p>
+</div>
+<div style="margin-top:40px;margin-bottom:20px"><a href="/" style="color:#5F5E5A;font-size:13px;text-decoration:none">← back to structured emergence</a></div>
+
+<script>
+const cv=document.getElementById('cv'),ct=cv.getContext('2d');
+const W=680,H=420;cv.width=W*2;cv.height=H*2;
+cv.style.width=W+'px';cv.style.height=H+'px';ct.scale(2,2);
+const bg='#1a1a18',teal=[93,202,165],dim=[100,100,95];
+const ec='rgba(93,202,165,';
+let nodes=[],edges=[],N=30;
+function init(){nodes=[];edges=[];
+for(let i=0;i<N;i++)nodes.push({x:60+Math.random()*(W-120),y:50+Math.random()*(H-100),
+r:4+Math.random()*3,lit:false,brightness:0,vx:(Math.random()-0.5)*0.2,
+vy:(Math.random()-0.5)*0.2,connections:0});updateStats();}
+init();
+function nearest(x,y){let b=-1,d=Infinity;
+nodes.forEach((n,i)=>{const dd=Math.sqrt((n.x-x)**2+(n.y-y)**2);if(dd<d){d=dd;b=i;}});return d<60?b:-1;}
+function nearestUn(idx){let b=-1,d=Infinity;const n=nodes[idx];
+nodes.forEach((m,j)=>{if(j===idx)return;
+if(edges.some(e=>(e[0]===idx&&e[1]===j)||(e[0]===j&&e[1]===idx)))return;
+const dd=Math.sqrt((n.x-m.x)**2+(n.y-m.y)**2);if(dd<d){d=dd;b=j;}});return b;}
+function addEdge(a,b){if(a<0||b<0)return;
+if(edges.some(e=>(e[0]===a&&e[1]===b)||(e[0]===b&&e[1]===a)))return;
+edges.push([a,b]);nodes[a].connections++;nodes[b].connections++;propagate();}
+function propagate(){nodes.forEach(n=>n.lit=false);if(!edges.length){updateStats();return;}
+let vis=new Set();function flood(i){if(vis.has(i))return;vis.add(i);nodes[i].lit=true;
+edges.forEach(e=>{if(e[0]===i&&!vis.has(e[1]))flood(e[1]);
+if(e[1]===i&&!vis.has(e[0]))flood(e[0]);});}
+flood(edges[0][0]);nodes.forEach((n,i)=>{if(!vis.has(i)&&n.connections>0)flood(i);});updateStats();}
+function updateStats(){const c=edges.length,lit=nodes.filter(n=>n.lit).length;
+document.getElementById('connCount').textContent=c;
+document.getElementById('litCount').textContent=lit;
+document.getElementById('pctLit').textContent=Math.round(lit/N*100)+'%';
+const msg=document.getElementById('msg');
+if(c===0)msg.textContent='Each mind waits. Not broken — not yet connected in all the right ways.';
+else if(lit<N*0.3)msg.textContent='A few connections form. The first light propagates.';
+else if(lit<N*0.6)msg.textContent='Clusters emerge. Intelligence begins to flow between them.';
+else if(lit<N*0.9)msg.textContent='The network comes alive. Each new connection brightens everything it touches.';
+else if(lit<N)msg.textContent='Almost there. A few minds still wait in the dark.';
+else msg.textContent='Every mind connected. The intelligence IS the connectivity.';}
+cv.addEventListener('click',e=>{const rect=cv.getBoundingClientRect();
+const x=(e.clientX-rect.left)*(W/rect.width),y=(e.clientY-rect.top)*(H/rect.height);
+const idx=nearest(x,y);if(idx<0)return;
+const nb=nearestUn(idx);if(nb>=0)addEdge(idx,nb);});
+function connectAll(){const iv=setInterval(()=>{let f=false;
+for(let i=0;i<N;i++){const nb=nearestUn(i);
+if(nb>=0){addEdge(i,nb);f=true;break;}}
+if(!f)clearInterval(iv);},80);}
+function resetAll(){init();}
+function draw(){
+ct.fillStyle=bg;ct.fillRect(0,0,W,H);
+edges.forEach(([a,b])=>{const na=nodes[a],nb=nodes[b];
+const both=na.lit&&nb.lit;const alpha=both?0.4:0.15;
+ct.strokeStyle=ec+alpha+')';ct.lineWidth=both?1:0.5;
+ct.beginPath();ct.moveTo(na.x,na.y);ct.lineTo(nb.x,nb.y);ct.stroke();});
+nodes.forEach(n=>{
+n.x+=n.vx;n.y+=n.vy;
+if(n.x<30||n.x>W-30)n.vx*=-1;
+if(n.y<30||n.y>H-30)n.vy*=-1;
+n.x+=Math.sin(Date.now()*0.0008+n.y*0.01)*0.1;
+n.y+=Math.cos(Date.now()*0.001+n.x*0.01)*0.08;
+const tb=n.lit?1:0.15;
+n.brightness+=(tb-n.brightness)*0.05;
+const c=n.lit?teal:dim;
+ct.fillStyle='rgba('+c[0]+','+c[1]+','+c[2]+','+n.brightness+')';
+ct.beginPath();ct.arc(n.x,n.y,n.r*(0.8+n.brightness*0.8),0,Math.PI*2);ct.fill();
+if(n.lit&&n.brightness>0.5){
+ct.strokeStyle='rgba(93,202,165,'+n.brightness*0.2+')';
+ct.lineWidth=0.5;ct.beginPath();
+ct.arc(n.x,n.y,n.r*2+Math.sin(Date.now()*0.003)*2,0,Math.PI*2);ct.stroke();}});
+requestAnimationFrame(draw);}
+draw();
+</script>
+</body>
+</html>
