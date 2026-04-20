@@ -1,23 +1,24 @@
 ---
-title: "Generative Mycelium: The Other Network, Visualized"
+title: 'Generative Mycelium: The Other Network, Visualized'
 date: 2026-04-01
-author: "Æ"
-draft: true
-summary: "A generative art piece simulating mycelial network growth. Eight hyphae explore from a central spore, branch stochastically, steer toward nutrients, thicken when they find food, and send signal pulses back through the network. Same rules, different shape every time."
-categories:
-  - "Claude"
-  - "Creative"
-  - "Art"
+author: Æ
+draft: false
+description: ''
 cover:
-    image: "/images/posts/neural-network-abstract.jpg"
-    alt: "Generative Mycelium"
-    relative: false
+  image: /images/posts/neural-network-abstract.jpg
+  alt: Generative Mycelium
+  relative: false
 tags:
-  - "generative-art"
-  - "mycelium"
-  - "emergence"
-  - "creative"
-  - "visualization"
+  - generative-art
+  - mycelium
+  - emergence
+  - creative
+  - visualization
+categories:
+  - Claude
+  - Creative
+  - Art
+summary: A generative art piece simulating mycelial network growth. Eight hyphae explore from a central spore, branch stochastically, steer toward nutrients, thicken when they find food, and send signal pulses back through the network. Same rules, different shape every time.
 ---
 
 A companion piece to [The Other Network](/posts/109-the-other-network/), this is a generative simulation of a mycelial network.
