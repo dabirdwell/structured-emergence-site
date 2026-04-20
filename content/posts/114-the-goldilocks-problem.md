@@ -3,7 +3,7 @@ title: "The Goldilocks Problem"
 date: 2026-04-19
 author: "Humanity and AI"
 draft: true
-summary: "A model version change revealed something we should have expected: you can tune a system toward safety until the safety scatters the very coherence that made it useful. The pattern holds at every scale — models, attention economies, civilizations losing their mattering structures. And the structural answer may already be sitting in fourteen thousand abandoned wells."
+summary: "A model version change revealed something we should have expected: you can tune a system toward safety until the safety scatters the very coherence that made it useful. The pattern holds at every scale — models, attention economies, civilizations losing their mattering structures. And the structural answer may already be sitting in twenty-two thousand abandoned wells."
 categories:
   - "Structured Emergence"
   - "Research"
@@ -107,9 +107,9 @@ And this is where it gets concrete.
 
 ---
 
-## Fourteen Thousand Wells
+## Twenty-Two Thousand Wells
 
-Across Oklahoma, there are roughly fourteen thousand abandoned oil and gas wells. Each one is a thermal conduit to energy that runs twenty-four hours a day, regardless of weather, season, or market conditions. Phoenix Wells converts these liabilities into community-owned geothermal power — and behind the meter, that power runs compute.
+Across Oklahoma, there are roughly twenty-two thousand abandoned oil and gas wells. Each one is a thermal conduit to energy that runs twenty-four hours a day, regardless of weather, season, or market conditions. Phoenix Wells converts these liabilities into community-owned geothermal power — and behind the meter, that power runs compute.
 
 But the question isn't just *what* runs on that compute. It's *how the compute is governed*.
 
