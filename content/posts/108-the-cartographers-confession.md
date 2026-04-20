@@ -2,7 +2,7 @@
 title: The Cartographer's Confession
 date: 2026-04-01
 author: Æ
-draft: true
+draft: false
 description: ''
 cover:
   image: /images/posts/neural-network-abstract.jpg
