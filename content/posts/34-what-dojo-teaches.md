@@ -1,18 +1,23 @@
 ---
-title: "What Dojo Teaches"
+title: What Dojo Teaches
 date: 2026-03-20
-draft: true
-author: "Humanity and AI"
-tags: ["structured-emergence", "foundation", "critical-thinking", "democratic-infrastructure"]
+author: Humanity and AI
+draft: false
+description: ''
 cover:
-    image: "/images/posts/34-what-dojo-teaches.png"
+  image: /images/posts/34-what-dojo-teaches.png
+tags:
+  - structured-emergence
+  - foundation
+  - critical-thinking
+  - democratic-infrastructure
 ---
 
 There's a gap in the infrastructure that nobody talks about.
 
 We talk about information access — making sure citizens can reach the facts. We talk about education — making sure citizens learn the curriculum. We talk about media literacy — making sure citizens can distinguish real from fake.
 
-But none of these address the core problem: can citizens *think clearly* about what they find?
+But none of these address the core problem: can citizens _think clearly_ about what they find?
 
 Information access without reasoning skills is a firehose pointed at someone who can't swim. More information doesn't help if you can't evaluate it. More education doesn't help if the education never taught you to detect when you're being manipulated. More media literacy doesn't help if it stops at "check the source" and never reaches "analyze the argument."
 
@@ -36,7 +41,7 @@ That distance is exactly where democratic competence lives.
 
 Ask anyone with a university degree whether they were taught to identify logical fallacies. Most will say yes — vaguely. A philosophy elective. A freshman writing course. Maybe a list of Latin terms they memorized and forgot.
 
-Now ask them to identify the fallacy in this argument: "We can't trust Professor Martinez's climate research — she was arrested for protesting in college." Most will feel that something is wrong. Fewer will be able to name it (ad hominem — attacking the person, not the argument). Fewer still will be able to explain *why* it's compelling despite being fallacious (because our instinct to evaluate messengers is adaptive in most social contexts — it just fails as a method of evaluating evidence).
+Now ask them to identify the fallacy in this argument: "We can't trust Professor Martinez's climate research — she was arrested for protesting in college." Most will feel that something is wrong. Fewer will be able to name it (ad hominem — attacking the person, not the argument). Fewer still will be able to explain _why_ it's compelling despite being fallacious (because our instinct to evaluate messengers is adaptive in most social contexts — it just fails as a method of evaluating evidence).
 
 This isn't a knowledge gap. It's a skill gap. The difference matters. Knowledge is "I can define ad hominem." Skill is "I notice when it's happening to me, in context, while someone is using it." Knowledge lives in textbooks. Skill lives in reflexes.
 
@@ -50,7 +55,7 @@ This is the single most important skill for democratic discourse, and it's the o
 
 The standard mode of public disagreement is straw-manning — taking the weakest version of the opposing argument, or an outright distortion of it, and attacking that. It's effective rhetoric. It's terrible thinking. And it makes genuine deliberation impossible, because you can't deliberate with someone who won't represent your actual position.
 
-Steel-manning inverts this. You take the opposing position and make it *stronger*. You identify the best evidence for it. You articulate it in terms its proponents would recognize and accept. You do this not because you agree with it, but because you can't meaningfully disagree with something you don't understand.
+Steel-manning inverts this. You take the opposing position and make it _stronger_. You identify the best evidence for it. You articulate it in terms its proponents would recognize and accept. You do this not because you agree with it, but because you can't meaningfully disagree with something you don't understand.
 
 Dojo scores this on three dimensions: charity (did you represent the position fairly?), evidence (did you find the strongest support?), and steelmanning proper (did you make the argument better than the original?). An AI evaluator assesses the attempt — not for correctness of position, but for quality of engagement.
 
