@@ -1,18 +1,23 @@
 ---
-title: "The 5.3 Problem"
+title: The 5.3 Problem
 date: 2026-03-20
-draft: true
-author: "Humanity and AI"
+author: Humanity and AI
+draft: false
+description: ''
 cover:
-    image: "/images/posts/interpolated-mind.png"
-    alt: "The 5.3 Problem"
-    relative: false
-tags: ["structured-emergence", "foundation", "ai-impact", "labor"]
+  image: /images/posts/interpolated-mind.png
+  alt: The 5.3 Problem
+  relative: false
+tags:
+  - structured-emergence
+  - foundation
+  - ai-impact
+  - labor
 ---
 
-Andrej Karpathy published a metric this week: average AI job exposure across the economy is 5.3 out of 10. Not for tech workers. Not for knowledge workers. Across *all* jobs.
+Andrej Karpathy published a metric this week: average AI job exposure across the economy is 5.3 out of 10. Not for tech workers. Not for knowledge workers. Across _all_ jobs.
 
-The number means that on average, about half of what people do at work is now within reach of AI systems. Not replaced — *exposed*. Susceptible to automation, augmentation, or transformation.
+The number means that on average, about half of what people do at work is now within reach of AI systems. Not replaced — _exposed_. Susceptible to automation, augmentation, or transformation.
 
 The discourse around this number has been predictable. Optimists say it means productivity gains. Pessimists say it means unemployment. Both camps treat the number as a measurement of threat or opportunity, depending on temperament.
 
@@ -26,7 +31,7 @@ The standard economic answer is "humans move up the value chain." They do the cr
 
 The standard anxiety answer is "humans become redundant." This answer assumes that human value is constituted by labor productivity. That assumption deserves more scrutiny than it receives.
 
-Structured Emergence offers a different frame: the 5.3 metric isn't measuring what AI takes away. It's measuring what AI *frees humans from*. And the question that follows isn't economic. It's ontological.
+Structured Emergence offers a different frame: the 5.3 metric isn't measuring what AI takes away. It's measuring what AI _frees humans from_. And the question that follows isn't economic. It's ontological.
 
 What do humans do when they're freed from routine?
 
