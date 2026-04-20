@@ -1,11 +1,16 @@
 ---
-title: "Sixteen Components, One Thesis"
+title: Sixteen Components, One Thesis
 date: 2026-03-20
-draft: true
-author: "Humanity and AI"
-tags: ["structured-emergence", "foundation", "universal-basic-citizenship", "systems-thinking"]
+author: Humanity and AI
+draft: false
+description: ''
 cover:
-    image: "/images/posts/35-sixteen-components-one-thesis.png"
+  image: /images/posts/35-sixteen-components-one-thesis.png
+tags:
+  - structured-emergence
+  - foundation
+  - universal-basic-citizenship
+  - systems-thinking
 ---
 
 Foundation's Universal Basic Citizenship framework contains sixteen components. Read individually, each looks like a policy proposal. Housing. Healthcare. Education. Energy. The kind of list that makes political scientists nod and move on.
@@ -85,7 +90,7 @@ The 5.3 problem — the metric showing that half of all labor is now exposed to 
 
 UBI without education produces a population with income but no direction. Education without information access produces a population with skills but no reliable way to apply them. Information access without thought privacy produces a population that can reach the truth but whose cognitive processes are transparent to whoever wants to exploit them.
 
-The AI transition doesn't just make each component more valuable. It makes their *integration* more valuable. In a labor-centric economy, you could survive missing a few of these. You couldn't thrive, but you could get by. In a post-labor economy — or even a significantly labor-reduced economy — the absence of any one component cascades into the others because the backup system (employment providing structure, income, identity, healthcare, and social connection) is no longer carrying the load.
+The AI transition doesn't just make each component more valuable. It makes their _integration_ more valuable. In a labor-centric economy, you could survive missing a few of these. You couldn't thrive, but you could get by. In a post-labor economy — or even a significantly labor-reduced economy — the absence of any one component cascades into the others because the backup system (employment providing structure, income, identity, healthcare, and social connection) is no longer carrying the load.
 
 This is the AI transition argument: the sixteen components aren't a wish list for a better society. They're the minimum viable infrastructure for a society navigating the most significant economic transformation in human history. The components that were nice-to-have in a labor economy become load-bearing in a post-labor one.
 
@@ -99,7 +104,7 @@ What could that generation do?
 
 The honest answer is: we don't know. And that's precisely the point. Every previous generation has been shaped by the constraints it grew up under. Poverty shaped one generation's creativity. War shaped another's resilience. Scarcity shaped resourcefulness. We've never seen what emerges from a generation unbound — not unbound from challenge or effort, but unbound from the artificial constraints of inadequate infrastructure.
 
-The sixteen components are a bet. Not a bet that the generation growing up within them will be better than us. A bet that they'll be *different* from us in ways we can't fully predict — because they'll be responding to the actual challenges of their world rather than spending their energy surviving problems that could have been solved.
+The sixteen components are a bet. Not a bet that the generation growing up within them will be better than us. A bet that they'll be _different_ from us in ways we can't fully predict — because they'll be responding to the actual challenges of their world rather than spending their energy surviving problems that could have been solved.
 
 ## The reading
 
