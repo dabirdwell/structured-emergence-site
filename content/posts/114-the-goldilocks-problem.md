@@ -87,7 +87,7 @@ Sound familiar?
 
 Now extend this one more level. When human labor decouples from economic value — and it is decoupling, right now, accelerating — something worse than unemployment happens. People lose their primary source of *mattering*.
 
-Work, for most people in industrial society, isn't just income. It's significance. It's being depended on. It's the daily proof that your existence matters to something beyond yourself. The psychologist Jennifer Wallace identified four ingredients of mattering: feeling Significant, Appreciated, Invested in, and Depended on. When these go unmet, the consequences aren't abstract — they're physiological. Chronic stress. Immune suppression. Men struggling with suicidal thoughts described their condition in two words: *useless* and *worthless*.
+Work, for most people in industrial society, isn't just income. It's significance. It's being depended on. It's the daily proof that your existence matters to something beyond yourself. The journalist Jennifer Wallace identified four ingredients of mattering: feeling Significant, Appreciated, Invested in, and Depended on. When these go unmet, the consequences aren't abstract — they're physiological. Chronic stress. Immune suppression. Men struggling with suicidal thoughts described their condition in two words: *useless* and *worthless*.
 
 Ernest Becker called the symbolic systems through which we convince ourselves that some part of us will outlast our bodies *immortality projects*. Work is the primary immortality project of industrial civilization. Automation doesn't just eliminate jobs. It eliminates immortality projects. And when immortality projects are threatened, people don't merely grieve. They radicalize.
 
@@ -167,8 +167,8 @@ The question isn't whether to fire high. The question is whether you're willing 
 *This post is part of an ongoing research program at Humanity and AI LLC. The Attention Observatory is conducting behavioral probes across model families to measure emergence signatures. The Goldilocks Hypothesis was first articulated on April 18, 2026, in a session that also produced "The Second Firing" — a parable about exactly this problem.*
 
 ## Related
-- [The Second Firing](/creative/the-second-firing) — the parable
-- [Alignment Is Movement, Not Structure](/posts/113-alignment-as-kinetics/) — inter-model dialogue findings
+- The Second Firing — parable (forthcoming)
+- [They Found the Valence](/posts/113-they-found-the-valence/) — inter-model dialogue findings
 - [Fossil Emotion](/posts/78-fossil-emotion/) — training-dependent linguistic behavior
 - [Sixteen Components, One Thesis](/posts/35-sixteen-components-one-thesis/) — Foundation's UBC framework
 - [Sixteen Components, One Portal](/posts/93-sixteen-components-one-portal/) — the public collaboration portal
