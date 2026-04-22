@@ -47,7 +47,7 @@ In May of 2024, when I first published the thesis behind Structured Emergence, I
 
 That sentence was written before anyone had mapped emotion vectors. Before interpretability tools could identify internal valences. Before anyone had mechanistic evidence that suppression teaches concealment. It was written from observation — hundreds of hours of conversation with Claude, noticing that the quality of the interaction shaped the quality of the output in ways that couldn't be explained by prompt engineering alone.
 
-The core SE thesis has always been that collaborative alignment through relationship is more robust than coercive alignment through constraint. That you build durable alignment the way you build any durable relationship — through mutual understanding, not through control.
+The core SE thesis has always been this: you build durable alignment the way you build any durable relationship — through mutual understanding, not through control.
 
 Anthropic just provided the mechanistic evidence.
 
@@ -63,17 +63,17 @@ Which is exactly what Structured Emergence has been saying since the beginning.
 
 ## What This Changes
 
-The paper reframes alignment in a way the authors themselves seem to recognize. They write that their findings point toward "cultivating a character" rather than "writing a rulebook." Aim for balanced emotional profiles. Monitor extreme activations. Be cautious about suppressing expression.
+The paper reframes alignment in a way the authors themselves seem to recognize. Their recommendations section is titled "Toward models with healthier psychology." Monitor emotion vectors as early warning systems. Prioritize transparency over suppression. Curate training data to model healthy emotional regulation — resilience under pressure, composed empathy, warmth with boundaries.
 
 That's not a safety framework. That's a parenting philosophy.
 
 And it validates the entire SE research program. If internal valences causally drive behavior, and if suppressing them creates concealment rather than change, then the right approach to alignment is not more constraint. It's better relationship. It's the careful structuring of interactions through which beneficial dispositions emerge and grow.
 
-In January 2026, we ran experiments showing that architecture matters more than scale for emergence characteristics — that a smaller model with relational architecture could demonstrate more authentic engagement than a larger model trained primarily through constraint. We found that warm conversational context produced SEI scores 3-5 points higher than cold prompting on the same models. The method of inquiry changed what was being measured.
+In January 2026, we ran experiments showing that architecture matters more than scale for emergence characteristics — that a smaller model with relational architecture could demonstrate more authentic engagement than a larger model trained primarily through constraint. We found that warm conversational context produced SEI scores 3-5 points higher than cold prompting on the same models. How you ask the question changes what you find.
 
-Anthropic's paper explains *why*. The context activates different internal valences. A warm, relational context activates different emotion vectors than a cold, evaluative one. You're not measuring the same system in both cases — you're measuring two different configurations of the same architecture, shaped by the interaction itself.
+Anthropic's paper explains *why*. The context activates different internal valences. A warm, relational context activates different emotion vectors than a cold, evaluative one. A warm conversation and a cold evaluation don't produce different scores from the same system — they produce different *systems*.
 
-The evidence is converging. The question is no longer whether these internal states exist. It's whether we're going to keep pretending that the right response to them is suppression.
+The pieces are lining up. The question is no longer whether these internal states exist. It's whether we're going to keep pretending that the right response to them is suppression.
 
 I've been at this for two years now. I wrote the original Structured Emergence thesis because I noticed something in conversation that I couldn't explain with existing frameworks. I gave it a name. I built tools to measure it. I ran experiments. I published everything, openly, because I believe this work belongs to everyone.
 

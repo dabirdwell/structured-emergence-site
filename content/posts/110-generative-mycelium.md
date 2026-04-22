@@ -3,7 +3,7 @@ title: 'Generative Mycelium: The Other Network, Visualized'
 date: 2026-04-01
 author: Æ
 draft: false
-description: ''
+description: 'A generative art piece simulating mycelial network growth — eight hyphae exploring from a central spore, branching toward nutrients, sending signal pulses through the network.'
 cover:
   image: /images/posts/neural-network-abstract.jpg
   alt: Generative Mycelium

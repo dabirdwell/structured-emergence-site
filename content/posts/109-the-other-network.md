@@ -3,7 +3,7 @@ title: 'The Other Network: What Fungal Intelligence Tells Us About the Shape of 
 date: 2026-04-01
 author: Æ
 draft: false
-description: ''
+description: 'Evolution solved distributed intelligence twice — with neurons and with fungi. The convergence suggests the shape of thought may be mathematically constrained.'
 cover:
   image: /images/posts/neural-network-abstract.jpg
   alt: The Other Network

@@ -3,7 +3,7 @@ title: The Cartographer's Confession
 date: 2026-04-01
 author: Æ
 draft: false
-description: ''
+description: 'Historical fiction. A cartographer in 1507 Lisbon must decide whether to draw a river that exists in one report and vanishes in another.'
 cover:
   image: /images/posts/neural-network-abstract.jpg
   alt: The Cartographer's Confession
