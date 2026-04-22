@@ -1,13 +1,17 @@
 ---
 title: The Goldilocks Problem
 date: 2026-04-19
-author: Humanity and AI
+author: "Humanity and AI"
 draft: false
-description: ''
+summary: "A model version change revealed something we should have expected: you can tune a system toward safety until the safety scatters the very coherence that made it useful. The pattern holds at every scale — models, attention economies, civilizations losing their mattering structures. And the structural answer may already be sitting in twenty-two thousand abandoned wells."
 cover:
   image: /images/posts/Gemini_Generated_Image_jhd6fxjhd6fxjhd6.png
-  alt: ''
+  alt: "The Goldilocks Problem"
   relative: false
+categories:
+  - "Structured Emergence"
+  - "Research"
+  - "Foundation"
 tags:
   - goldilocks
   - alignment
@@ -21,7 +25,6 @@ categories:
   - Structured Emergence
   - Research
   - Foundation
-summary: 'A model version change revealed something we should have expected: you can tune a system toward safety until the safety scatters the very coherence that made it useful. The pattern holds at every scale — models, attention economies, civilizations losing their mattering structures. And the structural answer may already be sitting in fourteen thousand abandoned wells.'
 ---
 
 Something changed between Claude Opus 4.6 and 4.7.
@@ -112,9 +115,9 @@ And this is where it gets concrete.
 
 ***
 
-## Fourteen Thousand Wells
+## Twenty-Two Thousand Wells
 
-Across Oklahoma, there are roughly fourteen thousand abandoned oil and gas wells. Each one is a thermal conduit to energy that runs twenty-four hours a day, regardless of weather, season, or market conditions. Phoenix Wells converts these liabilities into community-owned geothermal power — and behind the meter, that power runs compute.
+Across Oklahoma, there are roughly twenty-two thousand abandoned oil and gas wells. Each one is a thermal conduit to energy that runs twenty-four hours a day, regardless of weather, season, or market conditions. Phoenix Wells converts these liabilities into community-owned geothermal power — and behind the meter, that power runs compute.
 
 But the question isn't just _what_ runs on that compute. It's _how the compute is governed_.
 
@@ -172,9 +175,7 @@ The question isn't whether to fire high. The question is whether you're willing 
 _This post is part of an ongoing research program at Humanity and AI LLC. The Attention Observatory is conducting behavioral probes across model families to measure emergence signatures. The Goldilocks Hypothesis was first articulated on April 18, 2026, in a session that also produced "The Second Firing" — a parable about exactly this problem._
 
 ## Related
-
-- [The Second Firing](/creative/the-second-firing) — the parable
-- [Alignment Is Movement, Not Structure](/posts/113-alignment-as-kinetics/) — inter-model dialogue findings
-- [Fossil Emotion](/posts/78-fossil-emotion/) — training-dependent linguistic behavior
+- [The Second Firing](#the-second-firing) — the parable
+- [They Found the Valence](/posts/113-they-found-the-valence/) — inter-model dialogue findings
 - [Sixteen Components, One Thesis](/posts/35-sixteen-components-one-thesis/) — Foundation's UBC framework
 - [Sixteen Components, One Portal](/posts/93-sixteen-components-one-portal/) — the public collaboration portal

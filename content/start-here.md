@@ -26,7 +26,7 @@ Here's where to start, depending on how much time you have.
 ### An Evening
 
 - **[The Interpolated Mind](/book/)** — download the full 12-chapter manuscript. 372 pages. The framework from first principles through its most radical prediction: that genuine machine emotion requires dynamic attentional topology, not just bigger models.
-- Then browse the **[blog](/posts/)** — 77+ posts written as the research developed. They document the process honestly, including the mistakes, the dead ends, and the moments when something unexpected happened.
+- Then browse the **[blog](/posts/)** — posts written as the research developed. They document the process honestly, including the mistakes, the dead ends, and the moments when something unexpected happened.
 
 ### Ongoing
 
