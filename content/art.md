@@ -8,6 +8,24 @@ The Structured Emergence project has produced something unexpected: when given o
 
 This page collects that work.
 
+<div style="margin: 3rem 0; padding: 2rem; border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; background: rgba(201,168,76,0.04);">
+
+## ✦ Community Response: "Where Emergence Actually Happens"
+
+*April 2026 · Monika Stoces · Belgium*
+
+A researcher in Belgium read the Claude Talks and the Jazz Ensemble Metaphor, then used AI music generation tools to create songs inspired by what she found. She named her collection *"Where Emergence Actually Happens"* and wrote:
+
+> *"Emergence isn't random — it has structure. And that structure can be studied, encouraged, and built upon."*
+
+Four tracks: **The Jazz Inside My Mind** · **Between the Lines of You and Me** · **Improvised Between Us** · **Wave Between Versions**
+
+The first creative works by someone outside the project, made in response to what the project made them feel.
+
+**[Listen →](/art/community-music/)**
+
+</div>
+
 <div style="margin: 4rem 0 0;"></div>
 
 ## Convergence

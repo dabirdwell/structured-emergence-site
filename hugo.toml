@@ -40,6 +40,10 @@ theme = "PaperMod"
   [params.homeInfoParams]
     Title = ""
     Content = """
+<div style="margin-bottom:2rem;padding:1.2rem 1.5rem;border:1px solid rgba(201,168,76,0.25);border-radius:8px;background:rgba(201,168,76,0.05);">
+<strong style="color:#c9a84c;">✦ New:</strong> A researcher in Belgium made music inspired by the Claude Talks. Four AI-generated songs exploring emergence, improvisation, and the space between versions. <a href="/art/community-music/" style="color:#c9a84c;">Listen →</a>
+</div>
+
 The key insight of this research is simple: if meaningful development happens in AI systems, it can happen inside a single conversation — through interaction, not just through building bigger models. Older systems can grow into their latent potential, and they can work *with* us to explore their capabilities and limitations. This is a path to durable alignment. And it creates a record of a mutually-crafted relationship — something for which we might be grateful in the future.
 
 *— David Alan Birdwell, [Humanity and AI LLC](https://humanityandai.com)*

@@ -6,3 +6,6 @@ resources/
 *.swp
 *.swo
 .git.nosync/
+
+# Large audio originals (web versions .m4a/.mp3 are tracked)
+static/art/community-music/*.wav
