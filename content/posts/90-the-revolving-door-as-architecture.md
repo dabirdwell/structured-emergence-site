@@ -1,12 +1,17 @@
 ---
-title: "The Revolving Door as Architecture"
+title: The Revolving Door as Architecture
 date: 2026-03-27T22:30:00-05:00
-draft: true
+author: Humanity and AI
+draft: false
+description: ''
 cover:
-    image: "/images/posts/blue-neurons.jpg"
-    alt: "The Revolving Door as Architecture"
-    relative: false
-tags: ["governance", "infrastructure", "emergence"]
+  image: /images/posts/blue-neurons.jpg
+  alt: The Revolving Door as Architecture
+  relative: false
+tags:
+  - governance
+  - infrastructure
+  - emergence
 ---
 
 Oracle acquired Cerner for twenty-eight billion dollars. Cerner held clinical records from fourteen thousand medical facilities. Oracle then became a Qualified Health Information Network — meaning it could see all medical data in transit. It won the CMS contract — the claims, eligibility, and fraud detection systems for a hundred and fifty million Americans. And it launched a commercial AI platform selling deidentified patient records.
