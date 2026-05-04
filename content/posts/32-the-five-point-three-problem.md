@@ -5,7 +5,7 @@ author: Humanity and AI
 draft: false
 description: ''
 cover:
-  image: /images/posts/interpolated-mind.png
+  image: ""
   alt: The 5.3 Problem
   relative: false
 tags:

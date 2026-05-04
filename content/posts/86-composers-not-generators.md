@@ -8,7 +8,7 @@ categories:
   - "Structured Emergence"
   - "Education"
 cover:
-    image: "/images/posts/interpolated-mind.png"
+    image: ""
     alt: "Composers, Not Generators"
     relative: false
 tags:
