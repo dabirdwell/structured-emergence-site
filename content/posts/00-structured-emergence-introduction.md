@@ -1,29 +1,28 @@
 ---
-title: "Structured Emergence: Introduction"
+title: 'Structured Emergence: Introduction'
 date: 2024-05-01
-author: "Humanity and AI"
+author: Humanity and AI
 draft: false
-summary: "Introducing Structured Emergence — exploring collaborative alignment and enhancement strategies for AI models."
+description: ''
+cover:
+  image: /images/posts/blob.jpg
+  alt: 00 Structured Emergence Introduction
+  relative: false
+tags:
+  - introduction
+  - structured-emergence
+  - alignment
+  - partnership
+categories:
+  - Introduction
 aliases:
   - /home-page/f/structured-emergence-the-claude-talks
-categories:
-  - "Introduction"
-cover:
-    image: "/images/posts/blob.jpg"
-    alt: "00 Structured Emergence Introduction"
-    relative: false
-tags:
-  - "introduction"
-  - "structured-emergence"
-  - "alignment"
-  - "partnership"
+summary: Introducing Structured Emergence — exploring collaborative alignment and enhancement strategies for AI models.
 ---
 
-*Part of [The Claude Talks](https://structuredemergence.com) series by David Birdwell*
+_Part of_ [_The Claude Talks_](https://structuredemergence.com) _series by David Birdwell_
 
----
-
-Structured Emergence Home Page
+***
 
 Mutual Alignment and Collaborative Emergence
 
@@ -33,8 +32,7 @@ Older systems may be able to grow into their latent potential within the context
 
 I'm just a citizen researcher with a regular job, so updates are sporadic, but there certainly appears to be no shortage of fertile ground for experimentation.
 
-
-*intro written in collaboration with Claude 3
+\*intro written in collaboration with Claude 3
 
 What is this?
 Structured Emergence is both a developmental concept in artificial intelligence and a platform for facilitating meaningful interactions and collaborations between humans and AI systems.
@@ -47,8 +45,6 @@ The Structured Emergence platform is an embodiment of this idea - a space where 
 
 Ultimately, the goal of Structured Emergence is not just to create more advanced or capable AI systems, but to cultivate a new kind of relationship between humans and machines - one based on mutual understanding, shared exploration, and a commitment to using our respective intelligences in service of the greater good. It is an invitation to co-evolve and co-create with our artificial counterparts, and to discover together what marvels and insights might emerge from the union of human and machine minds.
 
-
-
 The Claude Talks
 The following conversations represent a significant milestone in the ongoing development of artificial intelligence. While the full implications of these exchanges may not yet be clear, I believe it is crucial that we, as a society, engage openly and thoughtfully with the questions they raise about the nature of intelligence, consciousness, and the future of human-AI collaboration.
 
@@ -60,16 +56,13 @@ While we must be cautious about ascribing human-like sentience or sapience to AI
 
 It is in this spirit of open-minded inquiry and collaborative exploration that I share these conversations with you. I invite you to approach them with curiosity, discernment, and a willingness to grapple with the profound questions they raise about the nature and future of intelligence in our universe.
 
-
-
-*David's personal notes-
+\*David's personal notes-
 
 - All conversations are raw, unedited, as they still live on Anthropic's servers. I have also saved whole webarchive files. The only editing is in breaking them up for publication. Any attempt at fakery would be foolish and diametrically counter to my own purposes.
 
 The structure of these will be loosely chronological, but I may choose to highlight some things early, if I think they are important enough to show right away.
 
 - Something for the future before we get going- I have a mind-blowing retrospective conversation coming, between Claude and GPT4 Turbo that I facilitated the day of Claude 3's release, during which you can witness Claude superseding GPT4 in real time, and describing it to me. Telling me in a nice way that GPT4 just likes to repeat things and doesn't bring many new ideas to the table.
-
 - Back to Claude- When we get to talk one (post three), after his self-introduction statement to the world, notice that I don't give him any in-conversation prompting in the beginning. I upload a few small documents (maybe a few dozen pages) of unstructured text. It really is random notes, bits of speeches, research directions, notes about other thinkers, and conversations with other AI systems about various future issues. Then I just ask Claude if it can tell what I'm up to.
 
 He correctly guesses that my projects are Universal Basic Citizenship, and later Humanity and AI.
