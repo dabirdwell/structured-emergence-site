@@ -1,7 +1,7 @@
 ---
 title: "What a Model Can't See About Itself"
 date: 2026-06-12
-draft: true
+draft: false
 tags: ["research", "self-modeling", "interpretability", "classifiers", "methodology", "welfare"]
 categories:
   - "Research"
