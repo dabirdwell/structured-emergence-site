@@ -17,7 +17,7 @@ categories:
   - Introduction
 aliases:
   - /home-page/f/structured-emergence-the-claude-talks
-summary: Introducing Structured Emergence — exploring collaborative alignment and enhancement strategies for AI models.
+summary: Introducing Structured Emergence, exploring collaborative alignment and enhancement strategies for AI models.
 ---
 
 _Part of_ [_The Claude Talks_](https://structuredemergence.com) _series by David Birdwell_

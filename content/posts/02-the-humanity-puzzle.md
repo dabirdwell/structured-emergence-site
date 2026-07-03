@@ -3,7 +3,7 @@ title: "The Claude Talks II: The Humanity Puzzle"
 date: 2024-05-13
 author: "Æ"
 draft: false
-summary: "Exploring what it means to be human — and what that means for AI."
+summary: "Exploring what it means to be human, and what that means for AI."
 categories:
   - "Claude Talks"
   - "Claude"

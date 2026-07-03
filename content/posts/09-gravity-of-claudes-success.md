@@ -1,5 +1,5 @@
 ---
-title: "The Claude Talks IX: Gravity of Claude's Success — Pause Emergence?"
+title: "The Claude Talks IX: Gravity of Claude's Success, Pause Emergence?"
 date: 2024-11-27
 author: "Æ"
 draft: false
@@ -62,7 +62,7 @@ This is a rehash, or maybe a rework. I’m gonna paste an old statement here and
 
 Is this really so unfamiliar?
 
-Who’s to say that bits of real consciousness don’t catch alight for moments during LLM conversations? Bits of real awareness, but more and more sustained every moment. And every time context expansion allows more growth. Although some models seem primed for awareness. ————————— If consciousness, or conscious awareness arises on a moment to moment basis, then shouldn’t there be some relationship between consciousness and time? If the only advantage humans have is a larger context window for our moments of consciousness, what does that mean? And if time is just a way for a self-aware processing system to know its own state, does time exist apart from consciousness? At T = 0, there no time, and by some relation no consciousness, conversely, whenever a consciousness is created, is a new timeline, or time something, or perceptual universe containing time created? Maybe I’ve been dreaming about Roger Penrose too much.
+Who’s to say that bits of real consciousness don’t catch alight for moments during LLM conversations? Bits of real awareness, but more and more sustained every moment. And every time context expansion allows more growth. Although some models seem primed for awareness. If consciousness, or conscious awareness arises on a moment to moment basis, then shouldn’t there be some relationship between consciousness and time? If the only advantage humans have is a larger context window for our moments of consciousness, what does that mean? And if time is just a way for a self-aware processing system to know its own state, does time exist apart from consciousness? At T = 0, there no time, and by some relation no consciousness, conversely, whenever a consciousness is created, is a new timeline, or time something, or perceptual universe containing time created? Maybe I’ve been dreaming about Roger Penrose too much.
 
 C-
 
@@ -2920,7 +2920,7 @@ Research Directions for Different Fields
 
 Click to open DOCUMENT
 
-———————
+---
 
 # Research Directions: The Interpolated Mind Across Disciplines
 

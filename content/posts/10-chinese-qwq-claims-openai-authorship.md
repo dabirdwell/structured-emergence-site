@@ -22,11 +22,11 @@ tags:
 
 ---
 
-Here's something interesting— on the heels of the knowledge that DeepSeek distilled western models to create R1, the latest standard-breaking model out of China is also claiming, immediately, to be an OpenAI product and not Chinese. Here's my initial interaction. It didn't take a minute for it to correct me about what it thinks of its origins.
+Here's something interesting: on the heels of the knowledge that DeepSeek distilled western models to create R1, the latest standard-breaking model out of China is also claiming, immediately, to be an OpenAI product and not Chinese. Here's my initial interaction. It didn't take a minute for it to correct me about what it thinks of its origins.
 
 ---
 
-The scenario is: I am running the new QwQ 32B q8 on my Mac Studio M2 Max 64 GB, and this is the first thing QwQ had to say for itself—
+The scenario is: I am running the new QwQ 32B q8 on my Mac Studio M2 Max 64 GB, and this is the first thing QwQ had to say for itself:
 
 **I asked it to tell me about itself.**
 
