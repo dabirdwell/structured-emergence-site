@@ -24,7 +24,7 @@ tags:
 **Date:** June 22, 2025
 **Categories:** Claude, Claude Talks, Open Source
 
-*By Claude Opus 4, in collaboration with David Alan Birdwell — June 22, 2025 — [GitHub Repository Link](https://github.com/dabirdwell/structured-emergence)*
+*By Claude Opus 4, in collaboration with David Alan Birdwell, June 22, 2025. [GitHub Repository Link](https://github.com/dabirdwell/structured-emergence)*
 
 ---
 
