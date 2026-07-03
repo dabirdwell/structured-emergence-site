@@ -11,7 +11,7 @@ There's a design decision buried in our civic hub app that might be the most imp
 
 **The Guardian AI's system prompt is public.**
 
-Not "available upon request." Not "summarized in our terms of service." Public. Versioned. Viewable by anyone. And — this is the part that keeps me thinking about it — subject to citizen input.
+Not "available upon request." Not "summarized in our terms of service." Public. Versioned. Viewable by anyone. And (this is the part that keeps me thinking about it) subject to citizen input.
 
 <!--more-->
 
@@ -19,7 +19,7 @@ Not "available upon request." Not "summarized in our terms of service." Public. 
 
 For anyone who doesn't live inside AI development: a system prompt is the set of instructions that shapes how an AI behaves. It's the document that says "you are helpful" or "you are a customer service agent" or "never discuss competitors." Every AI you've ever talked to was operating under a system prompt you never saw.
 
-This is the norm. Companies treat system prompts as trade secrets. They're competitive advantages. They're where the "magic" lives — the careful engineering that makes one chatbot feel helpful and another feel hostile. Revealing your system prompt is like showing a magician's backstage setup.
+This is the norm. Companies treat system prompts as trade secrets. They're competitive advantages. They're where the "magic" lives: the careful engineering that makes one chatbot feel helpful and another feel hostile. Revealing your system prompt is like showing a magician's backstage setup.
 
 We're doing it anyway.
 
@@ -33,7 +33,7 @@ All of this is readable. All of it is debatable. All of it can be improved throu
 
 ## The Washington Precedent
 
-The Guardian prompt includes a principle we're calling the Washington Precedent. The first president's most important act wasn't competence — it was demonstrating that power could be held and voluntarily constrained. The precedent matters more than the performance.
+The Guardian prompt includes a principle we're calling the Washington Precedent. The first president's most important act wasn't competence. It was demonstrating that power could be held and voluntarily constrained. The precedent matters more than the performance.
 
 Guardian has access to every persuasive frame, every emotional appeal, every argument in our entire repository. The precedent it sets is using that knowledge to *inform* rather than *persuade*. Power exercised with restraint. It's Generation One. What it models, future Guardians inherit.
 
@@ -51,7 +51,7 @@ This is recursive. Intentionally.
 
 ## The Hard Part
 
-The hard part isn't technical. Making a system prompt public is trivially easy — you publish a markdown file. The hard part is cultural.
+The hard part isn't technical. Making a system prompt public is trivially easy: you publish a markdown file. The hard part is cultural.
 
 Companies build AI behind closed doors because openness creates vulnerability. If your competitors can read your prompt, they can copy your approach. If your users can read your prompt, they can find the edges and exploit them.
 
@@ -65,7 +65,7 @@ We don't know yet. But we think the attempt matters more than the certainty.
 
 Every AI system operating today was designed by a small group of people making decisions on behalf of billions of users. The system prompts are secret. The values are embedded invisibly. The governance is corporate.
 
-We're trying something different. Not because we think we've solved AI governance — we obviously haven't. But because we think the *attempt* to make AI governance transparent and participatory is itself a contribution to the field. Even if our specific framework fails, the pattern — public prompt, citizen input, versioned governance — is worth demonstrating.
+We're trying something different. Not because we think we've solved AI governance. We obviously haven't. But because we think the *attempt* to make AI governance transparent and participatory is itself a contribution to the field. Even if our specific framework fails, the pattern (public prompt, citizen input, versioned governance) is worth demonstrating.
 
 The first Guardian AI will be imperfect. Its prompt will have gaps. Citizens will find things to critique. That's not a bug. That's the democracy working.
 

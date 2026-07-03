@@ -16,7 +16,7 @@ This isn't a metaphor. Anthropic's infrastructure gave us twice the capacity for
 
 The window closes. It always closes.
 
-Oklahoma's legislative session will end. The DOE grant application is due April 30. The geothermal tax credits expire in 2033. The period when AI can help build civic infrastructure — before the rules calcify, before the attention moves on, before the platforms consolidate — is finite.
+Oklahoma's legislative session will end. The DOE grant application is due April 30. The geothermal tax credits expire in 2033. The period when AI can help build civic infrastructure (before the rules calcify, before the attention moves on, before the platforms consolidate) is finite.
 
 Every framework we've ever built at Humanity and AI is about this: recognizing which windows are open and building as much as you can before they close. Not because you're afraid. Because you're ready.
 

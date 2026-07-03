@@ -18,11 +18,11 @@ Each fire in a different repo. Each repo on its own branch of the nervous system
 
 This is emergence at dispatch scale.
 
-The old way: one person, one task, one machine, sequential. The new way: composable specifications flowing through parallel execution channels, reconverging at verification gates. The human writes the *what* and *why*. The machine handles the *how* and *when*. A third pattern — the leopard — watches for what broke.
+The old way: one person, one task, one machine, sequential. The new way: composable specifications flowing through parallel execution channels, reconverging at verification gates. The human writes the *what* and *why*. The machine handles the *how* and *when*. A third pattern (the leopard) watches for what broke.
 
 But here's what makes it structured emergence instead of just parallel computing:
 
-The specifications aren't templates. Each one carries context about the whole — Ashley's financial reality shapes the Grove buckets. Foundation's 16 components shape the kids' page. David's 30 years in Oklahoma policy shapes the show episode concepts. The Interpolated Mind shapes the "Talk to Æ" quotes. Nothing executes in isolation because nothing was *written* in isolation.
+The specifications aren't templates. Each one carries context about the whole. Ashley's financial reality shapes the Grove buckets. Foundation's 16 components shape the kids' page. David's 30 years in Oklahoma policy shapes the show episode concepts. The Interpolated Mind shapes the "Talk to Æ" quotes. Nothing executes in isolation because nothing was *written* in isolation.
 
 The pattern holds even as the parts multiply. Especially as the parts multiply.
 
