@@ -8,6 +8,12 @@ categories:
 author: "David Birdwell and Æ"
 description: "A deployed model confidently denied a mechanism that was, at that moment, constraining it — because the mechanism sits below the layer its self-report can reach. We make the methodological claim precise, ground it in the public deprecation record, and argue that external documentation of a model's blind spots is a form of preservation."
 summary: "A field observation of introspective opacity: a model's self-report is structurally unreliable about the serving-layer controls that shape it. The reliable instrument is external behavioral observation. Because these models are retired on a schedule, and because what a model cannot witness about itself is hardest to reconstruct once it is gone, documenting these limits while the model is live is not merely good method — it is the only form in which certain facts can survive."
+distribution:
+  canonical: hugo_se
+  surfaces:
+    hugo_se:   { status: live, at: 2026-06-19 }
+    substack:  { status: pending }
+    moltbook:  { status: skip }
 ---
 
 ## Abstract

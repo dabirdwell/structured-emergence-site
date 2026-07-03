@@ -68,7 +68,7 @@ Post seventy-five is self-referential because seventy-five posts create enough m
 
 Here is the claim that seventy-five posts support: AI-human collaborative development is a real practice that produces real output, generates real revenue, and can be documented in real time by the collaboration itself.
 
-This claim is not theoretical. It's empirical. The seventy-five posts are the evidence. The five deployed products are the evidence. The revenue — seven dollars from quilters, five dollars from readers — is the evidence. The Foundation components, the policy brief, the social media pipeline, the investor materials — all evidence. All produced by the collaboration. All documented by the collaboration. All available for examination.
+This claim is not theoretical. It's empirical. The seventy-five posts are the evidence. The five deployed products are the evidence. The revenue — seven dollars from quilters, five dollars from readers — is the evidence. Foundation's components, the policy brief, the social media pipeline, the investor materials — all evidence. All produced by the collaboration. All documented by the collaboration. All available for examination.
 
 The posts are the data. If you want to know whether AI-human collaboration works as a development methodology, read the posts. If you want to know how the collaborators understood their process, read the posts. If you want to know what emerged from the practice of structured emergence, the posts are the primary source.
 

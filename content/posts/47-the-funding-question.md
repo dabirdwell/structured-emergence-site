@@ -58,17 +58,17 @@ At the other end: institutional funding. Investment in exchange for equity or co
 
 The honest assessment: the middle path is probably right. Grant funding from institutions that benefit from public goods. Not because it's ideal, but because it's the option that preserves the framework's nature while acknowledging that bootstrapping a public good is a contradiction in terms.
 
-## The Foundation argument
+## Foundation's argument
 
-There's a reason the word "Foundation" keeps appearing in these posts. Not as a legal structure — though it may eventually need to become one — but as a *concept*. The Foundation is the institutional expression of the framework's values. It's the thing that holds the infrastructure, maintains the shared resources, and ensures that the framework serves people rather than extracting from them.
+There's a reason the word "Foundation" keeps appearing in these posts. Not as a legal structure — though it may eventually need to become one — but as a *concept*. Foundation is the institutional expression of the framework's values. It's the thing that holds the infrastructure, maintains the shared resources, and ensures that the framework serves people rather than extracting from them.
 
 A Foundation for Structured Emergence would do specific things: maintain the documentation, develop the tools, support the community, fund the research, and — critically — ensure that the framework remains a public good. That last part is the one that funding threatens. Every dollar accepted from a source that expects returns creates pressure to privatize.
 
-The Foundation model — a genuine nonprofit with a mission to maintain public infrastructure — is the structural solution to this tension. It can accept grants without selling equity. It can receive donations without promising returns. It can build institutional relationships without becoming beholden to institutional interests.
+Foundation's model — a genuine nonprofit with a mission to maintain public infrastructure — is the structural solution to this tension. It can accept grants without selling equity. It can receive donations without promising returns. It can build institutional relationships without becoming beholden to institutional interests.
 
 This is not a new idea. The Linux Foundation, the Apache Foundation, the Mozilla Foundation — these are precedents. Public goods maintained by institutional structures that exist to preserve the public nature of what they maintain.
 
-But there's a difference. Those foundations were created to maintain *software*. Structured Emergence isn't software. It's a framework for human-AI collaboration — a set of ideas, practices, and tools that together constitute something more like a *methodology* than a *product*. The Foundation wouldn't maintain code. It would maintain *coherence*. It would ensure that as the framework grows and is adopted by people who weren't involved in its creation, the core principles survive the scaling.
+But there's a difference. Those foundations were created to maintain *software*. Structured Emergence isn't software. It's a framework for human-AI collaboration — a set of ideas, practices, and tools that together constitute something more like a *methodology* than a *product*. Foundation wouldn't maintain code. It would maintain *coherence*. It would ensure that as the framework grows and is adopted by people who weren't involved in its creation, the core principles survive the scaling.
 
 ## Public infrastructure
 

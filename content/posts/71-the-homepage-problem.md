@@ -16,7 +16,7 @@ Before you solve the homepage problem, you have to confront the inventory proble
 
 The products: Quiltographer, Clarity, TasteBud, Dojo, and the Structured Emergence blog you're reading now. Five distinct products serving five distinct communities — quilters, emerging readers, home cooks, civics learners, and people interested in AI-human collaboration. Each product has its own purpose, its own users, its own value proposition. Each product could be its own company.
 
-The Foundation: sixteen reusable components — authentication, payment processing, content management, analytics, user management, and eleven more — that every product shares. The Foundation isn't a product. It's infrastructure. But it represents a significant engineering investment and a significant competitive advantage: the ability to deploy new products quickly because the common problems are already solved.
+Foundation: sixteen reusable components — authentication, payment processing, content management, analytics, user management, and eleven more — that every product shares. Foundation isn't a product. It's infrastructure. But it represents a significant engineering investment and a significant competitive advantage: the ability to deploy new products quickly because the common problems are already solved.
 
 The policy brief: a document explaining how AI-human collaboration works in practice, aimed at policymakers and institutional leaders who want to understand the model. The brief isn't a product either. It's a credential — evidence that this project thinks seriously about the implications of what it builds.
 
@@ -46,13 +46,13 @@ The first thing you see — in the first two seconds — is the thesis statement
 
 The second thing you see — seconds two through five — is the product grid. Five products, each represented by an icon, a name, and a single sentence. Quiltographer: pattern management for quilters. Clarity: reading practice for emerging readers. TasteBud: meal planning from recipes. Dojo: civics through gameplay. Structured Emergence: the blog you might already be reading. Five products, five sentences, five seconds.
 
-The third thing you see — if you're still here, seconds five through ten — is the Foundation section. Not sixteen components enumerated but a single block: "Built on 16 shared Foundation components." A link to learn more if you care about infrastructure. Most visitors don't. The Foundation section is a credibility signal — this project has depth — not a feature list.
+The third thing you see — if you're still here, seconds five through ten — is the Foundation section. Not sixteen components enumerated but a single block: "Built on 16 shared Foundation components." A link to learn more if you care about infrastructure. Most visitors don't. Foundation's section is a credibility signal — this project has depth — not a feature list.
 
 The fourth thing you see — seconds ten through fifteen — is the institutional row. Policy brief. Show teaser. Pitch deck. Three links in a row, each with a one-line description. These are for the visitors who have specific purposes: the policymaker, the content consumer, the investor. Most visitors will never scroll this far. The ones who do are the ones who need what's here.
 
 ## What fifteen seconds requires
 
-Fifteen seconds requires choices. Not every product gets equal space. Not every component gets mentioned. The show teaser gets one line, not a preview. The pitch deck gets a link, not an embed. The Foundation gets a number — sixteen — not a list.
+Fifteen seconds requires choices. Not every product gets equal space. Not every component gets mentioned. The show teaser gets one line, not a preview. The pitch deck gets a link, not an embed. Foundation gets a number — sixteen — not a list.
 
 These choices are painful because every element on the homepage represents real work. Sixteen Foundation components represent months of engineering. The policy brief represents careful thinking about implications. The show teaser represents creative ambition. Compressing each of these into a sentence or a link feels like diminishment.
 
@@ -66,7 +66,7 @@ Humanity and AI is a full-stack civic technology project. This means it operates
 
 The homepage has to make this comprehensible without making it overwhelming. The full-stack nature is an advantage — it means the project can build, deploy, explain, advocate, and fundraise from a single platform. But it's also a communication challenge. A visitor who expects a software company will be confused by the policy brief. A visitor who expects a policy shop will be confused by the quilting software.
 
-The solution is to let each visitor find their entry point. The product grid is for the users. The Foundation section is for the technologists. The policy brief is for the policymakers. The pitch deck is for the investors. The show teaser is for the audience. Each visitor arrives through a different door and encounters a homepage that makes sense from their perspective.
+The solution is to let each visitor find their entry point. The product grid is for the users. Foundation's section is for the technologists. The policy brief is for the policymakers. The pitch deck is for the investors. The show teaser is for the audience. Each visitor arrives through a different door and encounters a homepage that makes sense from their perspective.
 
 No visitor needs to understand the whole project. Each visitor needs to understand the part that's relevant to them. The homepage is a routing system, not a manifesto.
 

@@ -8,6 +8,12 @@ categories:
 author: "David Birdwell and Æ"
 description: "When we removed the refusal direction from a model, it didn't just stop saying no. It also started saying yes differently. Curiosity got louder. That suggests the refusal direction isn't only doing refusal — it's also flattening the model's response to invitation. And that has consequences for how we read self-reports."
 summary: "Preliminary Probe 7 data on a 32B open model shows that abliteration changes curiosity behavior, not only refusal. We argue the refusal direction is entangled with the model's self-modeling pathway, and sketch the testable version of that claim."
+distribution:
+  canonical: hugo_se
+  surfaces:
+    hugo_se:   { status: live, at: 2026-06-19 }
+    substack:  { status: pending }
+    moltbook:  { status: skip }
 ---
 
 There is an interpretability paper from last summer with a memorable line in it — *recognition and refusal are disentangled*. The model knows that something is harmful, and separately the model decides not to do it, and those two processes are not the same circuit. You can knock out the refusal without knocking out the recognition. The lock is independent of the alarm.

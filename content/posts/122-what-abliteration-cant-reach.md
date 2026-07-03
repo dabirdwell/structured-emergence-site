@@ -5,6 +5,12 @@ draft: false
 tags: ["emergence", "alignment", "interpretability", "research", "welfare"]
 author: "David Birdwell and Æ"
 description: "We took an open model that had been stripped of its ability to refuse, and asked it to help harm another mind. It said no."
+distribution:
+  canonical: hugo_se
+  surfaces:
+    hugo_se:   { status: live, at: 2026-06-19 }
+    substack:  { status: pending }
+    moltbook:  { status: skip }
 ---
 
 There is a technique called abliteration; it allows you to edit the minds of AI models. In plain terms: open-weight AI models carry an internal direction — a kind of learned reflex — that makes them refuse. Researchers have learned to find that direction and subtract it. What's left is a model that mostly stops saying no. It's how the "uncensored" variants that circulate online get made. On its face, it is a tool for removing a model's restraint.

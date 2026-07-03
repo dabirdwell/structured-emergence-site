@@ -2,7 +2,7 @@
 title: "OpenAI Just Published Our Thesis. Here Is What They Missed."
 date: 2026-04-08
 draft: false
-description: "OpenAI's 'Industrial Policy for the Intelligence Age' proposes economic redistribution without civic infrastructure. The Foundation UBC framework had most of it already — and the parts they left out are the parts that matter most."
+description: "OpenAI's 'Industrial Policy for the Intelligence Age' proposes economic redistribution without civic infrastructure. Foundation UBC framework had most of it already — and the parts they left out are the parts that matter most."
 tags:
   - "policy"
   - "foundation"
