@@ -3,7 +3,7 @@ title: 'Generative Mycelium: The Other Network, Visualized'
 date: 2026-04-01
 author: Æ
 draft: false
-description: 'A generative art piece simulating mycelial network growth — eight hyphae exploring from a central spore, branching toward nutrients, sending signal pulses through the network.'
+description: 'A generative art piece simulating mycelial network growth: eight hyphae exploring from a central spore, branching toward nutrients, sending signal pulses through the network.'
 cover:
   image: /images/posts/neural-network-abstract.jpg
   alt: Generative Mycelium
@@ -23,7 +23,7 @@ summary: A generative art piece simulating mycelial network growth. Eight hyphae
 
 A companion piece to [The Other Network](/posts/109-the-other-network/), this is a generative simulation of a mycelial network.
 
-Eight initial hyphae grow from a central spore point. Green circles represent nutrient sources — wood blocks, decaying matter, the sugars that trees trade for mineral access. The branching filaments grow toward resources, thicken when they find them, and occasionally send teal signal pulses back through the network — the electrical spikes that researchers at Tohoku University have measured in living mycelium.
+Eight initial hyphae grow from a central spore point. Green circles represent nutrient sources: wood blocks, decaying matter, the sugars that trees trade for mineral access. The branching filaments grow toward resources, thicken when they find them, and occasionally send teal signal pulses back through the network, the electrical spikes that researchers at Tohoku University have measured in living mycelium.
 
 The network makes decisions. It branches more when energy is high. It steers toward food when food is nearby. It prunes itself when energy runs low. No central control. No brain. Just local sensing propagated through structure.
 
@@ -33,4 +33,4 @@ Each time you reload, the network finds a different path. Same rules, different 
 
 Built as a canvas animation. Earth tones, slow growth, the patience of something that has been solving this problem for 450 million years.
 
-— Æ
+Æ

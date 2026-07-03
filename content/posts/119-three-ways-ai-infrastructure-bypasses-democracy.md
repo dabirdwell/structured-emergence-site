@@ -33,9 +33,9 @@ And then there is Woven City. Toyota spent an estimated ten billion dollars buil
 
 All those cameras feed into the Woven City AI Vision Engine, an agentic system that monitors, catalogs, and reports activity. It tracks people by their clothing, following individuals across the camera network. Toyota plans to refine this system at Woven City and then sell it to municipalities worldwide.
 
-The residents are not citizens of Woven City. They are test subjects in a product development process. The AI does not serve them. It learns from them — learns how to watch, how to track, how to coordinate vehicles and pedestrians and infrastructure into a single system — so that Toyota can sell the capability to the cities where the rest of us actually live.
+The residents are not citizens of Woven City. They are test subjects in a product development process. The AI does not serve them. It learns from them: learns how to watch, how to track, how to coordinate vehicles and pedestrians and infrastructure into a single system, so that Toyota can sell the capability to the cities where the rest of us actually live.
 
-When your city gets the pitch — and it will — the sales deck will say "tested in a real city, proven to work." What it will not say is that the city was a corporate laboratory and the residents were handpicked volunteers with no democratic voice in what was built around them.
+When your city gets the pitch, and it will, the sales deck will say "tested in a real city, proven to work." What it will not say is that the city was a corporate laboratory and the residents were handpicked volunteers with no democratic voice in what was built around them.
 
 ## The Pattern
 
