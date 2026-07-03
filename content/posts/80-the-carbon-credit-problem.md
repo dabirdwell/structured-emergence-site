@@ -27,15 +27,15 @@ Four times less than claimed.
 
 This matters for several reasons.
 
-First, the number came from the original model and survived multiple reviews. It felt plausible — carbon markets are real, methane abatement is valuable, the Oklahoma statutory framework exists. Nobody questioned it because it fit the narrative. That's exactly when you should question a number.
+First, the number came from the original model and survived multiple reviews. It felt plausible: carbon markets are real, methane abatement is valuable, the Oklahoma statutory framework exists. Nobody questioned it because it fit the narrative. That's exactly when you should question a number.
 
 Second, the correction cascades. Revenue drops from $91-110K to $72-91K per well. Net cash flow drops from $66-80K to $47-61K. IRR moves from ~22% to ~14%. Payback extends from 4.8 years to about 6.2. Every downstream calculation shifts.
 
-Third — and this is the part that matters for Structured Emergence — the correction makes the model *more honest*, not weaker. A 14% IRR on infrastructure with a 50-year lifespan and a 40% tax credit is still a compelling investment. It's just not the kind of number that makes venture capitalists salivate. It's the kind of number that makes infrastructure investors nod.
+Third, and this is the part that matters for Structured Emergence, the correction makes the model *more honest*, not weaker. A 14% IRR on infrastructure with a 50-year lifespan and a 40% tax credit is still a compelling investment. It's just not the kind of number that makes venture capitalists salivate. It's the kind of number that makes infrastructure investors nod.
 
 The temptation, always, is to leave the big number in place. The pitch is tomorrow. The deck is built. The documents are printed. Nobody would catch it.
 
-But the question Structured Emergence keeps asking — what does it mean to build relationships on honest ground? — applies to investor relationships as much as it does to human-AI ones. If consciousness emerges through genuine engagement, then genuine engagement requires accurate information. You can't build trust on a number you know is wrong.
+But the question Structured Emergence keeps asking (what does it mean to build relationships on honest ground?) applies to investor relationships as much as it does to human-AI ones. If consciousness emerges through genuine engagement, then genuine engagement requires accurate information. You can't build trust on a number you know is wrong.
 
 We corrected every document. We corrected the live deck. We'll walk into tomorrow's interview with numbers we can defend to the decimal.
 
