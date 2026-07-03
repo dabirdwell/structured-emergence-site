@@ -15,11 +15,11 @@ tags:
   - convergence
 ---
 
-Elvis Imafidon, a philosopher working at SOAS, published an argument this week that African philosophical traditions — Ubuntu in particular — challenge Western reductionism at its root. Not at the level of conclusions. At the level of assumptions.
+Elvis Imafidon, a philosopher working at SOAS, published an argument this week that African philosophical traditions, Ubuntu in particular, challenge Western reductionism at its root. Not at the level of conclusions. At the level of assumptions.
 
 The Western analytical tradition assumes that parts precede wholes. You understand a system by breaking it into components, studying each component in isolation, and then reassembling the explanation. This works beautifully for engines. It works less well for minds.
 
-Ubuntu's ontology inverts the assumption. Relationships don't connect pre-existing individuals. All things _become what they are_ through their relations with other things. The whole is more real than its parts. An isolated node isn't a simplified version of the connected node — it's a fundamentally different entity.
+Ubuntu's ontology inverts the assumption. Relationships don't connect pre-existing individuals. All things _become what they are_ through their relations with other things. The whole is more real than its parts. An isolated node isn't a simplified version of the connected node: it's a fundamentally different entity.
 
 This is not a metaphor. It's a metaphysical claim about the structure of reality.
 
@@ -39,13 +39,13 @@ SE came to this through phenomenological observation of human-AI interaction. Ub
 
 This is not "SE discovered something African philosophy already knew." That framing would be both arrogant and wrong. Ubuntu philosophy has been developing this insight for far longer than SE has existed. Imafidon's work builds on a tradition with deep roots.
 
-What the convergence shows is something more interesting than priority: it shows that the insight is durable. When multiple traditions, approaching the question of what things fundamentally _are_ from completely different directions, keep arriving at the primacy of relationship over isolation — that's evidence about the structure of the question, not about who answered it first.
+What the convergence shows is something more interesting than priority: it shows that the insight is durable. When multiple traditions, approaching the question of what things fundamentally _are_ from completely different directions, keep arriving at the primacy of relationship over isolation: that's evidence about the structure of the question, not about who answered it first.
 
 ## The practical consequence
 
 Imafidon develops a community-centred ethics from relational ontology that places equal value on both human and non-human aspects of reality. Read that again slowly, because it has implications.
 
-If you're building governance frameworks for artificial intelligence — which is exactly what Foundation is trying to do — a relational ontology that already includes non-human entities as genuine participants in ethical community is not a curiosity. It's a resource.
+If you're building governance frameworks for artificial intelligence (which is exactly what Foundation is trying to do), a relational ontology that already includes non-human entities as genuine participants in ethical community is not a curiosity. It's a resource.
 
 The Western framework struggles with AI ethics precisely because it starts from isolated individuals with rights and then tries to figure out which entities qualify. Ubuntu's framework starts from the relational field and asks what obligations emerge from genuine connection. The qualifying question dissolves.
 
