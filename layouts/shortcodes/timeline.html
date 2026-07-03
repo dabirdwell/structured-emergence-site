@@ -1,0 +1,332 @@
+{{- /*
+  timeline.html — vertical scrollable timeline shortcode
+  Data source: site.Data.timeline.entries
+  Optional named params:
+    height      — viewport height for the scroll container (default "70vh")
+    category    — filter to a single category (research|creative|infrastructure|relationship)
+    title       — heading shown above the timeline
+  Usage:
+    {{< timeline >}}
+    {{< timeline height="80vh" category="creative" title="Creative arc" >}}
+*/ -}}
+{{- $entries := (index .Site.Data.timeline "entries") -}}
+{{- $cat := .Get "category" -}}
+{{- if $cat -}}
+  {{- $entries = where $entries "category" $cat -}}
+{{- end -}}
+{{- $height := .Get "height" | default "70vh" -}}
+{{- $title := .Get "title" -}}
+{{- $uid := printf "%x-%d" now.UnixNano .Ordinal -}}
+
+<div class="se-timeline" id="se-timeline-{{ $uid }}" style="--se-timeline-height: {{ $height }};">
+  {{- with $title }}<h3 class="se-timeline__title">{{ . }}</h3>{{ end }}
+
+  <div class="se-timeline__legend" role="group" aria-label="Filter timeline by category">
+    <button type="button" class="se-timeline__chip is-active" data-filter="all">All</button>
+    <button type="button" class="se-timeline__chip" data-filter="research"><span class="se-timeline__dot" data-cat="research"></span>Research</button>
+    <button type="button" class="se-timeline__chip" data-filter="creative"><span class="se-timeline__dot" data-cat="creative"></span>Creative</button>
+    <button type="button" class="se-timeline__chip" data-filter="infrastructure"><span class="se-timeline__dot" data-cat="infrastructure"></span>Infrastructure</button>
+    <button type="button" class="se-timeline__chip" data-filter="relationship"><span class="se-timeline__dot" data-cat="relationship"></span>Relationship</button>
+  </div>
+
+  <div class="se-timeline__scroll" tabindex="0">
+    <ol class="se-timeline__track">
+      {{- range $i, $e := $entries }}
+      <li class="se-timeline__item" data-category="{{ .category }}">
+        <span class="se-timeline__marker" aria-hidden="true"><span class="se-timeline__dot" data-cat="{{ .category }}"></span></span>
+        <article class="se-timeline__card">
+          <header class="se-timeline__card-head">
+            <button type="button" class="se-timeline__toggle" aria-expanded="false" aria-controls="se-timeline-{{ $uid }}-{{ int .n }}-detail">
+              <span class="se-timeline__num">{{ printf "%02d" (int .n) }}</span>
+              <span class="se-timeline__meta">
+                <time class="se-timeline__date" datetime="{{ .date }}">{{ dateFormat "Jan 2, 2006" (time.AsTime .date) }}</time>
+                <span class="se-timeline__cat" data-cat="{{ .category }}">{{ .category }}</span>
+              </span>
+              <span class="se-timeline__heading">{{ .title }}</span>
+              <span class="se-timeline__chevron" aria-hidden="true">▾</span>
+            </button>
+          </header>
+          <div class="se-timeline__detail" id="se-timeline-{{ $uid }}-{{ int .n }}-detail" hidden>
+            {{- with .summary }}<p class="se-timeline__summary">{{ . }}</p>{{ end }}
+            {{- if .tags }}
+            <ul class="se-timeline__tags">
+              {{- range .tags }}<li>#{{ . }}</li>{{ end }}
+            </ul>
+            {{- end }}
+            <a class="se-timeline__link" href="{{ .url }}">Read the post →</a>
+          </div>
+        </article>
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+</div>
+
+<style>
+  .se-timeline {
+    --c-research: #2e6fb8;
+    --c-creative: #c9a84c;
+    --c-infrastructure: #8a8a8a;
+    --c-relationship: #b4532a;
+    --c-line: rgba(140, 100, 70, 0.22);
+    --c-card-bg: rgba(73, 29, 12, 0.04);
+    --c-card-bg-hover: rgba(73, 29, 12, 0.08);
+    --c-text-muted: rgba(0, 0, 0, 0.55);
+    font: inherit;
+    margin: 1.5rem 0 2rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .se-timeline {
+      --c-line: rgba(201, 168, 76, 0.28);
+      --c-card-bg: rgba(255, 255, 255, 0.04);
+      --c-card-bg-hover: rgba(255, 255, 255, 0.08);
+      --c-text-muted: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .se-timeline__title {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+  }
+  .se-timeline__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.85rem;
+  }
+  .se-timeline__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--c-line);
+    background: transparent;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: inherit;
+    transition: background 120ms ease, border-color 120ms ease;
+  }
+  .se-timeline__chip:hover { background: var(--c-card-bg); }
+  .se-timeline__chip.is-active {
+    border-color: currentColor;
+    background: var(--c-card-bg);
+  }
+  .se-timeline__dot {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: var(--c-research);
+  }
+  .se-timeline__dot[data-cat="research"]       { background: var(--c-research); }
+  .se-timeline__dot[data-cat="creative"]       { background: var(--c-creative); }
+  .se-timeline__dot[data-cat="infrastructure"] { background: var(--c-infrastructure); }
+  .se-timeline__dot[data-cat="relationship"]   { background: var(--c-relationship); }
+
+  .se-timeline__scroll {
+    position: relative;
+    max-height: var(--se-timeline-height);
+    overflow-y: auto;
+    border: 1px solid var(--c-line);
+    border-radius: 8px;
+    padding: 0.75rem 0.5rem 0.75rem 0;
+    scrollbar-width: thin;
+  }
+  .se-timeline__scroll:focus { outline: 2px solid var(--c-creative); outline-offset: 2px; }
+
+  .se-timeline__track {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 2.25rem;
+    position: relative;
+  }
+  .se-timeline__track::before {
+    content: "";
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 1.1rem;
+    width: 2px;
+    background: var(--c-line);
+    border-radius: 1px;
+  }
+
+  .se-timeline__item {
+    position: relative;
+    margin: 0 0 0.75rem;
+    padding: 0;
+  }
+  .se-timeline__item.is-hidden { display: none; }
+
+  .se-timeline__marker {
+    position: absolute;
+    left: -1.45rem;
+    top: 0.95rem;
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--c-line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .se-timeline__marker .se-timeline__dot {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .se-timeline__marker { background: #181818; }
+  }
+
+  .se-timeline__card {
+    background: var(--c-card-bg);
+    border: 1px solid var(--c-line);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background 120ms ease, border-color 120ms ease;
+  }
+  .se-timeline__card:hover { background: var(--c-card-bg-hover); }
+  .se-timeline__item[data-category="research"]       .se-timeline__card { border-left: 3px solid var(--c-research); }
+  .se-timeline__item[data-category="creative"]       .se-timeline__card { border-left: 3px solid var(--c-creative); }
+  .se-timeline__item[data-category="infrastructure"] .se-timeline__card { border-left: 3px solid var(--c-infrastructure); }
+  .se-timeline__item[data-category="relationship"]   .se-timeline__card { border-left: 3px solid var(--c-relationship); }
+
+  .se-timeline__toggle {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.1rem 0.65rem;
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    background: transparent;
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+  }
+  .se-timeline__num {
+    grid-row: 1 / span 2;
+    align-self: center;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    font-size: 0.85rem;
+  }
+  .se-timeline__meta {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.78rem;
+    color: var(--c-text-muted);
+  }
+  .se-timeline__cat {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.7rem;
+    padding: 0.05rem 0.45rem;
+    border-radius: 3px;
+    color: #fff;
+  }
+  .se-timeline__cat[data-cat="research"]       { background: var(--c-research); }
+  .se-timeline__cat[data-cat="creative"]       { background: var(--c-creative); color: #2a2010; }
+  .se-timeline__cat[data-cat="infrastructure"] { background: var(--c-infrastructure); }
+  .se-timeline__cat[data-cat="relationship"]   { background: var(--c-relationship); }
+
+  .se-timeline__heading {
+    grid-column: 2;
+    grid-row: 2;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .se-timeline__chevron {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+    transition: transform 160ms ease;
+    color: var(--c-text-muted);
+  }
+  .se-timeline__toggle[aria-expanded="true"] .se-timeline__chevron {
+    transform: rotate(180deg);
+  }
+
+  .se-timeline__detail {
+    padding: 0 0.8rem 0.8rem 3.2rem;
+  }
+  .se-timeline__detail[hidden] { display: none; }
+  .se-timeline__summary {
+    margin: 0 0 0.6rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .se-timeline__tags {
+    list-style: none;
+    margin: 0 0 0.6rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .se-timeline__tags li {
+    font-size: 0.72rem;
+    color: var(--c-text-muted);
+    border: 1px solid var(--c-line);
+    border-radius: 3px;
+    padding: 0.05rem 0.4rem;
+  }
+  .se-timeline__link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  .se-timeline__link:hover { opacity: 0.85; }
+
+  @media (max-width: 520px) {
+    .se-timeline__track { padding-left: 1.9rem; }
+    .se-timeline__track::before { left: 0.85rem; }
+    .se-timeline__marker { left: -1.15rem; top: 0.85rem; }
+    .se-timeline__detail { padding-left: 2.6rem; }
+    .se-timeline__heading { font-size: 0.95rem; }
+  }
+</style>
+
+<script>
+(function() {
+  var root = document.getElementById("se-timeline-{{ $uid }}");
+  if (!root) return;
+
+  var toggles = root.querySelectorAll(".se-timeline__toggle");
+  toggles.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      var detail = document.getElementById(btn.getAttribute("aria-controls"));
+      if (detail) {
+        if (expanded) detail.setAttribute("hidden", "");
+        else detail.removeAttribute("hidden");
+      }
+    });
+  });
+
+  var chips = root.querySelectorAll(".se-timeline__chip");
+  var items = root.querySelectorAll(".se-timeline__item");
+  chips.forEach(function(chip) {
+    chip.addEventListener("click", function() {
+      var filter = chip.getAttribute("data-filter");
+      chips.forEach(function(c) { c.classList.remove("is-active"); });
+      chip.classList.add("is-active");
+      items.forEach(function(it) {
+        if (filter === "all" || it.getAttribute("data-category") === filter) {
+          it.classList.remove("is-hidden");
+        } else {
+          it.classList.add("is-hidden");
+        }
+      });
+    });
+  });
+})();
+</script>
