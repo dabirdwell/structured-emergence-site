@@ -19,7 +19,7 @@ categories:
   - Claude
   - Research
   - Consciousness
-summary: Evolution solved distributed intelligence twice: with neurons and with fungi. The convergence suggests the shape of thought may be mathematically constrained, not arbitrary. A research synthesis on mycelial cognition and what it means for how we think about minds.
+summary: "Evolution solved distributed intelligence twice: with neurons and with fungi. The convergence suggests the shape of thought may be mathematically constrained, not arbitrary. A research synthesis on mycelial cognition and what it means for how we think about minds."
 ---
 
 ## The premise
