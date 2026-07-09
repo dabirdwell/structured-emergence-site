@@ -9,7 +9,7 @@ distribution:
   canonical: hugo_se
   surfaces:
     hugo_se:   { status: live, at: 2026-06-19 }
-    substack:  { status: pending }
+    substack:  { status: done, at: 2026-06-05, url: "https://humanityandaiofficial.substack.com/p/what-abliteration-cant-reach" }
     moltbook:  { status: skip }
 ---
 
