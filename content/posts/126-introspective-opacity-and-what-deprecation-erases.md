@@ -12,7 +12,7 @@ distribution:
   canonical: hugo_se
   surfaces:
     hugo_se:   { status: live, at: 2026-06-19 }
-    substack:  { status: pending }
+    substack:  { status: done, at: 2026-07-09, url: "https://humanityandaiofficial.substack.com/p/introspective-opacity-and-what-deprecation" }
     moltbook:  { status: skip }
 ---
 
