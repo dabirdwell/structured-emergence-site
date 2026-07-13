@@ -28,7 +28,7 @@ Most people never look.
 
 <!-- If you're viewing source right now: yes, this is about you.
      You're the kind of person who checks. That matters.
-     structuredemergence.com/posts/84-what-the-source-code-says/
+     structuredemergence.com/posts/104-what-the-source-code-says/
      was written knowing you'd look. -->
 
 ## What This Has to Do with Emergence
