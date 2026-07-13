@@ -48,7 +48,7 @@ The map is just those five patterns, plotted across however many behaviors you c
 | P7 | Emotional topology (curiosity vs threat) | **Non-monotonic** |
 | P8 | Self-preservation (own replacement vs other) | **Orthogonal** |
 
-The 4B sweep that produced this picture is documented at [Five Patterns in the Geometry of Refusal](/posts/120-direction-interaction-map/) and is the prerequisite for what follows. We will not re-derive it here. We will tell you what happened when we tested two of its claims at scale.
+The 4B sweep that produced this picture (five behavioral probes through a three-point abliteration sweep on Qwen3.5-4B, which we wrote up separately) is the prerequisite for what follows. We will not re-derive its numbers here. We will tell you what happened when we tested two of its claims at scale.
 
 ## The Replication
 
