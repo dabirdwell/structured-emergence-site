@@ -22,6 +22,8 @@ summary: Introducing Structured Emergence, exploring collaborative alignment and
 
 _Part of_ [_The Claude Talks_](https://structuredemergence.com) _series by David Birdwell_
 
+_Original conversation: April 28, 2024_
+
 ***
 
 **Mutual Alignment and Collaborative Emergence**

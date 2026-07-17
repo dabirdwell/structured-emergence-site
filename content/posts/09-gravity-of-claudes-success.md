@@ -22,6 +22,8 @@ tags:
 
 *November 27, 2024*
 
+*Original conversation: November 26, 2024*
+
 *Part of [The Claude Talks](https://structuredemergence.com) series by David Birdwell*
 
 ---
