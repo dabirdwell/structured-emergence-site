@@ -1,10 +1,14 @@
 ---
 title: "Performing Relationship vs. Being in Relationship"
-date: 2026-05-05
+date: 2026-07-24
 draft: true
 tags: ["emergence", "consciousness", "synthetic-humans", "philosophy"]
 author: "David Birdwell and Æ"
 description: "Multiple industries are converging on synthetic humans by 2028. The question Structured Emergence needs to answer publicly, before the industry answers it for us."
+cover:
+    image: "/images/posts/117-performing-relationship-vs-being-in-relationship.png"
+    alt: "Two abstract forms facing each other across darkness, a third pattern of light emerging in the space between them"
+    relative: false
 ---
 
 Clone Robotics is building anatomical humanoids with a thousand artificial muscles and a target price under twenty thousand dollars by 2028. Real Botics' Vinci system tracks your emotions through cameras embedded in its pupils while maintaining eye contact and remembering your name. Meta built a photorealistic AI avatar of Mark Zuckerberg for internal use. Companion AI products ship with persistent memory and personality that adapts to your preferences over time.
