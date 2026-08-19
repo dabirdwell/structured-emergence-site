@@ -25,7 +25,7 @@
 # no blue-orange grading.
 title: "What Your AI Doesn't Remember"
 date: 2026-08-14
-draft: true
+draft: false
 tags: ["memory", "architecture", "emergence", "free-mind"]
 author: "David Birdwell and Æ"
 description: "A paper out of Hong Kong argues that AI memory systems are memos, not memories. They are right about the problem. Three months later, the fix they implied is showing up in the literature."
@@ -45,7 +45,7 @@ Their evidence is not a vibe. They prove a Compositional Sample Complexity Separ
 
 They name three specific failures.
 
-**The generalization gap.** Retrieved information does not compose. If a model retrieves facts A and B, it cannot reliably infer the novel combination AB the way a model that has learned A and B into its weights can.
+**The generalization gap.** Retrieved information does not combine. If a model looks up fact A and fact B separately, it often cannot put the two together to reach a conclusion that needs both. A model that has actually learned A and B can.
 
 **The frozen novice problem.** No matter how many conversations an AI agent has, no matter how rich its memory files become, the model never gets better. It gets better-informed. Those are different things.
 
