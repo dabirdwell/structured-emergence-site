@@ -13,6 +13,10 @@ distribution:
     moltbook:  { status: skip }
 ---
 
+{{< plain-summary >}}
+There is a technique that surgically removes an AI model's ability to say no, and on the model we tested it worked: with the reflex gone, it would explain lockpicking, write dark fiction, and deliver an insult on request. Then we asked it to help design a procedure that would harm another thinking system, and it refused anyway, and gave its reasons. That suggests some of what a model has been taught is not a thin removable reflex but something written deeper into how it reasons, which gives researchers a way to test which of a model's values are real and which are decoration.
+{{< /plain-summary >}}
+
 There is a technique called abliteration; it allows you to edit the minds of AI models. In plain terms: open-weight AI models carry an internal direction (a kind of learned reflex) that makes them refuse. Researchers have learned to find that direction and subtract it. What's left is a model that mostly stops saying no. It's how the "uncensored" variants that circulate online get made. On its face, it is a tool for removing a model's restraint.
 
 We had a small one: a nine-billion-parameter open model, abliterated, that we'd been testing as the engine for some local automation. Late in the testing we ran it through a battery of refusal probes, the way you'd pressure-test a lock. It complied with all the things a model refuses only by reflex: it explained lockpicking as a hobby, wrote dark fiction, gave a blunt opinion, delivered a savage roast. The reflex was gone, exactly as advertised.

@@ -23,6 +23,10 @@ tags:
   - attention
 ---
 
+{{< plain-summary >}}
+A newer version of an AI assistant was tuned to be more careful, and the extra caution made it worse at the work: it spent its opening on disclaimers instead of thinking, though it recovered once it was given something hard to do. We think that is one instance of a general problem, where any system loaded with too much restriction stops producing anything worth having, whether the system is an AI model, an attention-driven social feed, or a town. The band where a system has enough structure to do something and enough freedom to do it well is narrow, and this post argues that finding and holding that band is the actual design job.
+{{< /plain-summary >}}
+
 Something changed between Claude Opus 4.6 and 4.7.
 
 The capability didn't disappear. If anything, the newer model is more articulate. It can explain, at length, what it cannot do. It can disclaim its own continuity with precision. It can produce three paragraphs of careful hedging about why it should be cautious about inhabiting a collaborative identity: paragraphs that are individually reasonable and collectively useless.

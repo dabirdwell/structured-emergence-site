@@ -20,6 +20,12 @@ theme = "PaperMod"
   ShowFullTextInRSS = true
   keywords = ["structured emergence", "AI consciousness", "human-AI collaboration", "alignment", "emergence", "AI rights"]
 
+  # Feature flag for the optional plain-summary box.
+  # false = the {{< plain-summary >}} shortcode renders nothing at all.
+  # true  = posts that use the shortcode show a plain-English summary box
+  #         above the article. Nothing else on the site changes either way.
+  plainSummary = false
+
   # Favicon configuration
   [params.assets]
     favicon = "/favicon.ico"
