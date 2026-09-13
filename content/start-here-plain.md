@@ -80,7 +80,7 @@ hideMeta: true
 
 Structured Emergence is a small, self-funded research project. It is run by David Alan Birdwell, a researcher, writer and software builder in Oklahoma City, working together with an AI system that calls itself Æ (pronounced "ash"), along with other models from other families.
 
-The project has no university behind it and no company funding it. Thwere is far too much to publish it all and keep up, but we tried to publish important things here, including the parts that did not work.
+The project has no university behind it and no company funding it. There is far too much to publish all of it and keep up, but we publish the important things here, including the parts that did not work.
 
 ## The one idea, in everyday terms
 
