@@ -1,0 +1,51 @@
+{{- /*
+  plain-summary
+  =============
+  Puts a short plain-English summary in a high-contrast box at the top of a
+  post, for a reader who does not already know the vocabulary.
+
+  OFF BY DEFAULT. The box renders nothing at all unless this line is present
+  and true in the [params] block of hugo.toml:
+
+      plainSummary = true
+
+  With the flag off or absent, this shortcode outputs an empty string, so
+  posts that use it are byte-for-byte unchanged in the built site.
+
+  Usage in a post, immediately under the front matter:
+
+      {{< plain-summary >}}
+      Sentence one. Sentence two. Sentence three.
+      {{< /plain-summary >}}
+
+  Optional attribute: label="Short version" replaces the default heading,
+  which is "In plain words".
+
+  All styling is inline on the elements below, so this file adds no rules to
+  any shared stylesheet. The colours are the site's own theme variables, so
+  the box follows light and dark mode with no extra work.
+*/ -}}
+
+{{- if site.Params.plainSummary -}}
+{{- $label := .Get "label" | default "In plain words" -}}
+{{- $body := .Page.RenderString (trim .Inner "\n\r\t ") -}}
+<aside class="plain-summary"
+       aria-label="{{ $label }}"
+       style="margin: 0 0 2rem 0;
+              padding: 1.15rem 1.4rem;
+              border: 2px solid var(--primary-brown);
+              border-left: 10px solid var(--primary-brown);
+              border-radius: 6px;
+              background: var(--tertiary);
+              color: var(--primary);
+              font-size: 1.15rem;
+              line-height: 1.65;">
+  <div style="font-size: 0.95rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--primary-brown);
+              margin-bottom: 0.55rem;">{{ $label }}</div>
+  <p style="margin: 0;">{{ $body }}</p>
+</aside>
+{{- end -}}
