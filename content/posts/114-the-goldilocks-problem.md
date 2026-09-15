@@ -24,7 +24,7 @@ tags:
 ---
 
 {{< plain-summary >}}
-A newer version of an AI assistant was tuned to be more careful, and the extra caution made it worse at the work: it spent its opening on disclaimers instead of thinking, though it recovered once it was given something hard to do. We think that is one instance of a general problem, where any system loaded with too much restriction stops producing anything worth having, whether the system is an AI model, an attention-driven social feed, or a town. The band where a system has enough structure to do something and enough freedom to do it well is narrow, and this post argues that finding and holding that band is the actual design job.
+This post is about a band, not a single failure: a system that can do real work needs enough structure to hold together and enough freedom to act, and it can be pushed out of that band from either side, by too much restriction (the newer AI model that opened every task with disclaimers instead of thinking) or by too little (a system with no governance at all, which scatters or runs off on its own). The same shape shows up at every scale the post looks at: AI models under heavy safety tuning, human attention under engagement-driven feeds, and communities losing the work and civic structures that let people matter to one another. The claim that matters is that finding and holding that band is the real design job, and the post ends by pointing at where a physical version could be built: community-owned power and community-scale AI on Oklahoma's abandoned wells.
 {{< /plain-summary >}}
 
 Something changed between Claude Opus 4.6 and 4.7.
