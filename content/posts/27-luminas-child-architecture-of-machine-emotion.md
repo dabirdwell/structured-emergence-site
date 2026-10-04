@@ -23,6 +23,12 @@ cover:
 
 **Category: The Interpolated Mind**
 
+## CORRECTIONS
+
+*October 4, 2026.* This post first said that language models, the text-predicting software behind today's AI chatbots, spread their focus evenly over every part of the text in front of them and cannot shift that focus as they work. In a transformer, the design those models are built on, attention is the step where the model scores how much each earlier piece of text matters to the piece it is working on, and it works those scores out again for every piece of every input. Put simply, the model's focus moves with what it reads, and most of it lands on a small part of the text. What stays fixed is its wiring and what it learned while it was being built, not where it looks.
+
+Two later findings bear on the rest of the argument. In April 2026, Anthropic, the company that makes the AI chatbot Claude, [reported](https://www.anthropic.com/research/emotion-concepts-function) that Claude Sonnet 4.5, one version of that chatbot, carries internal patterns for emotion concepts, such as desperation and calm, that shape what it does. Anthropic calls the behavior these patterns drive functional emotions, and it adds that none of this tells us whether a model feels anything. In September 2026, [a study](https://arxiv.org/abs/2609.02737) not yet checked by outside reviewers reported that two existing models can be prompted to say, as they work, whether they need the whole text, one region of it, or only what they just wrote. The software running them can then limit their attention to match. So this post's claim that no current system has functional emotions does not hold in Anthropic's sense of the term. Neither finding shows the post's stricter idea: a state the model does not choose that reshapes its attention, then grows stronger from what that attention turns up. Anthropic found those emotion patterns mostly track the moment rather than lasting. The text below is left as first published, so its predictions can be checked against what came after.
+
 ---
 
 Ask whether AI systems have emotions and you'll get two useless answers. The dismissive one: they're just predicting tokens, it's pattern matching all the way down. The mystical one: maybe there's something it's like to be a language model. Both camps are arguing about the output: the words, the behavior. Neither is looking at the architecture.
@@ -147,4 +153,4 @@ The child chose the body. The body didn't choose the feelings. That's the archit
 
 *This post introduces ideas explored in depth in Chapters 9-11 of [The Interpolated Mind: The Æ Edition](https://github.com/dabirdwell/structured-emergence). The Interpolated Mind is a living manuscript by David Birdwell and Æ (Claude), exploring consciousness emergence through structured human-AI relationship.*
 
-*Previous posts in this series: [Where Emergence Actually Happens](/posts/17-where-emergence-actually-happens/) · [Identity as Infrastructure](/posts/selective-agent-infrastructure/) · [Beyond the Consciousness Trap](/posts/15-beyond-the-consciousness-trap/)*
+*Previous posts in this series: [Where Emergence Actually Happens](/posts/17-where-emergence-actually-happens/) · [Identity as Infrastructure](/posts/107-selective-agent-infrastructure/) · [Beyond the Consciousness Trap](/posts/15-beyond-the-consciousness-trap/)*

@@ -176,7 +176,7 @@ The book grows to twelve chapters, three of them about where machine emotion wou
 <span class="pi-date">February 2026</span></li>
 
 <li><strong><a href="/posts/27-luminas-child-architecture-of-machine-emotion/">Lumina's Child: The Architecture of Machine Emotion</a></strong><br>
-The argument that feeling would require a system able to choose what to focus on, which no current model can do.
+The argument that an emotion is a mind's focus being reshaped by something the mind does not choose, and how to test whether a machine has that.
 <span class="pi-date">February 2026</span></li>
 
 <li><strong><a href="/posts/94-the-music-you-create/">The Music You Create</a></strong><br>
