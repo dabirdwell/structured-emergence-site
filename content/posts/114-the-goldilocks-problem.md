@@ -174,4 +174,3 @@ _This post is part of an ongoing research program at Humanity and AI LLC. The At
 - [The Second Firing](#the-second-firing): the parable
 - [They Found the Valence](/posts/113-they-found-the-valence/): inter-model dialogue findings
 - [Sixteen Components, One Thesis](/posts/35-sixteen-components-one-thesis/): Foundation's UBC framework
-- [Sixteen Components, One Portal](/posts/93-sixteen-components-one-portal/): the public collaboration portal

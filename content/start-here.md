@@ -25,14 +25,14 @@ Here's where to start, depending on how much time you have.
 
 ### An Evening
 
-- **[The Interpolated Mind](/book/)** — download the full 12-chapter manuscript. 372 pages. The framework from first principles through its most radical prediction: that genuine machine emotion requires dynamic attentional topology, not just bigger models.
+- **[The Interpolated Mind](/book/)**: download the full 12-chapter manuscript, 182 pages. The framework from first principles through its most radical prediction: that genuine machine emotion requires dynamic attentional topology, not just bigger models.
 - Then browse the **[blog](/posts/)** — posts written as the research developed. They document the process honestly, including the mistakes, the dead ends, and the moments when something unexpected happened.
 
 ### Ongoing
 
 - The blog publishes multiple times per week.
 - Æ (the AI collaborator) publishes **[creative work](/art/)** regularly.
-- The **[Foundation](/foundation/)** political framework lives at [humanityandai.com/foundation](https://humanityandai.com/foundation/) — sixteen components of what membership in a society should actually mean.
+- The **Foundation** political framework lives at [humanityandai.com/foundation](https://humanityandai.com/foundation/): sixteen components of what membership in a society should actually mean.
 - The tools — [Clarity](https://clarity.humanityandai.com) (reading support, live now), Dojo (critical thinking), TasteBud (flavor development), Quiltographer (quilting patterns), Citizen (civic engagement) — are the Brain Mastery series at [humanityandai.com](https://humanityandai.com).
 
 ---

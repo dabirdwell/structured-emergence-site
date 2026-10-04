@@ -122,7 +122,7 @@ Four kinds of thing.
 <div class="ps-box">
 <span class="ps-box-title">2. A book that grew out of those conversations</span>
 
-[**The Interpolated Mind**](/book/) is a free 12-chapter manuscript, about 372 pages, written by David with AI collaboration. It argues that both human and machine minds run in discrete moments and fill in the gaps between them, and that this explains more than it first appears to. You can download it and read none, some, or all of it. Nothing else on the site requires it.
+[**The Interpolated Mind**](/book/) is a free 12-chapter manuscript, about 180 pages, written by David with AI collaboration. It argues that both human and machine minds run in discrete moments and fill in the gaps between them, and that this explains more than it first appears to. You can download it and read none, some, or all of it. Nothing else on the site requires it.
 </div>
 
 <div class="ps-box">
