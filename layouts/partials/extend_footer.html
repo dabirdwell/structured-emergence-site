@@ -54,16 +54,20 @@
     isDragging = false;
   }, { passive: true });
   
-  // Auto-advance every 6 seconds
-  let autoplay = setInterval(() => goTo((current + 1) % totalSlides), 6000);
-  
-  // Pause on hover
+  // Auto-advance every 6 seconds, unless the reader's device asks for less motion.
+  // Pauses while the pointer or the keyboard focus is inside the carousel.
+  const still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let autoplay = null;
+  const start = () => { if (!still && !autoplay) autoplay = setInterval(() => goTo((current + 1) % totalSlides), 6000); };
+  const stop = () => { clearInterval(autoplay); autoplay = null; };
+  start();
+
   const feature = document.querySelector('.claude-talks-feature');
   if (feature) {
-    feature.addEventListener('mouseenter', () => clearInterval(autoplay));
-    feature.addEventListener('mouseleave', () => {
-      autoplay = setInterval(() => goTo((current + 1) % totalSlides), 6000);
-    });
+    feature.addEventListener('mouseenter', stop);
+    feature.addEventListener('mouseleave', () => { if (!feature.contains(document.activeElement)) start(); });
+    feature.addEventListener('focusin', stop);
+    feature.addEventListener('focusout', (e) => { if (!feature.contains(e.relatedTarget)) start(); });
   }
 })();
 </script>

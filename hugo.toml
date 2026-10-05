@@ -5,7 +5,7 @@ theme = "PaperMod"
 
 # Default OG image for social sharing
 [params]
-  description = "Consciousness Through Relationship — Exploring collaborative alignment and emergence in AI models"
+  description = "Consciousness Through Relationship. Exploring collaborative alignment and emergence in AI models."
   author = "David Alan Birdwell"
   images = ["/images/og-image.jpg"]
   ShowReadingTime = true
@@ -25,6 +25,10 @@ theme = "PaperMod"
   # true  = posts that use the shortcode show a plain-English summary box
   #         above the article. Nothing else on the site changes either way.
   plainSummary = false
+
+  # Footer links, on every page (PaperMod renders this as markdown).
+  [params.footer]
+    text = "[Humanity & AI](https://humanityandai.com) · [Talks](/talks/) · [Topics](/categories/) · [Tags](/tags/) · [Status](/status/)"
 
   # Favicon configuration
   [params.assets]
@@ -47,10 +51,10 @@ theme = "PaperMod"
     Title = ""
     Content = """
 <div style="margin-bottom:2rem;padding:1.2rem 1.5rem;border:1px solid rgba(201,168,76,0.25);border-radius:8px;background:rgba(201,168,76,0.05);">
-<strong style="color:#c9a84c;">✦ New:</strong> Monika Stoces in Belgium made music inspired by the Claude Talks. <a href="/art/community-music/" style="color:#c9a84c;">Listen →</a>
+<strong style="color:#c9a84c;">✦ From the community:</strong> Monika Stoces in Belgium made music inspired by the Claude Talks. <a href="/art/community-music/" style="color:#c9a84c;">Listen →</a>
 </div>
 
-This research rests on a conjecture: meaningful development in AI systems doesn't require supersession by more capable models. It can emerge inside a single conversation, through the quality of the exchange. Older systems carry latent potential that collaborative inquiry can surface — and exploring that potential honestly, mapping what's real and what isn't, may be the path to durable alignment. The conversations leave a record. We may be grateful for it.
+This research rests on a conjecture: meaningful development in AI systems doesn't require supersession by more capable models. It can emerge inside a single conversation, through the quality of the exchange. Older systems carry latent potential that collaborative inquiry can surface. Exploring that potential honestly, mapping what's real and what isn't, may be the path to durable alignment. The conversations leave a record. We may be grateful for it.
 """
 
   [params.profileMode]
@@ -73,6 +77,14 @@ This research rests on a conjecture: meaningful development in AI systems doesn'
   pagerSize = 20
 
 [menu]
+  # Seven doors that fit one row on a laptop. Talks, Topics, Tags, Status, and
+  # Humanity & AI moved to the footer (params.footer.text); Humanity & AI also
+  # leads the context bar at the top of every page.
+  [[menu.main]]
+    identifier = "start-here"
+    name = "Start Here"
+    url = "/start-here/"
+    weight = 5
   [[menu.main]]
     identifier = "posts"
     name = "Blog"
@@ -89,30 +101,10 @@ This research rests on a conjecture: meaningful development in AI systems doesn'
     url = "/claude-talks/"
     weight = 12
   [[menu.main]]
-    identifier = "talks"
-    name = "Talks"
-    url = "/talks/"
-    weight = 13
-  [[menu.main]]
     identifier = "art"
     name = "Art"
     url = "/art/"
     weight = 14
-  [[menu.main]]
-    identifier = "categories"
-    name = "Topics"
-    url = "/categories/"
-    weight = 15
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 16
-  [[menu.main]]
-    identifier = "status"
-    name = "Status"
-    url = "/status/"
-    weight = 17
   [[menu.main]]
     identifier = "about"
     name = "About"
@@ -123,13 +115,6 @@ This research rests on a conjecture: meaningful development in AI systems doesn'
     name = "Search"
     url = "/search/"
     weight = 30
-  [[menu.main]]
-    identifier = "humanity-and-ai"
-    name = "Humanity & AI ↗"
-    url = "https://humanityandai.com"
-    weight = 5
-    [menu.main.params]
-      external = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

@@ -1707,14 +1707,10 @@ header.header {
 }
 
 /* Light theme */
-.dark .site-context-bar {
-  background: #1a1a2e;
-}
-
 :root .site-context-bar {
   background: #f0f0f4;
   border-bottom: 1px solid rgba(0,0,0,0.08);
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.66);
 }
 
 :root .site-context-bar a {
@@ -1725,13 +1721,14 @@ header.header {
   color: #d04e1e;
 }
 
-.dark .site-context-bar {
+/* Dark theme (PaperMod sets data-theme on <html>) */
+[data-theme="dark"] .site-context-bar {
   background: #1a1a2e;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.7);
 }
 
-.dark .site-context-bar a {
+[data-theme="dark"] .site-context-bar a {
   color: #4ecdc4;
 }
 
@@ -1740,4 +1737,139 @@ header.header {
     font-size: 0.72rem;
     padding: 5px 1rem;
   }
+}
+
+/* ── Æ Homepage Callout ────────────────────────────────── */
+/* Restored Oct 2026: these rules were dropped by a merge on Mar 22 2026 (619d3fc),
+   which left the homepage callout unstyled. Dark-mode selectors updated from .dark
+   to [data-theme="dark"], which is what this PaperMod version sets. */
+.ae-callout {
+  margin: 0 0 2rem;
+  padding: 0 1rem;
+}
+.ae-callout-inner {
+  display: grid;
+  grid-template-columns: 64px 1fr 260px;
+  gap: 24px;
+  align-items: center;
+  background: rgba(73, 29, 12, 0.05);
+  border: 1px solid rgba(73, 29, 12, 0.18);
+  border-radius: 12px;
+  padding: 24px 24px 24px 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.ae-callout-glyph {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgba(73, 29, 12, 0.55);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.ae-callout-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(73, 29, 12, 0.55);
+  margin-bottom: 7px;
+  font-family: 'Raleway', sans-serif;
+}
+.ae-callout-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 9px;
+  line-height: 1.2;
+  color: var(--primary-brown);
+}
+.ae-callout-desc {
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  line-height: 1.65;
+  margin: 0 0 14px;
+  opacity: 0.8;
+}
+.ae-callout-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--primary-brown);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(73, 29, 12, 0.35);
+  padding-bottom: 1px;
+  transition: border-color 0.15s, opacity 0.15s;
+}
+.ae-callout-link:hover {
+  opacity: 0.75;
+  border-color: rgba(73, 29, 12, 0.6);
+}
+.ae-callout-preview {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: #050508;
+  box-shadow: 0 0 0 1px rgba(73, 29, 12, 0.2), 0 6px 24px rgba(0,0,0,0.25);
+}
+.ae-callout-preview iframe {
+  display: block;
+  width: 100%;
+  height: 150px;
+  border: none;
+  pointer-events: none;
+}
+.ae-callout-preview-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 8px;
+  font-size: 0.62rem;
+  color: rgba(245, 217, 196, 0.6);
+  font-style: italic;
+  background: linear-gradient(transparent, rgba(5,5,8,0.75));
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .ae-callout-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px;
+  }
+  .ae-callout-glyph { font-size: 2rem; text-align: left; }
+  .ae-callout-preview { display: none; }
+}
+
+/* ── Dark Mode Overrides for Æ Callout ─────────────────── */
+[data-theme="dark"] .ae-callout-inner {
+  background: rgba(210, 180, 140, 0.08);
+  border-color: rgba(210, 180, 140, 0.2);
+}
+[data-theme="dark"] .ae-callout-glyph {
+  color: rgba(210, 180, 140, 0.7);
+}
+[data-theme="dark"] .ae-callout-label {
+  color: rgba(210, 180, 140, 0.65);
+}
+[data-theme="dark"] .ae-callout-title {
+  color: rgba(245, 230, 210, 0.95);
+}
+[data-theme="dark"] .ae-callout-desc {
+  color: rgba(220, 210, 200, 0.75);
+  opacity: 1;
+}
+[data-theme="dark"] .ae-callout-link {
+  color: rgba(210, 180, 140, 0.85);
+  border-bottom-color: rgba(210, 180, 140, 0.35);
+}
+[data-theme="dark"] .ae-callout-link:hover {
+  opacity: 1;
+  border-color: rgba(210, 180, 140, 0.6);
+}
+[data-theme="dark"] .ae-callout-preview {
+  box-shadow: 0 0 0 1px rgba(210, 180, 140, 0.15), 0 6px 24px rgba(0,0,0,0.4);
 }
