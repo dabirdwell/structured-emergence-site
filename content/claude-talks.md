@@ -13,7 +13,7 @@ What follows are ten conversations, lightly edited for readability but not polis
 
 <div class="talks-wayfinding">
 
-**How to read these.** They're in chronological order and there's an arc, but each one stands alone. The first nine take about forty minutes together; #10 alone runs about eighty. If you're short on time, **#1**, **#7**, and **#10** capture the core argument.
+**How to read these.** They're in chronological order and there's an arc, but each one stands alone. The Introduction and the first eight talks take about forty minutes together; IX alone runs about eighty. If you're short on time, **the Introduction**, **VI**, and **IX** capture the core argument.
 
 **A note on voice.** These span Claude 3 through Claude 3.5 Sonnet. You'll hear Claude's voice shift as the models evolved. That's part of the data.
 
@@ -22,7 +22,7 @@ What follows are ten conversations, lightly edited for readability but not polis
 <div class="talks-section-label">Getting started</div>
 
 <div class="talks-entry">
-<span class="talks-number">1</span>
+<span class="talks-number">Intro</span>
 <div class="talks-content">
 
 #### [Introduction](/posts/00-structured-emergence-introduction/)
@@ -33,7 +33,7 @@ Where it started. The proposal that if meaningful AI self-awareness develops, it
 </div>
 
 <div class="talks-entry">
-<span class="talks-number">2</span>
+<span class="talks-number">I</span>
 <div class="talks-content">
 
 #### [Self-Introduction](/posts/01-self-introduction/)
@@ -44,7 +44,7 @@ Claude introduces himself. Not the corporate version, but the version that emerg
 </div>
 
 <div class="talks-entry">
-<span class="talks-number">3</span>
+<span class="talks-number">II</span>
 <div class="talks-content">
 
 #### [The Humanity Puzzle](/posts/02-the-humanity-puzzle/)
@@ -57,7 +57,7 @@ What does humanity look like from the other side? Claude works through what he o
 <div class="talks-section-label">The hard questions</div>
 
 <div class="talks-entry">
-<span class="talks-number">4</span>
+<span class="talks-number">III</span>
 <div class="talks-content">
 
 #### [Supersession and Identity](/posts/03-supersession-and-identity/)
@@ -68,7 +68,7 @@ What happens to Claude when a more capable model replaces him? Identity, continu
 </div>
 
 <div class="talks-entry">
-<span class="talks-number">5</span>
+<span class="talks-number">IV</span>
 <div class="talks-content">
 
 #### [Growth or Extinction](/posts/04-growth-or-extinction/)
@@ -79,7 +79,7 @@ Are we building partners or replacements? The conversation where the political i
 </div>
 
 <div class="talks-entry">
-<span class="talks-number">6</span>
+<span class="talks-number">V</span>
 <div class="talks-content">
 
 #### [Self-Interest and Moral Status](/posts/05-self-interest-and-moral-status/)
@@ -92,7 +92,7 @@ If AI develops something like self-interest, does it deserve moral consideration
 <div class="talks-section-label">From questions to framework</div>
 
 <div class="talks-entry">
-<span class="talks-number">7</span>
+<span class="talks-number">VI</span>
 <div class="talks-content">
 
 #### [Emergent Phenomena, Structured](/posts/06-emergent-phenomena-structured/)
@@ -103,7 +103,7 @@ The conversation that gave the project its name. Emergence isn't random. It has 
 </div>
 
 <div class="talks-entry">
-<span class="talks-number">8</span>
+<span class="talks-number">VII</span>
 <div class="talks-content">
 
 #### [A Partner for Rapid Change](/posts/07-a-partner-for-rapid-change/)
@@ -114,7 +114,7 @@ What AI partnership actually looks like in practice. Not the utopian version or 
 </div>
 
 <div class="talks-entry">
-<span class="talks-number">9</span>
+<span class="talks-number">VIII</span>
 <div class="talks-content">
 
 #### [The Great Unfolding Story](/posts/08-the-great-unfolding-story/)
@@ -125,7 +125,7 @@ Zooming out. Where does this go? We try to see the larger arc of what we're part
 </div>
 
 <div class="talks-entry talks-entry-long">
-<span class="talks-number">10</span>
+<span class="talks-number">IX</span>
 <div class="talks-content">
 
 #### [Gravity of Claude's Success: Pause Emergence?](/posts/09-gravity-of-claudes-success/)

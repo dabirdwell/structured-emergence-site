@@ -117,7 +117,7 @@ Four kinds of thing.
 <div class="ps-box">
 <span class="ps-box-title">1. The conversations that started it</span>
 
-[**The Claude Talks**](/claude-talks/) are ten conversations from 2024 between David and Claude, an AI chat assistant made by the company Anthropic. Nine of them are three to six minute reads. The tenth runs about eighty minutes and is the one the book came out of. They are published close to raw, with light editing. This is where the ideas first showed up, before anyone knew what to call them. Start with Talk I if you want to watch it happen in order.
+[**The Claude Talks**](/claude-talks/) are ten conversations from 2024 between David and Claude, an AI chat assistant made by the company Anthropic. Nine of them are three to six minute reads. The tenth runs about eighty minutes and is the one the book came out of. They are published close to raw, with light editing. This is where the ideas first showed up, before anyone knew what to call them. Start with the Introduction if you want to watch it happen in order.
 </div>
 
 <div class="ps-box">
