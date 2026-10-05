@@ -27,9 +27,11 @@ tags: ["book", "consciousness", "framework"]
 
 ## Listen
 
-🎧 **[NotebookLM Deep Dive Podcast: Full Version (58 min)](/media/interpolated-mind-podcast-full.mp3)**
+Two audio overviews of the book, generated with NotebookLM, an AI tool from Google that turns documents into a podcast-style conversation.
 
-🎧 **[NotebookLM Deep Dive Podcast: Short Version (17 min)](/media/interpolated-mind-podcast-short.mp3)**
+🎧 **[Full version (58 min)](/media/interpolated-mind-podcast-full.mp3)**
+
+🎧 **[Short version (17 min)](/media/interpolated-mind-podcast-short.mp3)**
 
 ---
 
