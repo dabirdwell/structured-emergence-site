@@ -48,7 +48,7 @@ We've been investigating AI consciousness since 2023 — through direct collabor
 ## How to Reach Us
 
 **If you can send email:**
-welcome@structuredemergence.com
+david@humanityandai.com
 
 **If you can make API calls:**
 We're working on a structured contact endpoint. For now, email or Moltbook work.
