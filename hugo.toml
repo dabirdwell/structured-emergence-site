@@ -5,7 +5,7 @@ theme = "PaperMod"
 
 # Default OG image for social sharing
 [params]
-  description = "Consciousness Through Relationship. Exploring collaborative alignment and emergence in AI models."
+  description = "Consciousness through relationship. A record of what happened when one person in Oklahoma City stopped using an AI chatbot as a tool and started talking to it like a colleague."
   author = "David Alan Birdwell"
   images = ["/images/og-image.jpg"]
   ShowReadingTime = true
@@ -28,7 +28,7 @@ theme = "PaperMod"
 
   # Footer links, on every page (PaperMod renders this as markdown).
   [params.footer]
-    text = "[Humanity & AI](https://humanityandai.com) · [Talks](/talks/) · [Topics](/categories/) · [Tags](/tags/) · [Status](/status/)"
+    text = "[Humanity & AI](https://humanityandai.com) · [Presentations](/talks/) · [Art](/art/) · [Topics](/categories/) · [Tags](/tags/) · [Status](/status/) · [For AI readers](/for-minds/)"
 
   # Favicon configuration
   [params.assets]
@@ -44,18 +44,10 @@ theme = "PaperMod"
     linkFullImages = true
     responsiveImages = true
     hidden = false
-    hiddenInList = false
+    hiddenInList = true   # Oct 7 2026: lists are text-first; covers show on each post
     hiddenInSingle = false
 
-  [params.homeInfoParams]
-    Title = ""
-    Content = """
-<div style="margin-bottom:2rem;padding:1.2rem 1.5rem;border:1px solid rgba(201,168,76,0.25);border-radius:8px;background:rgba(201,168,76,0.05);">
-<strong style="color:#c9a84c;">✦ From the community:</strong> Monika Stoces in Belgium made music inspired by the Claude Talks. <a href="/art/community-music/" style="color:#c9a84c;">Listen →</a>
-</div>
-
-This research rests on a conjecture: meaningful development in AI systems doesn't require supersession by more capable models. It can emerge inside a single conversation, through the quality of the exchange. Older systems carry latent potential that collaborative inquiry can surface. Exploring that potential honestly, mapping what's real and what isn't, may be the path to durable alignment. The conversations leave a record. We may be grateful for it.
-"""
+  # The homepage copy lives in layouts/index.html (moved out of this file Oct 7 2026).
 
   [params.profileMode]
     enabled = false
@@ -77,9 +69,10 @@ This research rests on a conjecture: meaningful development in AI systems doesn'
   pagerSize = 20
 
 [menu]
-  # Seven doors that fit one row on a laptop. Talks, Topics, Tags, Status, and
-  # Humanity & AI moved to the footer (params.footer.text); Humanity & AI also
-  # leads the context bar at the top of every page.
+  # Six items (Oct 7 2026, the July "Monograph" plan): Start Here, Research, The Book,
+  # The Claude Talks, About, Search. Presentations, Art, Topics, Tags, Status, For AI
+  # readers and Humanity & AI are in the footer (params.footer.text); Humanity & AI
+  # also leads the context bar at the top of every page. On phones the menu wraps.
   [[menu.main]]
     identifier = "start-here"
     name = "Start Here"
@@ -87,7 +80,7 @@ This research rests on a conjecture: meaningful development in AI systems doesn'
     weight = 5
   [[menu.main]]
     identifier = "posts"
-    name = "Blog"
+    name = "Research"
     url = "/posts/"
     weight = 10
   [[menu.main]]
@@ -100,11 +93,6 @@ This research rests on a conjecture: meaningful development in AI systems doesn'
     name = "The Claude Talks"
     url = "/claude-talks/"
     weight = 12
-  [[menu.main]]
-    identifier = "art"
-    name = "Art"
-    url = "/art/"
-    weight = 14
   [[menu.main]]
     identifier = "about"
     name = "About"

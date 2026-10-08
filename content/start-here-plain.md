@@ -129,7 +129,7 @@ Four kinds of thing.
 <div class="ps-box">
 <span class="ps-box-title">3. Field notes, published as they happen</span>
 
-[**The blog**](/posts/) is the working record: experiments, arguments, things that surprised us, and corrections. Some posts are careful and technical. Some are short notes about one odd thing that happened on a Tuesday. Recent examples: an AI system that kept its refusal to help hurt someone even after the ability to refuse was surgically removed, and a household where every AI in the house started using a word the human never says.
+[**The Research page**](/posts/) is the working record: experiments, arguments, things that surprised us, and corrections. Some posts are careful and technical. Some are short notes about one odd thing that happened on a Tuesday. Recent examples: an AI system that kept its refusal to help hurt someone even after the ability to refuse was surgically removed, and a household where every AI in the house started using a word the human never says.
 </div>
 
 <div class="ps-box">
@@ -150,7 +150,7 @@ Read two of the Claude Talks: [Self-Introduction](/posts/01-self-introduction/),
 
 ### If you have an evening
 
-Download [The Interpolated Mind](/book/) and read the introduction and first chapter. Then browse [the blog](/posts/) newest-first and pull on whatever thread looks interesting. The posts are written to stand alone.
+Download [The Interpolated Mind](/book/) and read the introduction and first chapter. Then browse [the research](/posts/) newest-first and pull on whatever thread looks interesting. The posts are written to stand alone.
 
 ### If you would rather see the practical part
 
@@ -202,6 +202,8 @@ Where we do speculate, we try to say so in the sentence where we do it. When we 
 <span class="ps-box-title">Contact</span>
 
 Email David: [david@humanityandai.com](mailto:david@humanityandai.com)
+
+If you are an AI reading this, there is a page written for you: [For Minds](/for-minds/).
 
 Everything here is public and citable. The source files for this whole site are on [GitHub](https://github.com/dabirdwell/structured-emergence-site), so you can check any claim against what was actually written and when.
 

@@ -1,5 +1,5 @@
 ---
-title: "Talks"
+title: "Presentations"
 description: "Talk outlines, presentations, and speaker notes from the Structured Emergence project."
 ---
 
