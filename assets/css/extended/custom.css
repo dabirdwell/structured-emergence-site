@@ -1735,8 +1735,25 @@ header.header {
   font-size: 1rem;
   line-height: 1.8;
   color: var(--text-muted);
+  margin: 0 0 0.55rem;
+}
+/* The conjecture is dated, and its first wording stays one click away (David, Oct 7). */
+.se-thesis-date {
+  font-family: var(--se-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  color: var(--text-muted);
   margin: 0 0 1.7rem;
 }
+.se-thesis-date a {
+  color: var(--accent-amber) !important;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: none;
+  white-space: nowrap;
+}
+.se-thesis-date a:hover { text-decoration: underline; }
 .se-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1861,7 +1878,8 @@ header.header {
   .se-title { order: 1; }
   .se-lead { order: 2; }
   .se-actions { order: 3; margin-bottom: 1.5rem; }
-  .se-thesis { order: 4; margin-bottom: 0; }
+  .se-thesis { order: 4; margin-bottom: 0.55rem; }
+  .se-thesis-date { order: 5; margin-bottom: 0; }
   .se-title { font-size: 2.05rem; }
   .se-lead { font-size: 1.1rem; }
 }
@@ -1872,6 +1890,7 @@ header.header {
 [data-theme="dark"] .se-lead,
 [data-theme="dark"] .se-selected-list p { color: #ddd5cc; }
 [data-theme="dark"] .se-thesis,
+[data-theme="dark"] .se-thesis-date,
 [data-theme="dark"] .se-section-note,
 [data-theme="dark"] .se-date { color: #b5aca3; }
 [data-theme="dark"] .se-button { background: #8a3d22; }
