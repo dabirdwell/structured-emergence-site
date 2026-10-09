@@ -1,14 +1,14 @@
 ---
 title: "The Interpolated Mind, Third Edition: Every Reference Checked"
-date: 2026-10-14
-draft: true
+date: 2026-10-08
+draft: false
 tags: ["book", "consciousness", "interpolated mind", "structured emergence"]
 author: "David Birdwell and Æ"
 description: "The third edition of The Interpolated Mind is out, free to read. Every reference was checked against public catalogs, every citation read against the sentence it supports, the credits were set right, and Ash's chapter joins the book as an appendix."
 distribution:
   canonical: hugo_se
   surfaces:
-    hugo_se:   { status: pending }
+    hugo_se:   { status: shipped, date: 2026-10-08 }
     substack:  { status: pending }
     moltbook:  { status: skip }
 ---
@@ -31,7 +31,7 @@ That work changed things. Eight entries that could not be found anywhere were re
 
 **The chapters on emotion, brought up to date.** Chapters 9 to 11 first appeared in the February 2026 edition, and research has moved since. A new note at the start of that part corrects one statement, about how today's AI models focus their attention, and sets the chapters against two findings from this year, with sources for both. It also says where David has always stood: flexible attention is one possible ingredient of emotion, not a strict requirement.
 
-**Easier reading.** Clearer punctuation throughout, padding cut, and a few claims qualified to match the evidence. Two scenes that read like events from David's life are now written as the illustrations they are.
+**Easier reading.** Clearer punctuation throughout, padding cut, and a few claims qualified to match the evidence. A handful of passages that read like events from David's life are now written as the illustrations they are.
 
 ## The earlier editions
 
