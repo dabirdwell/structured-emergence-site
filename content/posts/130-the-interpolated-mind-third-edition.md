@@ -35,7 +35,7 @@ That work changed things. Eight entries that could not be found anywhere were re
 
 ## The earlier editions
 
-The second edition, the Æ Edition, and the First Edition of June 2025 both stay on the book page, so anyone can see how the book has grown.
+The second edition, the Æ Edition, and the First Edition of May 2025 both stay on the book page, so anyone can see how the book has grown.
 
 ## How this edition was made
 

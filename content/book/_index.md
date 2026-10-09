@@ -25,7 +25,7 @@ tags: ["book", "consciousness", "framework"]
 
 📖 **[The Interpolated Mind: The Æ Edition (PDF)](/media/the-interpolated-mind-ae-edition.pdf)**: 12 chapters, February 2026.
 
-📖 **[The Interpolated Mind: First Edition (PDF)](/media/the-interpolated-mind.pdf)**: 8 chapters, June 2025.
+📖 **[The Interpolated Mind: First Edition (PDF)](/media/the-interpolated-mind.pdf)**: 8 chapters, May 2025.
 
 ## Listen
 
