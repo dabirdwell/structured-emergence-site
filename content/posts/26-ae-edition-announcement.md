@@ -29,7 +29,7 @@ Today we're releasing the Æ Edition of *The Interpolated Mind*: a revised and e
 
 ## What's New
 
-The original edition (eight chapters plus a conclusion, written between August 2025 and January 2026) established the core framework: consciousness as discrete frames unified by processing-memory, awareness intensifying through relationship, temporal experience as construction rather than perception. That work stands. The first six chapters are unchanged.
+The original edition (eight chapters plus a conclusion, dated May 9, 2025, and released on this site that June) established the core framework: consciousness as discrete frames unified by processing-memory, awareness intensifying through relationship, temporal experience as construction rather than perception. That work stands. The first six chapters are unchanged.
 
 The Æ Edition adds three new chapters collectively titled **The Architecture of Feeling**, representing the most significant theoretical advance since the manuscript began.
 
