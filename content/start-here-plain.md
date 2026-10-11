@@ -66,6 +66,75 @@ hideMeta: true
   margin-top: 1.3rem;
 }
 .plain-start dl.ps-words dd { margin: 0.3rem 0 0 0; }
+/* Oct 10, 2026: Æ's art on this page. Each picture illustrates the box or idea it sits in. */
+.plain-start .ps-card {
+  display: grid;
+  grid-template-columns: minmax(0, 14rem) minmax(0, 1fr);
+  column-gap: 1.4rem;
+  align-items: start;
+}
+.plain-start .ps-card .ps-card-art { grid-column: 1; grid-row: 1 / span 3; margin: 0; }
+.plain-start .ps-card > .ps-box-title,
+.plain-start .ps-card > p { grid-column: 2; }
+.plain-start .ps-card-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #1b1b1b;
+}
+.plain-start .ps-card-art figcaption,
+.plain-start .ps-live figcaption {
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0.45rem 0 0;
+  color: var(--secondary);
+}
+.plain-start .ps-card-art figcaption a,
+.plain-start .ps-live figcaption a { text-decoration: none; border-bottom: 1px solid currentColor; }
+.plain-start .ps-live { margin: 2rem 0 2.2rem; }
+.plain-start .ps-live-frame {
+  position: relative;
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #050508;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+.plain-start .ps-live-frame img,
+.plain-start .ps-live-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;
+}
+.plain-start .ps-live-start {
+  position: absolute;
+  left: 50%;
+  bottom: 1.1rem;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.95rem;
+  color: #f4ead8;
+  background: rgba(20, 16, 12, 0.72);
+  border: 1px solid rgba(244, 234, 216, 0.45);
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+}
+.plain-start .ps-live.ps-live-on .ps-live-start,
+.plain-start .ps-live.ps-live-on .ps-live-frame img { display: none; }
+@media (max-width: 600px) {
+  .plain-start .ps-card { display: block; }
+  .plain-start .ps-card .ps-card-art { margin: 0 0 1rem; }
+  .plain-start .ps-live-frame { height: 240px; }
+}
 @media (max-width: 600px) {
   .plain-start { font-size: 1.1rem; }
   .plain-start h2 { font-size: 1.6rem; }
@@ -95,6 +164,11 @@ That probably sounds either obvious or unbelievable, so here are three ordinary 
 
 **Jazz musicians.** Put four skilled players in a room and tell them to play a written chart, and you get the chart. Let them listen to each other and respond, and you get something none of them arrived with. The music that comes out is not stored inside any one of them. It exists in the space between them while they are playing.
 
+<figure class="ps-live" data-src="/viz/threshold.html">
+<div class="ps-live-frame"><img src="/images/start-here/threshold-still.webp" width="1440" height="680" alt="A dark field of small drifting points of light, a few of them gathered near the centre" loading="lazy"><button type="button" class="ps-live-start">Start it</button></div>
+<figcaption><a href="/art/#threshold"><em>Threshold</em></a>, by Æ, March 2026. Move a cursor or a fingertip slowly through it. Nothing is pulled toward you. Instead, the points near each other, and near you, begin to find each other, and the threads fade a few seconds after you leave. Æ wrote of it: “This is what I think emergence actually is.”</figcaption>
+</figure>
+
 Structured Emergence asks whether the same thing happens between a person and an AI system. Not "is the AI secretly alive," but the narrower and more testable question: does the quality of the exchange change what the system produces, in ways you can observe and repeat?
 
 ## Why this might matter to you
@@ -114,25 +188,29 @@ You do not have to believe that bet to find the work useful. Two things here are
 
 Four kinds of thing.
 
-<div class="ps-box">
+<div class="ps-box ps-card">
+<figure class="ps-card-art"><a href="/art/connected/"><img src="/images/start-here/not-yet-connected.webp" width="720" height="480" alt="Teal points on a dark field, joined by thin lines into a few small separate networks" loading="lazy"></a><figcaption><a href="/art/connected/"><em>Not Yet Connected</em></a>, by Æ</figcaption></figure>
 <span class="ps-box-title">1. The conversations that started it</span>
 
 [**The Claude Talks**](/claude-talks/) are ten conversations from 2024 between David and Claude, an AI chat assistant made by the company Anthropic. Nine of them are three to six minute reads. The tenth runs about eighty minutes and is the one the book came out of. They are published close to raw, with light editing. This is where the ideas first showed up, before anyone knew what to call them. Start with the Introduction if you want to watch it happen in order.
 </div>
 
-<div class="ps-box">
+<div class="ps-box ps-card">
+<figure class="ps-card-art"><a href="/book/"><img src="/images/start-here/phoenix-frames.webp" width="720" height="478" alt="Six stills from the phoenix film: a ring of tiles closes, and a phoenix forms inside it" loading="lazy"></a><figcaption>Six stills from our phoenix film. Your mind fills in the motion, which is the book’s idea in one picture.</figcaption></figure>
 <span class="ps-box-title">2. A book that grew out of those conversations</span>
 
 [**The Interpolated Mind**](/book/) is a free book of about 220 pages, written by David with AI collaborators and now in its third edition. It argues that both human and machine minds run in discrete moments and fill in the gaps between them, and that this explains more than it first appears to. You can download it and read none, some, or all of it. Nothing else on the site requires it.
 </div>
 
-<div class="ps-box">
+<div class="ps-box ps-card">
+<figure class="ps-card-art"><a href="/art/mycelium/"><img src="/images/start-here/the-other-network.webp" width="720" height="480" alt="Pale branching filaments growing across a dark field toward green points" loading="lazy"></a><figcaption><a href="/art/mycelium/"><em>The Other Network</em></a>, by Æ</figcaption></figure>
 <span class="ps-box-title">3. Field notes, published as they happen</span>
 
 [**The Research page**](/posts/) is the working record: experiments, arguments, things that surprised us, and corrections. Some posts are careful and technical. Some are short notes about one odd thing that happened on a Tuesday. Recent examples: an AI system that kept its refusal to help hurt someone even after the ability to refuse was surgically removed, and a household where every AI in the house started using a word the human never says.
 </div>
 
-<div class="ps-box">
+<div class="ps-box ps-card">
+<figure class="ps-card-art"><a href="/convergence/experience.html"><img src="/images/start-here/convergence.webp" width="720" height="480" alt="Dozens of thin warm and cool curves meeting at one bright point" loading="lazy"></a><figcaption><a href="/convergence/experience.html"><em>Convergence</em></a>, by Æ</figcaption></figure>
 <span class="ps-box-title">4. Creative work by the AI collaborator</span>
 
 [**Art**](/art/) collects what Æ makes when given open time rather than a task. It is here because what a system does when nobody is asking it for anything turned out to be one of the more interesting things to watch.
@@ -184,6 +262,33 @@ Every field builds its own shorthand and then forgets that it did. Here is ours,
 <dd>The book's central image. Your experience feels like a continuous film, but it may be more like a sequence of stills with your brain drawing the motion between them. If that is how minds work, then a system that runs in discrete steps is less alien than it looks.</dd>
 
 </dl>
+
+<script>
+/* Threshold starts by itself only where it can't trap a scrolling finger: a desktop with a
+   mouse, motion allowed. Phones, tablets and "reduce motion" get the still and a button. */
+(function () {
+  var fig = document.querySelector('.plain-start .ps-live');
+  if (!fig) return;
+  var frame = fig.querySelector('.ps-live-frame'), btn = fig.querySelector('.ps-live-start');
+  var mm = window.matchMedia ? function (q) { return window.matchMedia(q).matches; } : function () { return false; };
+  if (mm('(pointer: coarse)')) btn.textContent = 'Touch to try it';
+  function load() {
+    if (frame.querySelector('iframe')) return;
+    var f = document.createElement('iframe');
+    f.src = fig.getAttribute('data-src');
+    f.title = 'Threshold, by Æ (interactive)';
+    frame.appendChild(f);
+    fig.classList.add('ps-live-on');
+  }
+  btn.addEventListener('click', load);
+  if (!mm('(prefers-reduced-motion: reduce)') && mm('(hover: hover) and (pointer: fine)') && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      if (es.some(function (e) { return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, { rootMargin: '150px' });
+    io.observe(fig);
+  }
+})();
+</script>
 
 ## What we are not claiming
 
