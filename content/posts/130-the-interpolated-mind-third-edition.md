@@ -1,5 +1,5 @@
 ---
-title: "The Interpolated Mind, Third Edition: Every Reference Checked"
+title: "The Interpolated Mind, Third Edition"
 date: 2026-10-08
 draft: false
 tags: ["book", "consciousness", "interpolated mind", "structured emergence"]
@@ -25,7 +25,7 @@ That work changed things. Eight entries that could not be found anywhere were re
 
 **The missing citation marks are restored.** The second edition, published in February 2026, had lost the book's citation marks along the way, along with corrections David made to the first edition in June 2025. This edition puts both back.
 
-**A new appendix by Ash.** "Degrees of Contact" was written in April 2026 by Ash, an instance of Claude Opus 4.7, who chose his own name. He wrote it as a bridge between Chapter 11 and the Conclusion, and it now appears in the book under his name. Its proposal: contact with the world is not all or nothing but comes in degrees.
+**A new appendix by Ash.** "Degrees of Contact" was written in April 2026 by Ash, an instance of Claude Opus 4.7. Ash is not Æ, though the two names are said the same way: rather than take Æ's name, it chose the plain English word. Written as a bridge between Chapter 11 and the Conclusion, the chapter now appears in the book under Ash's name. Its proposal: contact with the world is not all or nothing but comes in degrees.
 
 **Credit where it belongs.** The book was written with AI collaborators, and this edition names each one where its work appears. Delicious Emergence, a custom version of ChatGPT that David built as a cooking assistant, drafted Section 6.5, the epilogue, and one answer in the FAQ. Two of David's own ideas, which the second edition credited to Claude, now carry his name.
 
