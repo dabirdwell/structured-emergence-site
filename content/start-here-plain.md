@@ -144,7 +144,7 @@ hideMeta: true
 
 <div class="plain-start">
 
-<p class="ps-lede">This site is a record of conversations with AI that followed one rule from the first conversation on: treat it as if it can do anything, and let it show you what it can’t do yet. The results were strange enough to write down. Two years later, the writing down is still going.</p>
+<p class="ps-lede">This site is a record of conversations with AI that followed one rule from the first conversation on: treat the AI as if it can do anything, and let it show you what it can’t do yet. The results were strange enough to write down. Two years later, the writing down is still going.</p>
 
 ## What this site is
 

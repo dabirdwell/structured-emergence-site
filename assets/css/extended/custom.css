@@ -1716,6 +1716,17 @@ header.header {
   --se-wide: min(1024px, calc(100vw - 3rem));
   margin: 2.8rem calc((100% - var(--se-wide)) / 2) 3.6rem;
 }
+/* The project's original phrase, kept as a small label above the question (David, Oct 11). */
+.se-kicker {
+  font-family: var(--se-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  margin: 0 0 0.75rem;
+}
+[data-theme="dark"] .se-kicker { color: #d4876a; }
 .se-title {
   font-family: var(--se-serif);
   font-size: 2.55rem;
