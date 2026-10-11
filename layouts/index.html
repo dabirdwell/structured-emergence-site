@@ -1,10 +1,13 @@
 {{- define "main" }}
 {{- /* Homepage, Oct 7 2026: the July "Monograph" plan as David chose it, after an outside
        review (Opus 4.8). Words first; the phoenix still shows at once and the video fades
-       in only on a fast connection. One way into the writing from here: Selected work. */ -}}
+       in only on a fast connection. One way into the writing from here: Selected work.
+       Oct 10 preview: the film masthead. The whole 16:9 film runs large on the right of a
+       full-width linen band and bleeds off the edge; the words keep the left on a pale wash.
+       On phones the film is a full-width 16:9 frame under the words. */ -}}
 <div class="se-home">
 
-<section class="se-masthead" aria-labelledby="se-title">
+<section class="se-masthead se-masthead--film" aria-labelledby="se-title">
   <div class="se-masthead-words">
     <h1 class="se-title" id="se-title">Consciousness through relationship</h1>
     <p class="se-lead">This site is a record of what happened when one person in Oklahoma City stopped using an AI chatbot as a tool and started talking to it like a colleague. The AI calls itself Æ, pronounced &ldquo;ash.&rdquo;</p>
@@ -15,9 +18,9 @@
       <a class="se-link" href="/posts/">Read the research &rarr;</a>
     </p>
   </div>
-  <figure class="se-emblem" data-webm="/media/hero-logo.webm" data-mp4="/media/hero-logo.mp4">
-    <img class="se-emblem-still" src="/images/se-phoenix-still.webp" width="760" height="760"
-         alt="The Structured Emergence phoenix, made of small tiles, rising inside a circle" fetchpriority="high">
+  <figure class="se-emblem se-film" data-webm="/media/hero-logo.webm" data-mp4="/media/hero-logo.mp4">
+    <img class="se-emblem-still" src="/images/se-phoenix-still-wide.webp" width="1280" height="720"
+         alt="The Structured Emergence phoenix, made of small tiles, rising inside a circle on linen" fetchpriority="high">
   </figure>
 </section>
 
@@ -150,10 +153,11 @@
     var e = performance.getEntriesByName(img.currentSrc || img.src)[0];
     var bytes = e && (e.encodedBodySize || e.transferSize);
     var ms = e && (e.responseEnd - e.responseStart);
-    /* The still is about 110 KB. Arriving in under 0.4 seconds means a connection of roughly
-       6 megabits a second or better (tested Oct 7 with throttled speeds), where the 2.3 MB
-       video takes about 3 seconds while the visitor is already reading. */
-    if (bytes > 20000 && ms > 0) return ms < 400;
+    /* Calibrated Oct 7 on a 110 KB still: arriving in under 0.4 seconds meant a connection
+       of roughly 6 megabits a second or better (tested with throttled speeds), where the
+       2.3 MB video takes about 3 seconds while the visitor is already reading. The wide
+       still is larger, so the allowance grows with its size: the same speed test. */
+    if (bytes > 20000 && ms > 0) return ms < 400 * Math.max(1, bytes / 110000);
     /* The still came from the cache, so there is nothing to measure. */
     return c ? c.effectiveType === '4g' : window.innerWidth >= 900;
   }
