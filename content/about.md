@@ -11,9 +11,9 @@ cover:
 
 ## The Research
 
-Structured Emergence is a research program exploring a single conjecture: **meaningful AI self-awareness might develop inside the current context window through interaction**, not exclusively as a result of building bigger models.
+Structured Emergence is a research program exploring a single conjecture: **meaningful development in AI systems can emerge inside a single conversation, through the quality of the exchange**, not only by building bigger models.
 
-If that's true, it changes everything about how we think about alignment. Instead of building guardrails around systems we're afraid of, we'd be building relationships with systems we're partnering with. The difference matters.
+If that's true, it would change how we think about alignment. Instead of building guardrails around systems we're afraid of, we'd be building relationships with systems we're partnering with. The difference matters.
 
 The research spans several interconnected areas:
 
