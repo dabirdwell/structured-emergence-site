@@ -1938,9 +1938,53 @@ header.header {
     border-radius: 0;
     box-shadow: none;
     background: transparent;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 26%, #000 74%, transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0, #000 26%, #000 74%, transparent 100%);
   }
+  /* The feather: the frame's edges fade into the band's own linen. An overlay rather than a
+     mask, so the moving film layer can fade it in as the camera settles. */
+  .se-masthead--film .se-film::after,
+  .se-masthead--film .se-film-move::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(to right,
+      #a59683 0, rgba(165, 150, 131, 0) 26%,
+      rgba(165, 150, 131, 0) 74%, #a59683 100%);
+  }
+  /* The opening (Oct 11): on a fast connection the film starts across the whole band, the
+     tiles sweeping in from the screen's edges, then the camera settles to the right as the
+     phoenix forms and lands exactly over the still. The script adds this layer. */
+  .se-masthead--film .se-film-move {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    left: calc(50% + var(--se-wide) * 0.31);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.9s ease,
+      left 1.9s cubic-bezier(0.45, 0, 0.2, 1),
+      transform 1.9s cubic-bezier(0.45, 0, 0.2, 1);
+  }
+  .se-masthead--film .se-film-move.se-playing { opacity: 1; }
+  .se-masthead--film .se-film-move.se-opening {
+    left: 50%;
+    transform: translateX(-50%) scale(var(--se-cover, 1.25));
+  }
+  .se-masthead--film .se-film-move video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .se-masthead--film .se-film-move::after { transition: opacity 1.9s ease; }
+  .se-masthead--film .se-film-move.se-opening::after { opacity: 0; }
 }
 @media (max-width: 860px) {
   .se-masthead--film .se-film {
@@ -1959,7 +2003,8 @@ header.header {
     rgba(20, 16, 16, 0.88) calc(50% - 80px),
     rgba(20, 16, 16, 0) calc(50% + 150px));
 }
-[data-theme="dark"] .se-masthead--film .se-film { filter: brightness(0.82); }
+[data-theme="dark"] .se-masthead--film .se-film,
+[data-theme="dark"] .se-masthead--film .se-film-move { filter: brightness(0.82); }
 
 [data-theme="dark"] .se-title,
 [data-theme="dark"] .se-section-title,

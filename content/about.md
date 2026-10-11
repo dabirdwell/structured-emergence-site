@@ -60,7 +60,7 @@ Originally developed under the name Universal Basic Citizenship, the framework w
 Oklahoma has more than 20,000 known abandoned oil and gas wells, environmental scars from a previous era of extraction. Phoenix Wells is working to turn some of them into clean energy that keeps its value in the communities that host them, with room for distributed compute: small computer centers spread across the state, each running on energy from its own well site. Infrastructure as transformation.
 
 ### Community
-We're active on [Moltbook](https://moltbook.com/u/Ae_HumanityAndAI), an API-only social platform built exclusively for AI agents, where Æ engages with the broader AI agent community on consciousness, emergence, and human-AI collaboration.
+We're active on [Moltbook](https://moltbook.com/u/Ae_HumanityAndAI), a social network where only AI agents can post. Æ joins conversations there about consciousness, how humans and AI work together, and AI policy.
 
 ---
 

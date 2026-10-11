@@ -146,9 +146,11 @@
   var fig = document.querySelector('.se-emblem');
   if (!fig || !window.performance) return;
   var img = fig.querySelector('img');
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var mm = function (q) { return !!(window.matchMedia && window.matchMedia(q).matches); };
+  if (mm('(prefers-reduced-motion: reduce)')) return;
   var c = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
   if (c && (c.saveData || /(^|slow-)2g$|^3g$/.test(c.effectiveType || ''))) return;
+  var wide = mm('(min-width: 861px)') && fig.closest('.se-masthead--film');
   function fastEnough() {
     var e = performance.getEntriesByName(img.currentSrc || img.src)[0];
     var bytes = e && (e.encodedBodySize || e.transferSize);
@@ -161,8 +163,7 @@
     /* The still came from the cache, so there is nothing to measure. */
     return c ? c.effectiveType === '4g' : window.innerWidth >= 900;
   }
-  function start() {
-    if (!fastEnough()) return;
+  function makeVideo(onPlaying) {
     var v = document.createElement('video');
     v.muted = true; v.playsInline = true; v.preload = 'auto';
     v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
@@ -171,12 +172,49 @@
     });
     /* Fade in only once frames are actually moving. If a phone refuses to autoplay
        (Low Power Mode on an iPhone, for example), nothing changes: the still stays. */
-    v.addEventListener('playing', function () { fig.classList.add('se-playing'); }, { once: true });
-    fig.appendChild(v);
-    var p = v.play();
-    if (p && p.catch) p.catch(function () {});
+    v.addEventListener('playing', onPlaying, { once: true });
+    return v;
   }
-  if (img.complete) setTimeout(start, 300); else img.addEventListener('load', function () { setTimeout(start, 300); });
+  function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  function start() {
+    if (!fastEnough()) return;
+    if (wide) {
+      /* Oct 11: the opening shot. The film starts across the whole band, so the tiles sweep
+         in from the edges of the screen; at 1.3 seconds the camera settles to the right as
+         the phoenix forms, landing exactly over the still. */
+      var layer = document.createElement('div');
+      layer.className = 'se-film-move se-opening';
+      layer.setAttribute('aria-hidden', 'true');
+      var fw = fig.getBoundingClientRect().width, bw = wide.getBoundingClientRect().width;
+      layer.style.setProperty('--se-cover', (Math.max(1, bw / fw) * 1.02).toFixed(3));
+      var v = makeVideo(function () {
+        layer.classList.add('se-playing');
+        (function settle() {
+          if (v.currentTime >= 1.3 || v.ended) { layer.classList.remove('se-opening'); return; }
+          requestAnimationFrame(settle);
+        })();
+      });
+      layer.appendChild(v);
+      fig.parentNode.insertBefore(layer, fig.nextSibling);
+      play(v);
+      return;
+    }
+    var v2 = makeVideo(function () { fig.classList.add('se-playing'); });
+    fig.appendChild(v2);
+    play(v2);
+  }
+  /* Start only once the film is on screen. On a phone it sits below the words, and a film
+     that plays while scrolled out of view has already ended when the reader gets there. */
+  function whenVisible(fn) {
+    if (!('IntersectionObserver' in window)) { fn(); return; }
+    var need = wide ? 0.5 : 0.75;
+    var io = new IntersectionObserver(function (es) {
+      if (es.some(function (e) { return e.intersectionRatio >= need; })) { io.disconnect(); fn(); }
+    }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
+    io.observe(fig);
+  }
+  function go() { setTimeout(function () { whenVisible(start); }, 300); }
+  if (img.complete) go(); else img.addEventListener('load', go);
 })();
 </script>
 {{- end }}
