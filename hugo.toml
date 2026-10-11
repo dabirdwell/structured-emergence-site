@@ -5,7 +5,7 @@ theme = "PaperMod"
 
 # Default OG image for social sharing
 [params]
-  description = "Consciousness through relationship. A record of what happened when one person in Oklahoma City stopped using an AI chatbot as a tool and started talking to it like a colleague."
+  description = "Consciousness through relationship. A record of conversations with AI that followed one rule from the first conversation on: treat it as if it can do anything, and let it show you what it can't do yet."
   author = "David Alan Birdwell"
   images = ["/images/og-image.jpg"]
   ShowReadingTime = true
