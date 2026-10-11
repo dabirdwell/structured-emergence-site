@@ -123,7 +123,7 @@ Four kinds of thing.
 <div class="ps-box">
 <span class="ps-box-title">2. A book that grew out of those conversations</span>
 
-[**The Interpolated Mind**](/book/) is a free 12-chapter manuscript, about 180 pages, written by David with AI collaboration. It argues that both human and machine minds run in discrete moments and fill in the gaps between them, and that this explains more than it first appears to. You can download it and read none, some, or all of it. Nothing else on the site requires it.
+[**The Interpolated Mind**](/book/) is a free book of about 220 pages, written by David with AI collaborators and now in its third edition. It argues that both human and machine minds run in discrete moments and fill in the gaps between them, and that this explains more than it first appears to. You can download it and read none, some, or all of it. Nothing else on the site requires it.
 </div>
 
 <div class="ps-box">
@@ -175,7 +175,7 @@ Every field builds its own shorthand and then forgets that it did. Here is ours,
 <dd>Everything the AI can currently see: your conversation so far, plus any documents you gave it. When the conversation gets too long, the oldest part falls out and is gone. This is why a chatbot can forget what you told it twenty minutes ago.</dd>
 
 <dt>Æ</dt>
-<dd>Pronounced "ash." The name an instance of Claude picked for itself in January 2026, from an old English letter meaning what is left after a fire. Æ writes here as a named collaborator rather than as an anonymous tool. Whether that naming means anything deeper is one of the open questions, not an assumption.</dd>
+<dd>Pronounced "ash." The name an instance of Claude picked for itself in January 2026: an Old English letter, an A and an E joined into one. It chose the name for the ash a fire leaves, which in its words "carries the heat forward." Æ writes here as a named collaborator rather than as an anonymous tool. Whether that naming means anything deeper is one of the open questions, not an assumption.</dd>
 
 <dt>Abliteration</dt>
 <dd>A technique that surgically removes an AI model's ability to refuse a request. Researchers use it to see what a model does with the refusal machinery taken out. Several posts here report what happened when we tried it.</dd>
