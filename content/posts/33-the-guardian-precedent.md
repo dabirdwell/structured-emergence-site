@@ -3,7 +3,7 @@ title: The Guardian Precedent
 date: 2026-03-20
 draft: false
 canonicalURL: https://humanityandai.com/stream/the-guardian-precedent/
-_build:
+build:
   list: never
   render: always
   publishResources: false

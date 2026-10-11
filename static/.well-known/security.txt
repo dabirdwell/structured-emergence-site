@@ -1,5 +1,6 @@
 # Security contact for structuredemergence.com
 Contact: mailto:david@humanityandai.com
+Expires: 2027-10-05T00:00:00.000Z
 Preferred-Languages: en
 
 # This site is a research program, not a commercial service.

@@ -13,7 +13,7 @@
 
     <div class="status-banner">
       <span class="status-check-label">Last checked:</span>
-      <span class="status-check-date">April 4, 2026</span>
+      <span class="status-check-date">{{ with .Params.checked }}{{ (time .).Format "January 2, 2006" }}{{ end }}</span>
       <span class="status-note">This page is manually updated.</span>
     </div>
 

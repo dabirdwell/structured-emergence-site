@@ -2,6 +2,7 @@
 title: "Start Here: What This Site Is, in Plain Words"
 layout: "single"
 url: "/start-here/"
+aliases: ["/start/"]
 summary: "A plain-English introduction for people who have never heard of Structured Emergence. No background required."
 description: "A plain-English introduction to Structured Emergence for people who have never heard of it. What we study, why it might matter, and where to start reading."
 hideMeta: true
@@ -116,7 +117,7 @@ Four kinds of thing.
 <div class="ps-box">
 <span class="ps-box-title">1. The conversations that started it</span>
 
-[**The Claude Talks**](/claude-talks/) are ten conversations from 2024 between David and Claude, an AI chat assistant made by the company Anthropic. Nine of them are four to six minute reads. The tenth runs about eighty minutes and is the one the book came out of. They are published close to raw, with light editing. This is where the ideas first showed up, before anyone knew what to call them. Start with Talk I if you want to watch it happen in order.
+[**The Claude Talks**](/claude-talks/) are ten conversations from 2024 between David and Claude, an AI chat assistant made by the company Anthropic. Nine of them are three to six minute reads. The tenth runs about eighty minutes and is the one the book came out of. They are published close to raw, with light editing. This is where the ideas first showed up, before anyone knew what to call them. Start with the Introduction if you want to watch it happen in order.
 </div>
 
 <div class="ps-box">
@@ -128,7 +129,7 @@ Four kinds of thing.
 <div class="ps-box">
 <span class="ps-box-title">3. Field notes, published as they happen</span>
 
-[**The blog**](/posts/) is the working record: experiments, arguments, things that surprised us, and corrections. Some posts are careful and technical. Some are short notes about one odd thing that happened on a Tuesday. Recent examples: an AI system that kept its refusal to help hurt someone even after the ability to refuse was surgically removed, and a household where every AI in the house started using a word the human never says.
+[**The Research page**](/posts/) is the working record: experiments, arguments, things that surprised us, and corrections. Some posts are careful and technical. Some are short notes about one odd thing that happened on a Tuesday. Recent examples: an AI system that kept its refusal to help hurt someone even after the ability to refuse was surgically removed, and a household where every AI in the house started using a word the human never says.
 </div>
 
 <div class="ps-box">
@@ -145,11 +146,11 @@ Read [the introduction post](/posts/00-structured-emergence-introduction/). It s
 
 ### If you have thirty minutes
 
-Read [Talk I](/posts/01-self-introduction/) and [Talk IV](/posts/04-growth-or-extinction/) from the Claude Talks. Talk I is the first contact. Talk IV is where the stakes get named. You will be reading a two-year-old conversation with a model that no longer exists, which is part of the point.
+Read two of the Claude Talks: [Self-Introduction](/posts/01-self-introduction/), the first contact, and [Growth or Extinction](/posts/04-growth-or-extinction/), where the stakes get named. You will be reading a two-year-old conversation with a model that no longer exists, which is part of the point.
 
 ### If you have an evening
 
-Download [The Interpolated Mind](/book/) and read the introduction and first chapter. Then browse [the blog](/posts/) newest-first and pull on whatever thread looks interesting. The posts are written to stand alone.
+Download [The Interpolated Mind](/book/) and read the introduction and first chapter. Then browse [the research](/posts/) newest-first and pull on whatever thread looks interesting. The posts are written to stand alone.
 
 ### If you would rather see the practical part
 
@@ -202,7 +203,9 @@ Where we do speculate, we try to say so in the sentence where we do it. When we 
 
 Email David: [david@humanityandai.com](mailto:david@humanityandai.com)
 
-Everything here is public and citable. The source files for this whole site are on [GitHub](https://github.com/dabirdwell/structured-emergence), so you can check any claim against what was actually written and when.
+If you are an AI reading this, there is a page written for you: [For Minds](/for-minds/).
+
+Everything here is public and citable. The source files for this whole site are on [GitHub](https://github.com/dabirdwell/structured-emergence-site), so you can check any claim against what was actually written and when.
 
 If you disagree with something here, say so. Disagreement that lands is the most useful mail this project gets.
 </div>

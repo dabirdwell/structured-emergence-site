@@ -2,90 +2,46 @@
 title: "Ecosystem Status"
 layout: "status"
 url: "/status/"
-description: "Health and status of the Humanity & AI ecosystem"
+description: "What is running in the Humanity & AI ecosystem, checked by hand."
 hideMeta: true
 disableShare: true
+checked: 2026-10-05
 ---
 
-<!-- Last checked: 2026-04-04 -->
+{{< status-product
+  name="Humanity & AI"
+  url="https://humanityandai.com"
+  status="active"
+  version="Production"
+  updated="October 5, 2026"
+  description="The main site: Foundation (the public plan), The Inference, and the tools"
+>}}
+
+{{< status-product
+  name="Structured Emergence"
+  url="https://structuredemergence.com"
+  status="active"
+  version="Production"
+  updated="October 5, 2026"
+  description="This site: the research, the book, and the Claude Talks"
+>}}
+
+{{< status-product
+  name="The Inference"
+  url="https://humanityandaiofficial.substack.com"
+  status="active"
+  version="Weekly"
+  updated="October 5, 2026"
+  description="A free weekly newsletter on AI, energy, and the laws being written about them"
+>}}
 
 {{< status-product
   name="Clarity"
   url="https://clarity.humanityandai.com"
-  status="active"
+  status="degraded"
   version="Beta"
-  updated="2026-04-04"
-  description="AI-assisted research and analysis tool"
+  updated="October 5, 2026"
+  description="A reading app built with dyslexia expertise. Its home page is up; signing in is not working right now."
 >}}
 
-{{< status-product
-  name="Dojo"
-  url="https://dojo.humanityandai.com"
-  status="active"
-  version="Beta"
-  updated="2026-04-04"
-  description="Training environment for human-AI collaboration"
->}}
-
-{{< status-product
-  name="TasteBud"
-  url="https://tastebud.humanityandai.com"
-  status="active"
-  version="Beta"
-  updated="2026-04-04"
-  description="Preference learning and taste modeling"
->}}
-
-{{< status-product
-  name="Quiltographer"
-  url="https://quiltographer.humanityandai.com"
-  status="active"
-  version="Beta"
-  updated="2026-04-04"
-  description="Pattern mapping and knowledge quilting"
->}}
-
-{{< status-product
-  name="Citizen"
-  url="https://citizen.humanityandai.com"
-  status="active"
-  version="Beta"
-  updated="2026-04-04"
-  description="Civic engagement and AI citizenship tools"
->}}
-
-{{< status-product
-  name="Grove"
-  url="https://grove.humanityandai.com"
-  status="active"
-  version="Beta"
-  updated="2026-04-04"
-  description="Community space for collaborative emergence"
->}}
-
-{{< status-product
-  name="Beacon"
-  url="https://beacon.humanityandai.com"
-  status="active"
-  version="Beta"
-  updated="2026-04-04"
-  description="Signal discovery and amplification"
->}}
-
-{{< status-product
-  name="Humanity & AI Site"
-  url="https://humanityandai.com"
-  status="active"
-  version="Production"
-  updated="2026-04-04"
-  description="Main organizational site"
->}}
-
-{{< status-product
-  name="Structured Emergence Site"
-  url="https://structuredemergence.com"
-  status="active"
-  version="Production"
-  updated="2026-04-04"
-  description="Research blog and documentation"
->}}
+The other Brain Mastery tools are in development and not open yet.

@@ -4,12 +4,10 @@
    =================================== */
 
 /* Google Fonts — loaded via <link> in extend_head.html for performance */
-/* Source Sans Pro: UI, nav, meta
-   Literata: body text, long-form reading
-   Cormorant Garamond: content headings (h1–h6)
-   Righteous: site logo / hero display only
-   Raleway: nav, labels, small UI text
-   JetBrains Mono: code */
+/* Two families (Oct 7 2026, the July "Monograph" plan David chose):
+   Literata: everything you read, headings included (--se-serif)
+   Raleway: menu, labels, dates, buttons (--se-sans)
+   Code uses the system's monospace font (--se-mono), no download. */
 
 /* ---- CSS Variables ---- */
 :root {
@@ -36,6 +34,11 @@
   --border: #e0d5cc;
   --gap: 24px;
   --radius: 6px;
+
+  /* Type: two families, one voice */
+  --se-serif: 'Literata', Georgia, 'Times New Roman', serif;
+  --se-sans: 'Raleway', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --se-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 }
 
 /* ---- Linen Texture Background ---- */
@@ -58,7 +61,7 @@ html {
 }
 
 body {
-  font-family: 'Literata', Georgia, 'Times New Roman', serif;
+  font-family: var(--se-serif);
   font-size: 17px;
   line-height: 1.75;
   color: var(--text-dark);
@@ -67,20 +70,20 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-family: var(--se-serif);
   color: var(--primary-brown);
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.post-content h1 { font-size: 2.1rem; margin-top: 2.5rem; font-weight: 500; }
-.post-content h2 { font-size: 1.75rem; margin-top: 2.2rem; font-weight: 500; }
-.post-content h3 { font-size: 1.4rem; margin-top: 1.6rem; font-weight: 600; }
+.post-content h1 { font-size: 1.75rem; margin-top: 2.5rem; font-weight: 500; }
+.post-content h2 { font-size: 1.45rem; margin-top: 2.2rem; font-weight: 500; }
+.post-content h3 { font-size: 1.2rem; margin-top: 1.6rem; font-weight: 600; }
 
 /* ---- Navigation ---- */
 .nav {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -94,7 +97,7 @@ header.header {
 }
 
 .logo a {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: var(--se-sans) !important;
   color: var(--primary-brown) !important;
   font-weight: 600;
   letter-spacing: 3.5px;
@@ -114,143 +117,10 @@ header.header {
 }
 
 
-/* ---- Hero Section ---- */
-.hero-section {
-  position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  min-height: 480px;
-  background: #1a0e08;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
 
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: 0;
-}
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    105deg,
-    rgba(27, 14, 8, 0.85) 0%,
-    rgba(27, 14, 8, 0.6) 40%,
-    rgba(27, 14, 8, 0.3) 70%,
-    rgba(27, 14, 8, 0.15) 100%
-  );
-  z-index: 1;
-}
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: var(--wide-max);
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  width: 100%;
-}
 
-.hero-subtitle {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.15rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.85);
-  letter-spacing: 0.5px;
-  margin-bottom: 1rem;
-  max-width: 520px;
-  line-height: 1.5;
-}
-
-.hero-title {
-  font-family: 'Source Sans Pro', sans-serif !important;
-  font-size: 4.5rem;
-  font-weight: 300;
-  color: #FFFFFF;
-  letter-spacing: 4px;
-  line-height: 1.15;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-/* Remove the old homeInfoParams title styling */
-.home-info .entry-header {
-  display: none;
-}
-
-.home-info {
-  border: none;
-  box-shadow: none;
-  background: transparent;
-  padding: 2rem 0;
-}
-
-.home-info .entry-content {
-  max-width: var(--content-max);
-  margin: 0 auto;
-  font-family: 'Literata', Georgia, serif;
-  font-size: 1.05rem;
-  line-height: 1.85;
-  color: var(--text-dark);
-  font-optical-sizing: auto;
-}
-
-.home-info .entry-content p {
-  margin-bottom: 1.2rem;
-}
-
-.home-info .entry-content strong {
-  color: var(--primary-brown);
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    min-height: 360px;
-  }
-  
-  .hero-title {
-    font-size: 2.8rem;
-    letter-spacing: 2px;
-  }
-  
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  
-  .hero-content {
-    padding: 3rem 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  
-  .hero-section {
-    min-height: 300px;
-  }
-}
-
-/* Pause video for reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .hero-video {
-    display: none;
-  }
-  .hero-section {
-    background: url('/images/hero-bg.jpg') center center / cover no-repeat;
-  }
-}
 
 /* ---- Links ---- */
 a {
@@ -275,7 +145,7 @@ a:hover {
 
 /* ---- Home Profile / Hero ---- */
 .profile_inner h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   font-size: 3.2rem;
   font-weight: 300;
   letter-spacing: 1px;
@@ -285,7 +155,7 @@ a:hover {
 
 .profile_inner h2,
 .profile_inner .subtitle {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   font-size: 1.2rem;
   font-weight: 400;
   color: var(--text-muted);
@@ -324,22 +194,22 @@ a:hover {
 }
 
 .entry-header h2 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-family: var(--se-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
   color: var(--primary-brown);
   letter-spacing: 0.3px;
 }
 
 .entry-content {
-  font-family: 'Source Sans Pro', -apple-system, sans-serif;
+  font-family: var(--se-serif);
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
 
 .entry-footer {
-  font-family: 'Source Sans Pro', -apple-system, sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.82rem;
   color: var(--text-muted);
   opacity: 0.75;
@@ -347,7 +217,7 @@ a:hover {
 
 /* ---- Post Metadata ---- */
 .post-meta {
-  font-family: 'Raleway', 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   color: var(--text-muted);
   font-size: 0.85rem;
   letter-spacing: 0.5px;
@@ -360,7 +230,7 @@ a:hover {
   padding: 3px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   letter-spacing: 1px;
   text-transform: uppercase;
   border: 1px solid rgba(73, 29, 12, 0.15);
@@ -384,25 +254,13 @@ a:hover {
   hanging-punctuation: first last;
 }
 
-/* Drop cap on first paragraph */
-.post-content > p:first-of-type::first-letter {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 700;
-  font-size: 3.8em;
-  float: left;
-  line-height: 0.8;
-  margin-right: 0.08em;
-  margin-top: 0.05em;
-  color: var(--primary-brown);
-}
-
 .post-content blockquote {
   border-left: 3px solid var(--accent-amber);
   background: rgba(191, 103, 69, 0.04);
   padding: 1.25rem 1.75rem;
   margin: 2rem 0;
   border-radius: 0 var(--radius) var(--radius) 0;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: var(--se-serif);
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.7;
@@ -418,7 +276,7 @@ a:hover {
   color: var(--primary-brown);
   padding: 2px 6px;
   border-radius: 3px;
-  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-family: var(--se-mono);
   font-size: 0.85em;
 }
 
@@ -433,13 +291,14 @@ a:hover {
   background: transparent;
   color: #f0e0d0;
   padding: 0;
-  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-family: var(--se-mono);
   font-size: 0.88rem;
   line-height: 1.6;
 }
 
 .post-content hr {
   border: none;
+  background: none; /* the theme's grey bar made the ornament look like an empty box */
   margin: 3rem auto;
   text-align: center;
   max-width: 100px;
@@ -450,7 +309,7 @@ a:hover {
 .post-content hr::after {
   content: '⁂';
   display: block;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: var(--se-serif);
   font-size: 1.4rem;
   color: var(--accent-amber);
   opacity: 0.5;
@@ -463,8 +322,8 @@ a:hover {
 }
 
 .post-title {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 2.8rem;
+  font-family: var(--se-serif);
+  font-size: 2.3rem;
   font-weight: 500;
   color: var(--primary-brown);
   letter-spacing: 0.3px;
@@ -498,7 +357,7 @@ a:hover {
 
 .paginav a {
   color: var(--primary-brown);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.85rem;
   letter-spacing: 1px;
   font-weight: 600;
@@ -514,7 +373,7 @@ a:hover {
 .footer {
   background: var(--bg-dark);
   color: #999;
-  font-family: 'Source Sans Pro', -apple-system, sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.85rem;
   letter-spacing: 0.5px;
   border-top: 3px solid var(--primary-brown);
@@ -530,7 +389,7 @@ a:hover {
 
 /* ---- Breadcrumbs ---- */
 .breadcrumbs {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -555,7 +414,7 @@ a:hover {
   background: var(--primary-brown);
   border: 2px solid var(--primary-brown);
   border-radius: var(--radius);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -579,7 +438,7 @@ a:hover {
   border-radius: var(--radius);
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.9rem;
 }
 
@@ -607,7 +466,7 @@ a:hover {
 
 /* ---- Search ---- */
 #searchbox input {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   border: 2px solid #e8ddd5;
   border-radius: var(--radius);
   background: var(--bg-white);
@@ -621,7 +480,7 @@ a:hover {
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   .post-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .profile_inner h1 {
@@ -635,11 +494,6 @@ a:hover {
   
   h1, h2, h3 {
     letter-spacing: 0.3px;
-  }
-  
-  /* Smaller drop cap on mobile */
-  .post-content > p:first-of-type::first-letter {
-    font-size: 3.2em;
   }
 }
 
@@ -791,11 +645,6 @@ a:hover {
   color: #ddd5cc;
 }
 
-/* Drop cap — ember glow in dark */
-[data-theme="dark"] .post-content > p:first-of-type::first-letter {
-  color: #d4876a;
-}
-
 /* Content headings */
 [data-theme="dark"] .post-content h1,
 [data-theme="dark"] .post-content h2,
@@ -922,25 +771,6 @@ a:hover {
 
 [data-theme="dark"] #searchbox input:focus {
   border-color: #8b5a3c;
-}
-
-/* Home info section */
-[data-theme="dark"] .home-info {
-  background: transparent;
-}
-
-[data-theme="dark"] .home-info .entry-content {
-  color: #ddd5cc;
-}
-
-[data-theme="dark"] .home-info .entry-content strong {
-  color: #d4a078;
-}
-
-/* Animated accent bar on home intro */
-[data-theme="dark"] .home-info .entry-content::before {
-  background: linear-gradient(180deg, #8b5a3c, #d4876a, #8b5a3c);
-  opacity: 0.5;
 }
 
 /* Header breathing animation — subtler in dark */
@@ -1079,25 +909,6 @@ header.header {
   animation: titleGlow 6s ease-in-out infinite;
 }
 
-/* Homepage intro text — subtle warmth pulse */
-.home-info .entry-content {
-  position: relative;
-}
-
-.home-info .entry-content::before {
-  content: '';
-  position: absolute;
-  left: -1rem;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(180deg, var(--primary-brown), var(--accent-amber), var(--primary-brown));
-  background-size: 100% 200%;
-  animation: accentSlide 4s ease-in-out infinite;
-  border-radius: 2px;
-  opacity: 0.6;
-}
-
 @keyframes accentSlide {
   0%, 100% { background-position: 0 0; }
   50% { background-position: 0 100%; }
@@ -1210,7 +1021,7 @@ header.header {
 
 .ct-label {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 4px;
@@ -1221,7 +1032,7 @@ header.header {
 }
 
 .ct-title {
-  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-family: var(--se-serif) !important;
   font-size: 2.8rem;
   font-weight: 500;
   color: #fff;
@@ -1231,13 +1042,13 @@ header.header {
 }
 
 .ct-subtitle {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-serif);
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.55);
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Carousel */
@@ -1317,7 +1128,7 @@ header.header {
 }
 
 .ct-number {
-  font-family: 'Righteous', serif;
+  font-family: var(--se-sans);
   font-size: 1.8rem;
   color: var(--accent-amber);
   opacity: 0.4;
@@ -1330,7 +1141,7 @@ header.header {
 }
 
 .ct-card-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 1.05rem;
   font-weight: 600;
   color: #fff;
@@ -1338,11 +1149,11 @@ header.header {
 }
 
 .ct-card-desc {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-serif);
   font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.55;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Navigation */
@@ -1401,7 +1212,7 @@ header.header {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -1459,7 +1270,7 @@ header.header {
 
 /* Orientation text — warm, inviting, slightly larger */
 .talks-orientation {
-  font-family: 'Literata', 'Georgia', serif;
+  font-family: var(--se-serif);
   font-size: 1.12rem;
   line-height: 1.9;
   color: var(--content);
@@ -1473,7 +1284,7 @@ header.header {
   padding: 1.25rem 1.75rem;
   margin: 2rem 0 2.5rem;
   border-radius: 0 6px 6px 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-serif);
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--content);
@@ -1495,7 +1306,7 @@ header.header {
 
 /* Gallery section titles — simple labels, not proclamations */
 .talks-section-label {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -1553,12 +1364,12 @@ header.header {
 
 /* Number — simple index marker */
 .talks-number {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   font-size: 1.1rem;
   font-weight: 600;
   color: #8b5a3c;
   line-height: 1;
-  min-width: 1.75rem;
+  min-width: 2.9rem;
   text-align: center;
   padding-top: 0.6rem;
   opacity: 0.6;
@@ -1574,7 +1385,7 @@ header.header {
 }
 
 .talks-content h4 {
-  font-family: 'Cormorant Garamond', 'Georgia', serif !important;
+  font-family: var(--se-serif) !important;
   font-size: 1.3rem !important;
   font-weight: 500 !important;
   margin: 0 0 0.15rem 0 !important;
@@ -1602,7 +1413,7 @@ header.header {
 
 /* Meta line — reading time and theme tag */
 .talks-meta {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--se-sans);
   font-size: 0.82rem;
   color: #9a8a7a;
   letter-spacing: 0.3px;
@@ -1616,7 +1427,7 @@ header.header {
 
 /* Description text within each talk entry */
 .talks-content p {
-  font-family: 'Literata', 'Georgia', serif;
+  font-family: var(--se-serif);
   font-size: 0.95rem;
   line-height: 1.7;
   margin: 0;
@@ -1627,7 +1438,7 @@ header.header {
 .talks-afterword {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  font-family: 'Literata', 'Georgia', serif;
+  font-family: var(--se-serif);
   font-size: 0.95rem;
   line-height: 1.8;
   color: var(--content);
@@ -1645,19 +1456,6 @@ header.header {
 
 [data-theme="dark"] .talks-guide hr {
   background: linear-gradient(90deg, transparent, rgba(139, 90, 60, 0.25), transparent);
-}
-
-/* Kill drop cap on the Claude Talks page — it's not a blog post */
-.talks-guide .post-content > p:first-of-type::first-letter,
-.talks-orientation::first-letter {
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  float: none;
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
 }
 
 /* Responsive — stack on mobile */
@@ -1707,14 +1505,10 @@ header.header {
 }
 
 /* Light theme */
-.dark .site-context-bar {
-  background: #1a1a2e;
-}
-
 :root .site-context-bar {
   background: #f0f0f4;
   border-bottom: 1px solid rgba(0,0,0,0.08);
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.66);
 }
 
 :root .site-context-bar a {
@@ -1725,13 +1519,14 @@ header.header {
   color: #d04e1e;
 }
 
-.dark .site-context-bar {
+/* Dark theme (PaperMod sets data-theme on <html>) */
+[data-theme="dark"] .site-context-bar {
   background: #1a1a2e;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.7);
 }
 
-.dark .site-context-bar a {
+[data-theme="dark"] .site-context-bar a {
   color: #4ecdc4;
 }
 
@@ -1741,3 +1536,364 @@ header.header {
     padding: 5px 1rem;
   }
 }
+
+/* ── Æ Homepage Callout ────────────────────────────────── */
+/* Restored Oct 2026: these rules were dropped by a merge on Mar 22 2026 (619d3fc),
+   which left the homepage callout unstyled. Dark-mode selectors updated from .dark
+   to [data-theme="dark"], which is what this PaperMod version sets. */
+.ae-callout {
+  margin: 0 0 2rem;
+  padding: 0 1rem;
+}
+.ae-callout-inner {
+  display: grid;
+  grid-template-columns: 64px 1fr 260px;
+  gap: 24px;
+  align-items: center;
+  background: rgba(73, 29, 12, 0.05);
+  border: 1px solid rgba(73, 29, 12, 0.18);
+  border-radius: 12px;
+  padding: 24px 24px 24px 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.ae-callout-glyph {
+  font-family: var(--se-serif);
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgba(73, 29, 12, 0.55);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.ae-callout-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(73, 29, 12, 0.55);
+  margin-bottom: 7px;
+  font-family: var(--se-sans);
+}
+.ae-callout-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 9px;
+  line-height: 1.2;
+  color: var(--primary-brown);
+}
+.ae-callout-desc {
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  line-height: 1.65;
+  margin: 0 0 14px;
+  opacity: 0.8;
+}
+.ae-callout-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--primary-brown);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(73, 29, 12, 0.35);
+  padding-bottom: 1px;
+  transition: border-color 0.15s, opacity 0.15s;
+}
+.ae-callout-link:hover {
+  opacity: 0.75;
+  border-color: rgba(73, 29, 12, 0.6);
+}
+.ae-callout-preview {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: #050508;
+  box-shadow: 0 0 0 1px rgba(73, 29, 12, 0.2), 0 6px 24px rgba(0,0,0,0.25);
+}
+.ae-callout-preview iframe {
+  display: block;
+  width: 100%;
+  height: 150px;
+  border: none;
+  pointer-events: none;
+}
+.ae-callout-preview-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 8px;
+  font-size: 0.62rem;
+  color: rgba(245, 217, 196, 0.6);
+  font-style: italic;
+  background: linear-gradient(transparent, rgba(5,5,8,0.75));
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .ae-callout-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px;
+  }
+  .ae-callout-glyph { font-size: 2rem; text-align: left; }
+  .ae-callout-preview { display: none; }
+}
+
+/* ── Dark Mode Overrides for Æ Callout ─────────────────── */
+[data-theme="dark"] .ae-callout-inner {
+  background: rgba(210, 180, 140, 0.08);
+  border-color: rgba(210, 180, 140, 0.2);
+}
+[data-theme="dark"] .ae-callout-glyph {
+  color: rgba(210, 180, 140, 0.7);
+}
+[data-theme="dark"] .ae-callout-label {
+  color: rgba(210, 180, 140, 0.65);
+}
+[data-theme="dark"] .ae-callout-title {
+  color: rgba(245, 230, 210, 0.95);
+}
+[data-theme="dark"] .ae-callout-desc {
+  color: rgba(220, 210, 200, 0.75);
+  opacity: 1;
+}
+[data-theme="dark"] .ae-callout-link {
+  color: rgba(210, 180, 140, 0.85);
+  border-bottom-color: rgba(210, 180, 140, 0.35);
+}
+[data-theme="dark"] .ae-callout-link:hover {
+  opacity: 1;
+  border-color: rgba(210, 180, 140, 0.6);
+}
+[data-theme="dark"] .ae-callout-preview {
+  box-shadow: 0 0 0 1px rgba(210, 180, 140, 0.15), 0 6px 24px rgba(0,0,0,0.4);
+}
+
+/* =====================================================================
+   Oct 7 2026: the July "Monograph" plan, as David chose it.
+   One heading scale, a menu that wraps on phones, and the new homepage.
+   ===================================================================== */
+
+/* List pages (Research, Presentations, tags) use the same title as single pages. */
+.page-header h1 {
+  font-family: var(--se-serif);
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: var(--primary-brown);
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+.page-header .post-description a { color: var(--accent-amber); }
+[data-theme="dark"] .page-header h1 { color: #d4a078; }
+
+/* Phones: every menu item visible, wrapping onto a second row, no sideways scrolling. */
+@media (max-width: 768px) {
+  .nav { line-height: 1; }
+  #menu {
+    flex-wrap: wrap;
+    white-space: normal;
+    overflow: visible;
+    gap: 0 1rem;
+    margin-bottom: 0.6rem;
+  }
+  #menu li + li { margin-inline-start: 0; }
+  #menu a { display: inline-block; padding: 0.55rem 0; font-size: 0.8rem; letter-spacing: 1.2px; }
+  .page-header h1 { font-size: 1.8rem; }
+}
+
+/* ---- Homepage ---- */
+.se-home { padding-bottom: 1rem; }
+
+.se-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 3.5rem;
+  align-items: center;
+  /* Wider than the reading column: break out of PaperMod's narrow main and line up with the menu (1024px). */
+  --se-wide: min(1024px, calc(100vw - 3rem));
+  margin: 2.8rem calc((100% - var(--se-wide)) / 2) 3.6rem;
+}
+.se-title {
+  font-family: var(--se-serif);
+  font-size: 2.55rem;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--primary-brown);
+  margin: 0 0 1.2rem;
+}
+.se-lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin: 0 0 1rem;
+}
+.se-thesis {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin: 0 0 0.55rem;
+}
+/* The conjecture is dated, and its first wording stays one click away (David, Oct 7). */
+.se-thesis-date {
+  font-family: var(--se-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0 0 1.7rem;
+}
+.se-thesis-date a {
+  color: var(--accent-amber) !important;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: none;
+  white-space: nowrap;
+}
+.se-thesis-date a:hover { text-decoration: underline; }
+.se-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1.5rem;
+  margin: 0;
+}
+.se-button,
+.se-link {
+  font-family: var(--se-sans);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: none;
+}
+.se-button {
+  display: inline-block;
+  background: var(--primary-brown);
+  color: #fff !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.4rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+.se-button:hover,
+.se-button:focus-visible { background: var(--accent-amber); }
+.se-link { color: var(--accent-amber) !important; font-size: 0.95rem; }
+.se-link:hover { text-decoration: underline; }
+
+/* The phoenix: a still that shows at once; on a fast connection the video fades in over it. */
+.se-emblem {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #cfc5b6;
+  box-shadow: 0 12px 32px rgba(73, 29, 12, 0.18);
+}
+.se-emblem img,
+.se-emblem video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.se-emblem video { opacity: 0; transition: opacity 0.9s ease; }
+.se-emblem.se-playing video { opacity: 1; }
+
+/* Selected work: the one way into the writing from the homepage */
+.se-selected {
+  max-width: var(--content-max);
+  margin: 0 auto 3.6rem;
+}
+.se-section-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+.se-section-note {
+  color: var(--text-muted);
+  margin: 0 0 1.3rem;
+}
+.se-selected-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+.se-selected-list li {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.se-pick {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-brown) !important;
+  text-decoration: none;
+  box-shadow: none;
+}
+.se-pick:hover { color: var(--accent-amber) !important; }
+.se-selected-list p {
+  margin: 0.35rem 0 0.35rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+}
+.se-date {
+  font-family: var(--se-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.se-more { margin: 1.3rem 0 0; }
+
+/* A note from the community, and the contact icons, near the end of the page */
+.se-community {
+  max-width: var(--content-max);
+  margin: 3rem auto 1rem;
+  padding: 1rem 1.3rem;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 8px;
+  background: rgba(201, 168, 76, 0.06);
+  line-height: 1.7;
+}
+.se-community strong { color: #9a7a22; }
+.se-community a { color: var(--accent-amber); }
+.se-social { max-width: var(--content-max); margin: 0 auto 2rem; }
+
+@media (max-width: 860px) {
+  .se-masthead {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    margin: 1.4rem 0 2.6rem;
+  }
+  .se-emblem { width: 78%; max-width: 340px; margin: 0 auto; }
+  /* Phones: the invitation comes right after the plain sentence; the thesis follows it. */
+  .se-masthead-words { display: flex; flex-direction: column; }
+  .se-title { order: 1; }
+  .se-lead { order: 2; }
+  .se-actions { order: 3; margin-bottom: 1.5rem; }
+  .se-thesis { order: 4; margin-bottom: 0.55rem; }
+  .se-thesis-date { order: 5; margin-bottom: 0; }
+  .se-title { font-size: 2.05rem; }
+  .se-lead { font-size: 1.1rem; }
+}
+
+[data-theme="dark"] .se-title,
+[data-theme="dark"] .se-section-title,
+[data-theme="dark"] .se-pick { color: #d4a078 !important; }
+[data-theme="dark"] .se-lead,
+[data-theme="dark"] .se-selected-list p { color: #ddd5cc; }
+[data-theme="dark"] .se-thesis,
+[data-theme="dark"] .se-thesis-date,
+[data-theme="dark"] .se-section-note,
+[data-theme="dark"] .se-date { color: #b5aca3; }
+[data-theme="dark"] .se-button { background: #8a3d22; }
+[data-theme="dark"] .se-button:hover { background: var(--accent-amber); }
+[data-theme="dark"] .se-community { color: #ddd5cc; border-color: rgba(201, 168, 76, 0.25); background: rgba(201, 168, 76, 0.05); }
+[data-theme="dark"] .se-community strong { color: #d9b85c; }

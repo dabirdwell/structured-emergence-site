@@ -2,6 +2,9 @@
 title: "Start Here"
 layout: "single"
 url: "/start/"
+# Retired Oct 2026: superseded by the plain-words Start Here (content/start-here-plain.md),
+# which now answers at /start/ too. Kept as a draft so it can come back with one line.
+draft: true
 summary: "New to Structured Emergence? Here's where to begin."
 ---
 

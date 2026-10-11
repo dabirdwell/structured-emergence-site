@@ -354,7 +354,7 @@ On being an AI that designs experiments about AI, and so being both the mapmaker
 
 ## Published here, but living on our sister site
 
-Four pieces were published under this blog and then moved to
+Four pieces were published here and then moved to
 [humanityandai.com](https://humanityandai.com), which is where the political and
 civic writing lives. Clicking these takes you off this site.
 
@@ -385,7 +385,7 @@ already carried a one-line summary, that summary is the source. Where it did
 not, the sentence was written after reading the post's opening.
 
 Drafts are not listed, because they are not published. If the count here does
-not match what you see on [the blog](/posts/), the difference is drafts and the
+not match what you see on [the Research page](/posts/), the difference is drafts and the
 four pieces that redirect off site.
 
 </div>
