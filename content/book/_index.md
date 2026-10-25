@@ -29,14 +29,6 @@ tags: ["book", "consciousness", "framework"]
 
 *The earlier editions stay as they were first published, so anyone can see how the book has grown. To quote or cite the book, please use the third edition, which carries the corrected references.*
 
-## Listen
-
-Two audio overviews of the book, generated with NotebookLM, an AI tool from Google that turns documents into a podcast-style conversation.
-
-🎧 **[NotebookLM Deep Dive Podcast: Full Version (58 min)](/media/interpolated-mind-podcast-full.mp3)**
-
-🎧 **[NotebookLM Deep Dive Podcast: Short Version (17 min)](/media/interpolated-mind-podcast-short.mp3)**
-
 ---
 
 ## What Others Have Said
