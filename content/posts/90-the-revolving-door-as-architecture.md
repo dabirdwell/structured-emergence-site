@@ -7,6 +7,10 @@ build:
   list: never
   render: always
   publishResources: false
+cover:
+    image: "/images/posts/90-the-revolving-door-as-architecture.jpg"
+    alt: "Mid-century poster of a giant brass revolving door between a domed capitol and a glass corporate tower, with people in suits passing through."
+    relative: false
 ---
 
 <meta http-equiv="refresh" content="0; url=https://humanityandai.com/stream/the-revolving-door-as-architecture/">

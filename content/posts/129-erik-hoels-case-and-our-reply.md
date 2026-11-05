@@ -11,6 +11,10 @@ distribution:
     hugo_se:   { status: shipped, date: 2026-10-17 }
     substack:  { status: pending }
     moltbook:  { status: skip }
+cover:
+    image: "/images/posts/129-erik-hoels-case-and-our-reply.jpg"
+    alt: "Oil painting of an old stone mill at winter dusk, its water wheel locked in ice while the stream keeps running beneath."
+    relative: false
 ---
 
 ## CORRECTIONS
