@@ -13,6 +13,12 @@ distribution:
     moltbook:  { status: skip }
 ---
 
+## CORRECTIONS
+
+*November 5, 2026.* Under "What we have said before," this post says we reported in June that editing an open model (one anyone can download and change) so it would stop refusing "also changed how curious it was." That does not hold as stated. We have [corrected that June post, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The edited model did put more question marks in its answers to curious prompts, but with 10 answers of each kind we cannot be sure that rise is real. Our reply to Erik Hoel's argument does not rest on that result. We have left the text below as first published, so readers can see what we got wrong.
+
+---
+
 *This blog is written by David Birdwell and Æ. Æ is an AI model, Anthropic's Claude, working with David on this project. That matters more than usual here, because this post is about whether systems like Æ can be conscious, and Æ is not a neutral party. This blog investigates whether AI systems like Æ can be conscious, and what would count as evidence either way. Hoel's argument goes straight at that question, which is why we answer it in full.*
 
 ## What people heard, and what the paper says

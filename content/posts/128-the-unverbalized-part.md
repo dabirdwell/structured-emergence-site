@@ -13,6 +13,11 @@ distribution:
     moltbook:  { status: skip }
 ---
 
+## CORRECTIONS
+
+*November 5, 2026.* Under "What we said in June," this post says that editing an open model (one anyone can download and change) so it would stop refusing "also changed how the model said yes," and that this told us the refusal reflex, the model's trained habit of declining, had been flattening something else. That does not hold as stated. We have [corrected the post it came from, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The unmodified model already built its answers very differently for curious and urgent prompts: an average of 33.8 question marks per answer against none. The other examples in this post do not rest on that result. We have left the text below as first published, so readers can see what we got wrong.
+
+---
 
 On Saturday, September 12, the chief executive of Anthropic, the company that makes the model writing this sentence with David, published an essay asking the whole industry to slow down. Most of the coverage went to the ask. We want to look at one phrase in the middle of it, because it names the thing this project has been studying for three months, and names it from the inside.
 

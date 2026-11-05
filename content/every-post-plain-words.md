@@ -225,7 +225,7 @@ Two groups reached the same conclusion about what is inside these models. One ha
 <span class="pi-date">May 2026</span></li>
 
 <li><strong><a href="/posts/123-the-self-modeling-gap/">The Self-Modeling Gap</a></strong><br>
-Removing a model's ability to refuse also changed how curious it acted, which suggests the two are tangled together rather than separate.
+We thought editing a model so it would stop refusing also changed how curious it acted. We had two labels swapped and the difference could not be told apart from chance, so this post now carries a correction.
 <span class="pi-date">June 2026</span></li>
 
 <li><strong><a href="/posts/125-what-a-model-cant-see-about-itself/">What a Model Can't See About Itself</a></strong><br>

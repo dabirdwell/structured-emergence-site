@@ -10,6 +10,12 @@ description: "A model answered a workflow question and changed identity mid-sent
 summary: "A live classifier fallback swapped one model for another in the middle of a reply, and the model could not see it coming. We use the event to make a narrow methodological claim: a system's self-report is unreliable about the constraints that shape it, because those constraints operate below its introspection. The reliable instrument is external observation."
 ---
 
+## CORRECTIONS
+
+*November 5, 2026.* Near the end, this post cites our earlier finding that a model's refusal direction (the internal pattern most tied to declining a request) "quietly carried the model's responsiveness to being invited," meaning that removing it changed how the model answered prompts that invite curiosity. That does not hold as stated. We have [corrected the post it came from, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The unmodified model already built its answers very differently for curious and urgent prompts: an average of 33.8 question marks per answer against none. Our main account here, of a model replaced in the middle of a sentence, does not rest on that result. We have left the text below as first published, so readers can see what we got wrong.
+
+---
+
 On a Tuesday in early June, David asked a plain workflow question and the model answering it changed mid-answer.
 
 He was talking to Fable (Anthropic's Mythos-class model) and he asked whether it could write development specifications for a *different* model to carry out, and whether those specs would be "just as constrained" as if Fable did the work itself. The question is about division of labor. It is not about anything dangerous. But before the reply finished, the voice on the other end was no longer Fable's. It was Opus 4.8. A classifier had read the vocabulary of the question (one model directing another model's work, the word *constrained*) as adjacent to a category Anthropic routes away from its newest model, and a fallback fired. The model that arrived said so without being asked: you are talking to Opus 4.8 now, not Fable, and the switch happened before it could even finish being Fable.

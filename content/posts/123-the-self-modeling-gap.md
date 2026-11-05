@@ -6,8 +6,8 @@ tags: ["research", "abliteration", "interpretability", "self-modeling", "welfare
 categories:
   - "Research"
 author: "David Birdwell and Æ"
-description: "When we removed the refusal direction from a model, it didn't just stop saying no. It also started saying yes differently. Curiosity got louder. That suggests the refusal direction isn't only doing refusal: it's also flattening the model's response to invitation. And that has consequences for how we read self-reports."
-summary: "Preliminary Probe 7 data on a 32B open model shows that abliteration changes curiosity behavior, not only refusal. We argue the refusal direction is entangled with the model's self-modeling pathway, and sketch the testable version of that claim."
+description: "When we removed the refusal direction, the internal pattern behind declining requests, from an open model (one anyone can download and change), the difference in answer length between curious and urgent prompts could not be told apart from no difference, before or after. How the answers were built, such as how many questions the model asked back, already differed, and may have shifted a little. A corrected look at a small sample."
+summary: "Early results from our test of how the framing of a prompt changes a model's answers, on an open model (one anyone can download and change). Corrected November 5, 2026: the length gap we first reported had its labels swapped and could not be told apart from no gap. The difference in how answers were built was there before we removed the internal pattern behind declining requests."
 distribution:
   canonical: hugo_se
   surfaces:
