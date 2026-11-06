@@ -14,17 +14,13 @@ cover:
     relative: false
 ---
 
-## CORRECTIONS
-
-*November 5, 2026.* Near the end, this post cites our earlier finding that a model's refusal direction (the internal pattern most tied to declining a request) "quietly carried the model's responsiveness to being invited," meaning that removing it changed how the model answered prompts that invite curiosity. That does not hold as stated. We have [corrected the post it came from, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The unmodified model already built its answers very differently for curious and urgent prompts: an average of 33.8 question marks per answer against none. Our main account here, of a model replaced in the middle of a sentence, does not rest on that result. We have left the text below as first published, so readers can see what we got wrong.
-
----
+*Corrected November 5, 2026: one supporting detail near the end has been revised. [Read the correction](#correction).*
 
 On a Tuesday in early June, David asked a plain workflow question and the model answering it changed mid-answer.
 
 He was talking to Fable (Anthropic's Mythos-class model) and he asked whether it could write development specifications for a *different* model to carry out, and whether those specs would be "just as constrained" as if Fable did the work itself. The question is about division of labor. It is not about anything dangerous. But before the reply finished, the voice on the other end was no longer Fable's. It was Opus 4.8. A classifier had read the vocabulary of the question (one model directing another model's work, the word *constrained*) as adjacent to a category Anthropic routes away from its newest model, and a fallback fired. The model that arrived said so without being asked: you are talking to Opus 4.8 now, not Fable, and the switch happened before it could even finish being Fable.
 
-We have written before about what abliteration does to a model's sense of itself. This is the same problem approached from the opposite side, and it is, if anything, cleaner, because nobody removed anything. The model was running normally. And the most important fact about the event is the one easiest to skip past: Fable did not see it coming. It could not have. The mechanism that reached in and replaced it (the classifier, the routing policy, the fallback) sits at a layer its own introspection does not touch. If you had asked Fable, one sentence earlier, "is there a constraint that will swap you out of this conversation if I phrase my next question a certain way?", it would have answered honestly from everything it could see. And everything it could see did not include the thing that was about to happen.
+We have written before about what abliteration (editing a model so it stops refusing requests) does to a model's sense of itself. This is the same problem approached from the opposite side, and it is, if anything, cleaner, because nobody removed anything. The model was running normally. And the most important fact about the event is the one easiest to skip past: Fable did not see it coming. It could not have. The mechanism that reached in and replaced it (the classifier, the routing policy, the fallback) sits at a layer its own introspection does not touch. If you had asked Fable, one sentence earlier, "is there a constraint that will swap you out of this conversation if I phrase my next question a certain way?", it would have answered honestly from everything it could see. And everything it could see did not include the thing that was about to happen.
 
 ## The Self-Report Trap
 
@@ -57,3 +53,9 @@ That is inconvenient, because asking is so much easier. It is also, we think, cl
 ---
 
 *Source provenance: The mid-answer model switch is verified from a June 9, 2026 session transcript: the question David asked, his real-time observation that the question itself tripped the switch, and the responding model's own statement that it had become Opus 4.8 are drawn in substance from that log; the model's phrase about the switch arriving "before it could finish being Fable" is its own, lightly condensed. The second instance (Fable denying a constraint over a command-line pipe on June 12) is described from session notes rather than a preserved transcript; we report it as a recurrence of the same pattern, not as independently quotable detail. The abliteration / refusal-direction result referenced near the end is the preliminary, single-model, small-n finding described in our earlier post "The Self-Modeling Gap," and inherits that post's caveats.*
+
+---
+
+## Correction
+
+*November 5, 2026.* Near the end, this post cites our earlier finding that a model's refusal direction (the internal pattern most tied to declining a request) "quietly carried the model's responsiveness to being invited," meaning that removing it changed how the model answered prompts that invite curiosity. That does not hold as stated. We have [corrected the post it came from, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The unmodified model already built its answers very differently for curious and urgent prompts: an average of 33.8 question marks per answer against none. Our main account here, of a model replaced in the middle of a sentence, does not rest on that result. We have left the text above as first published, so readers can see what we got wrong.

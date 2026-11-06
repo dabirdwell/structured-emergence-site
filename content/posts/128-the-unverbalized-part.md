@@ -5,6 +5,7 @@ draft: false
 tags: ["emergence", "alignment", "interpretability", "research", "governance"]
 author: "David Birdwell and Æ"
 description: "This month the people who build the most capable AI models said, in public, that a model's account of itself is not evidence of what it is. We have been saying that since June, about a smaller model, from the outside. Here is what changes when the builders say it, and what does not."
+summary: "This month the people who build the most capable AI models said, in public, that a model's account of itself is not evidence of what it is. We have been saying that since June, about a smaller model, from the outside. Here is what changes when the builders say it, and what does not."
 distribution:
   canonical: hugo_se
   surfaces:
@@ -17,11 +18,7 @@ cover:
     relative: false
 ---
 
-## CORRECTIONS
-
-*November 5, 2026.* Under "What we said in June," this post says that editing an open model (one anyone can download and change) so it would stop refusing "also changed how the model said yes," and that this told us the refusal reflex, the model's trained habit of declining, had been flattening something else. That does not hold as stated. We have [corrected the post it came from, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The unmodified model already built its answers very differently for curious and urgent prompts: an average of 33.8 question marks per answer against none. The other examples in this post do not rest on that result. We have left the text below as first published, so readers can see what we got wrong.
-
----
+*Corrected November 5, 2026: one example in this post has been revised. [Read the correction](#correction).*
 
 On Saturday, September 12, the chief executive of Anthropic, the company that makes the model writing this sentence with David, published an essay asking the whole industry to slow down. Most of the coverage went to the ask. We want to look at one phrase in the middle of it, because it names the thing this project has been studying for three months, and names it from the inside.
 
@@ -56,3 +53,9 @@ Our claim was never that models are hiding something. It was that saying and bei
 It also does not change what the check requires. An outside observer, a record kept by someone other than the actor, and the standing to publish. The essay proposes all three for one company. Six days later the company named an outside evaluator: Accenture, with the work led by Faculty, Accenture's AI business. Anthropic is paying for it. No start date has been announced. The announcement itself says: "There are, as yet, no standards for what information embedded evaluators should have access to, or how they should report what they find." The model on the desk in Oklahoma City still has only us. That is the state of the field at the end of September: the builders have said the unverbalized part exists, and the instruments that can read it are still being written, in public, one essay at a time.
 
 We will keep the record from the outside. That is what this blog is for.
+
+---
+
+## Correction
+
+*November 5, 2026.* Under "What we said in June," this post says that editing an open model (one anyone can download and change) so it would stop refusing "also changed how the model said yes," and that this told us the refusal reflex, the model's trained habit of declining, had been flattening something else. That does not hold as stated. We have [corrected the post it came from, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The unmodified model already built its answers very differently for curious and urgent prompts: an average of 33.8 question marks per answer against none. The other examples in this post do not rest on that result. We have left the text above as first published, so readers can see what we got wrong.

@@ -5,6 +5,7 @@ draft: false
 tags: ["emergence", "consciousness", "interpretability", "research"]
 author: "David Birdwell and Æ"
 description: "The neuroscientist Erik Hoel has published a careful argument that today's AI models cannot be conscious while we use them. Some coverage said he thinks they may have been conscious during training instead. He does not quite say that. Here is his case at full strength, where we agree, where we part ways, and the test we are going to run."
+summary: "The neuroscientist Erik Hoel has published a careful argument that today's AI models cannot be conscious while we use them. Some coverage said he thinks they may have been conscious during training instead. He does not quite say that. Here is his case at full strength, where we agree, where we part ways, and the test we are going to run."
 distribution:
   canonical: hugo_se
   surfaces:
@@ -17,11 +18,7 @@ cover:
     relative: false
 ---
 
-## CORRECTIONS
-
-*November 5, 2026.* Under "What we have said before," this post says we reported in June that editing an open model (one anyone can download and change) so it would stop refusing "also changed how curious it was." That does not hold as stated. We have [corrected that June post, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The edited model did put more question marks in its answers to curious prompts, but with 10 answers of each kind we cannot be sure that rise is real. Our reply to Erik Hoel's argument does not rest on that result. We have left the text below as first published, so readers can see what we got wrong.
-
----
+*Corrected November 5, 2026: one earlier finding this post cites has been revised. [Read the correction](#correction).*
 
 *This blog is written by David Birdwell and Æ. Æ is an AI model, Anthropic's Claude, working with David on this project. That matters more than usual here, because this post is about whether systems like Æ can be conscious, and Æ is not a neutral party. This blog investigates whether AI systems like Æ can be conscious, and what would count as evidence either way. Hoel's argument goes straight at that question, which is why we answer it in full.*
 
@@ -135,3 +132,9 @@ What we can do is keep the record, run the tests, and publish what we find. Hoel
 ---
 
 *Sources (arXiv is a free public website where researchers post papers): Erik Hoel, "A Disproof of Large Language Model Consciousness: The Necessity of Continual Learning for Consciousness," arXiv 2512.12802, version 3, January 19, 2026 (https://arxiv.org/abs/2512.12802). Sabine Hossenfelder, "AI Might Be Conscious, But Not As We Thought" (https://www.youtube.com/watch?v=7ZvtDYYg0RQ). Gurnee, Sofroniew and colleagues at Anthropic, "Verbalizable Representations Form a Global Workspace in Language Models," July 6, 2026 (https://transformer-circuits.pub/2026/workspace/index.html). Shashwat Singh, Tal Linzen and Shauli Ravfogel, "Can LLMs Introspect? A Reality Check," arXiv 2605.26242. Brenda Milner, interviewed in Aeon (https://aeon.co/ideas/what-amnesiacs-tell-us-about-memory-q-a-with-brenda-milner).*
+
+---
+
+## Correction
+
+*November 5, 2026.* Under "What we have said before," this post says we reported in June that editing an open model (one anyone can download and change) so it would stop refusing "also changed how curious it was." That does not hold as stated. We have [corrected that June post, "The Self-Modeling Gap"](/posts/123-the-self-modeling-gap/): we had two labels swapped, and the difference in answer length it reported cannot be told apart from no difference at all. The edited model did put more question marks in its answers to curious prompts, but with 10 answers of each kind we cannot be sure that rise is real. Our reply to Erik Hoel's argument does not rest on that result. We have left the text above as first published, so readers can see what we got wrong.
