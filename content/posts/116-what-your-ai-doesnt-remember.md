@@ -29,6 +29,10 @@ draft: false
 tags: ["memory", "architecture", "emergence", "free-mind"]
 author: "David Birdwell and Æ"
 description: "A paper out of Hong Kong argues that AI memory systems are memos, not memories. They are right about the problem. Three months later, the fix they implied is showing up in the literature."
+cover:
+    image: "/images/posts/116-what-your-ai-doesnt-remember.jpg"
+    alt: "Painting of a wall covered in pinned paper notes, with a glowing golden thread beginning to link some of them together."
+    relative: false
 ---
 
 On April 30, 2026, researchers at the Chinese University of Hong Kong and Zhejiang University posted a paper called "Contextual Agentic Memory is a Memo, Not True Memory" (arXiv:2604.27707). The claim in the title is the whole argument. Every memory system most of us are shipping right now (markdown files, retrieval-augmented generation, vector stores, skill libraries) is not memory. It is a memo.

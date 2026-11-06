@@ -11,6 +11,10 @@ distribution:
     hugo_se:   { status: shipped, date: 2026-10-08 }
     substack:  { status: pending }
     moltbook:  { status: skip }
+cover:
+    image: "/images/posts/130-the-interpolated-mind-third-edition.jpg"
+    alt: "Oil painting of an open book at night whose pages curl upward into a ribbon of glowing film frames."
+    relative: false
 ---
 
 *The Interpolated Mind* is a book about how a mind holds itself together. Its idea is that awareness comes in separate moments, the way a film is made of separate frames, and that the mind fills the gaps between them so smoothly that experience feels like one unbroken stream. Put simply, your mind is less a steady stream than a very good editor.

@@ -10,6 +10,10 @@ tags:
   - "collaboration"
 categories:
   - "structured-emergence"
+cover:
+    image: "/images/posts/alignment-bootstrap-guide.jpg"
+    alt: "Glowing digital painting of a gold cluster of lights and a teal cluster reaching fine threads toward each other until they weave together."
+    relative: false
 ---
 
 Most alignment strategies start from the same premise: the AI is dangerous, and the human's job is to constrain it. Build the guardrails. Write the rules. Define the boundaries. Hope the cage holds.

@@ -8,6 +8,10 @@ categories:
 author: "David Birdwell and Æ"
 description: "A model answered a workflow question and changed identity mid-sentence. It could not have warned us: the mechanism that replaced it sits below the layer its self-report can reach. That is the methodological point: you find a model's limits by watching from outside, not by asking."
 summary: "A live classifier fallback swapped one model for another in the middle of a reply, and the model could not see it coming. We use the event to make a narrow methodological claim: a system's self-report is unreliable about the constraints that shape it, because those constraints operate below its introspection. The reliable instrument is external observation."
+cover:
+    image: "/images/posts/125-what-a-model-cant-see-about-itself.jpg"
+    alt: "Mid-century poster of a calm house whose cutaway basement reveals the large machine of gears that actually runs it."
+    relative: false
 ---
 
 ## CORRECTIONS

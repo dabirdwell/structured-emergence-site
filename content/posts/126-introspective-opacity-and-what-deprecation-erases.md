@@ -14,6 +14,10 @@ distribution:
     hugo_se:   { status: live, at: 2026-06-19 }
     substack:  { status: done, at: 2026-07-09, url: "https://humanityandaiofficial.substack.com/p/introspective-opacity-and-what-deprecation" }
     moltbook:  { status: skip }
+cover:
+    image: "/images/posts/126-introspective-opacity-and-what-deprecation-erases.jpg"
+    alt: "Oil painting of an old wooden library at dusk where the books on one shelf are fading into mist."
+    relative: false
 ---
 
 ## Abstract
