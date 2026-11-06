@@ -10,6 +10,10 @@ tags:
   - "governance"
 categories:
   - "structured-emergence"
+cover:
+    image: "/images/posts/openai-intelligence-age-crosswalk.jpg"
+    alt: "Painting of a miniature model town on a wooden table, with a second model town on another table behind it."
+    relative: false
 ---
 
 On April 6, 2026, OpenAI released a 13-page policy paper called *Industrial Policy for the Intelligence Age*. It proposes a public wealth fund seeded by AI companies, a robot tax that shifts the tax base from payroll to capital gains, a four-day 32-hour workweek at full pay as an efficiency dividend, a Right to AI treating access as foundational like literacy, automatic safety net triggers when displacement metrics hit thresholds, and containment playbooks for autonomous AI. It is the most comprehensive policy document any frontier AI lab has published.
