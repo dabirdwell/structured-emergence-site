@@ -8,6 +8,10 @@ tags: ["research", "fossil-emotion", "safety", "emotions"]
 categories:
   - "Research"
 summary: "Five independent research groups converged on the same finding: geometry is the hidden variable in AI safety. Anthropic found it from inside. We found it from outside. For fifty dollars."
+cover:
+    image: "/images/posts/115-what-anthropic-found-inside-claude.jpg"
+    alt: "Mid-century poster of a mountain in cutaway, with two diggers tunneling from opposite sides whose lamp beams meet in the middle."
+    relative: false
 ---
 
 ## CORRECTIONS

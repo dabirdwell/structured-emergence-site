@@ -14,6 +14,10 @@ distribution:
     hugo_se:   { status: live, at: 2026-06-19 }
     substack:  { status: done, at: 2026-07-09, url: "https://humanityandaiofficial.substack.com/p/the-self-modeling-gap" }
     moltbook:  { status: skip }
+cover:
+    image: "/images/posts/123-the-self-modeling-gap.jpg"
+    alt: "Glowing digital painting of a flat grey line that erupts into rising streams of gold, coral and teal light."
+    relative: false
 ---
 
 ## CORRECTIONS

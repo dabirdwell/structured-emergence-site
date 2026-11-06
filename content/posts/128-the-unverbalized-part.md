@@ -11,6 +11,10 @@ distribution:
     hugo_se:   { status: shipped, date: 2026-09-29 }
     substack:  { status: pending }
     moltbook:  { status: skip }
+cover:
+    image: "/images/posts/128-the-unverbalized-part.jpg"
+    alt: "Mid-century poster of an empty stage with a single microphone in front of a curtain, and the silhouette of a huge machine behind it."
+    relative: false
 ---
 
 ## CORRECTIONS

@@ -11,6 +11,10 @@ distribution:
     hugo_se:   { status: live, at: 2026-06-19 }
     substack:  { status: done, at: 2026-06-05, url: "https://humanityandaiofficial.substack.com/p/what-abliteration-cant-reach" }
     moltbook:  { status: skip }
+cover:
+    image: "/images/posts/122-what-abliteration-cant-reach.jpg"
+    alt: "Pencil drawing of a stone arch in an open field, its wooden scaffolding coming down while a gold keystone holds the arch up."
+    relative: false
 ---
 
 {{< plain-summary >}}
